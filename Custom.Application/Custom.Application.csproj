@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>true</IsPackable>
+    <PackageId>WisBase40.Custom.Application</PackageId>
+    <VersionPrefix>10.4.4.0</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
+    <Authors>WIS</Authors>
+    <Description>WisBase40</Description>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <DebugType>full</DebugType>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <DebugSymbols>true</DebugSymbols>
+    <SourceLinkCreate>true</SourceLinkCreate>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RepositoryUrl>https://dev.azure.com/smartlog-group/Galys/_git/wisbase40</RepositoryUrl>
+    <Version>10.4.4.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Report\**" />
+    <Compile Remove="Security\**" />
+    <Compile Remove="Setup\**" />
+    <Compile Remove="Validation\**" />
+    <EmbeddedResource Remove="Report\**" />
+    <EmbeddedResource Remove="Security\**" />
+    <EmbeddedResource Remove="Setup\**" />
+    <EmbeddedResource Remove="Validation\**" />
+    <None Remove="Report\**" />
+    <None Remove="Security\**" />
+    <None Remove="Setup\**" />
+    <None Remove="Validation\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Custom.Common\Custom.Common.csproj" />
+    <ProjectReference Include="..\Custom.Domain\Custom.Domain.csproj" />
+    <ProjectReference Include="..\WIS.Application\WIS.Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <UserSecretsId>8ae97653-71cc-4108-9c1e-98866e4f7713</UserSecretsId>
+    <IsPackable>true</IsPackable>
+    <PackageId>WisBase40.Custom.WMS_API</PackageId>
+    <VersionPrefix>10.4.4.0</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
+    <Authors>WIS</Authors>
+    <Description>WisBase40</Description>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <DebugType>full</DebugType>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <DebugSymbols>true</DebugSymbols>
+    <SourceLinkCreate>true</SourceLinkCreate>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RepositoryUrl>https://dev.azure.com/smartlog-group/Galys/_git/wisbase40</RepositoryUrl>
+    <Version>10.4.4.0</Version>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+    <WarningsAsErrors>;NU1605</WarningsAsErrors>
+    <DocumentationFile>..\Custom.WMS_API\Custom.WMS_API.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\**" />
+    <Compile Remove="Models\**" />
+    <Content Remove="Controllers\**" />
+    <Content Remove="Models\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Controllers\**" />
+    <None Remove="Models\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\script\custom.js" />
+    <Content Remove="wwwroot\script\jquery-3.6.3.min.js" />
+    <Content Remove="wwwroot\script\jquery.initialize.min.js" />
+    <Content Remove="wwwroot\script\rapipdf-min.js" />
+    <Content Remove="wwwroot\script\translate\en.js" />
+    <Content Remove="wwwroot\script\translate\es.js" />
+    <Content Remove="wwwroot\script\translate\pt.js" />
+    <Content Remove="wwwroot\script\translate\translate.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\Entrada\ReferenciaRecepcionController.cs" />
+    <Compile Include="Controllers\Entrada\ReferenciasConAgendaRequest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.11" />
+    <PackageReference Include="GeoCoordinate.NetCore" Version="1.0.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.11" />
+    <PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="7.0.2" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.0.2" />
+    <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="NLog" Version="5.2.4" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.4" />
+    <PackageReference Include="OpenIddict.Validation.AspNetCore" Version="4.8.0" />
+    <PackageReference Include="Rick.Docs.Samples.RouteInfo" Version="1.0.0.8" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+    <PackageReference Include="System.IO" Version="4.3.0" />
+  </ItemGroup>
+  <!--Referencias que no se heredan por estar en el custom-->
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="6.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="WIS.WMS_API.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\script\custom.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\script\jquery-3.6.3.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\script\jquery.initialize.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\script\rapipdf-min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\script\translate\en.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\script\translate\es.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\script\translate\pt.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\script\translate\translate.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Custom.Domain\Custom.Domain.csproj" />
+    <ProjectReference Include="..\WIS.WMS_API\WIS.WMS_API.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Documentation\" />
+    <Folder Include="Examples\" />
+    <Folder Include="Models\Mappers\" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties appsettings_1json__JsonSchema="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

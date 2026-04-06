@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using WIS.Domain.DataModel;
+using WIS.Validation;
+
+namespace WIS.Application.Validation.Rules.Registro
+{
+    public class EmpresaRequeridaValidationRule : IValidationRule
+    {
+        protected readonly string _value;
+        protected readonly IUnitOfWork _uow;
+
+        public EmpresaRequeridaValidationRule(IUnitOfWork uow, string idEmpresa)
+        {
+            this._value = idEmpresa;
+            this._uow = uow;
+        }
+
+        public virtual List<IValidationError> Validate()
+        {
+            var errors = new List<IValidationError>();
+
+            if (string.IsNullOrEmpty(_value))
+                errors.Add(new ValidationError("General_msg_Error_EmpresaRequerida"));
+            else if (!_uow.EmpresaRepository.AnyEmpresa(int.Parse(_value)))
+                errors.Add(new ValidationError("General_Sec0_Error_IdEmpresaNoExistente"));
+
+            return errors;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+﻿
+#embed-container-wis {
+    top: -50px !important;
+}
+
+#wis-frame {
+    border: 0;
+    height: 87vh;
+    width: 100%;
+}
+
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}

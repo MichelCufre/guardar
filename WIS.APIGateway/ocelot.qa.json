@@ -1,0 +1,1969 @@
+{
+  "Routes": [ // https://ocelot.readthedocs.io/en/latest/features/routing.html
+    {
+      "UpstreamPathTemplate": "/api/AjustesDeStock/GetData",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/AjustesDeStock/GetData",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ConfirmacionDePedido/GetData",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ConfirmacionDePedido/GetData",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ConfirmacionDeRecepcion/GetData",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ConfirmacionDeRecepcion/GetData",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ConfirmacionDeProduccion/GetData",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ConfirmacionDeProduccion/GetData",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Facturacion/GetData",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Facturacion/GetData",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/PedidosAnulados/GetData",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/PedidosAnulados/GetData",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Salida/ConfirmarLectura",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Salida/ConfirmarLectura",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Salida/GetEjecucionesPendientes",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Salida/GetEjecucionesPendientes",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Salida/ConsultarEstado",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Salida/ConsultarEstado",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Agenda/Create",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Agenda/Create",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Agenda/Reprocess",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Agenda/Reprocess",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Agenda/GetAgenda",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Agenda/GetAgenda",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Agente/CreateOrUpdate",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Agente/CreateOrUpdate",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Agente/Reprocess",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Agente/Reprocess",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Agente/GetAgente",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Agente/GetAgente",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/AnulacionReferenciaRecepcion/Update",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/AnulacionReferenciaRecepcion/Update",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/AnulacionReferenciaRecepcion/Reprocess",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/AnulacionReferenciaRecepcion/Reprocess",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/CodigoBarras/CreateUpdateOrDelete",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/CodigoBarras/CreateUpdateOrDelete",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/CodigoBarras/Reprocess",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/CodigoBarras/Reprocess",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/CodigoBarras/GetCodigoBarras",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/CodigoBarras/GetCodigoBarras",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Empresa/CreateOrUpdate",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Empresa/CreateOrUpdate",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Empresa/Reprocess",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Empresa/Reprocess",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Empresa/GetEmpresa",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Empresa/GetEmpresa",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ModificarDetalleReferencia/Update",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ModificarDetalleReferencia/Update",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ModificarDetalleReferencia/Reprocess",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ModificarDetalleReferencia/Reprocess",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Pedido/Create",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Pedido/Create",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Pedido/Reprocess",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Pedido/Reprocess",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Pedido/GetPedido",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Pedido/GetPedido",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Producto/CreateOrUpdate",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Producto/CreateOrUpdate",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Producto/Reprocess",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Producto/Reprocess",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Producto/GetProducto",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Producto/GetProducto",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/PickingProducto/CreateUpdateOrDelete",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44308
+        }
+      ],
+      "DownstreamPathTemplate": "/PickingProducto/CreateUpdateOrDelete",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 petición cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/PickingProducto/Reprocess",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44308
+        }
+      ],
+      "DownstreamPathTemplate": "/PickingProducto/Reprocess",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 petición cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ProductoProveedor/CreateOrDelete",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ProductoProveedor/CreateOrDelete",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ProductoProveedor/Reprocess",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ProductoProveedor/Reprocess",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ProductoProveedor/GetProductoProveedor",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ProductoProveedor/GetProductoProveedor",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ReferenciaRecepcion/Create",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ReferenciaRecepcion/Create",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ReferenciaRecepcion/Reprocess",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ReferenciaRecepcion/Reprocess",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ReferenciaRecepcion/GetReferencia",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ReferenciaRecepcion/GetReferencia",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ReferenciaRecepcion/GetReferenciaById",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ReferenciaRecepcion/GetReferenciaById",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ConsultaDeStock/GetData",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ConsultaDeStock/GetData",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ModificarPedido/Update",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ModificarPedido/Update",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ModificarPedido/Reprocess",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ModificarPedido/Reprocess",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Egreso/Create",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Egreso/Create",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Egreso/Reprocess",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Egreso/Reprocess",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Egreso/GetEgresoPorCodigoCamion",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Egreso/GetEgresoPorCodigoCamion",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Egreso/GetEgresoPorIdExterno",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Egreso/GetEgresoPorIdExterno",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Lpn/Create",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Lpn/Create",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Lpn/Reprocess",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Lpn/Reprocess",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Lpn/GetLpn",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Lpn/GetLpn",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Lpn/GetLpnByIdExternoTipo",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Lpn/GetLpnByIdExternoTipo",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 petición cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Almacenamiento/GetData",
+      "UpsreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Almacenamiento/GetData",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Stock/Ajustar",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Stock/Ajustar",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Stock/ReprocesarAjuste",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Stock/ReprocesarAjuste",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Stock/Transferir",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Stock/Transferir",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Stock/ReprocesarTransferencia",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Stock/ReprocesarTransferencia",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/CrossDocking/CrossDockingUnaFase",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/CrossDocking/CrossDockingUnaFase",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/CrossDocking/ReprocesarCrossDockingUnaFase",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/CrossDocking/ReprocesarCrossDockingUnaFase",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Preparacion/Picking",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Preparacion/Picking",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 petición cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Preparacion/ReprocesarPicking",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Preparacion/ReprocesarPicking",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 petición cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Preparacion/AnularPickingPedidoPendiente",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Preparacion/AnularPickingPedidoPendiente",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Preparacion/ReprocesarAnularPickingPedidoPendiente",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Preparacion/ReprocesarAnularPickingPedidoPendiente",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Produccion/Create",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Produccion/Create",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Produccion/Reprocess",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/Produccion/Reprocess",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ProducirProduccion/Produce",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ProducirProduccion/Produce",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ProducirProduccion/Reprocess",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ProducirProduccion/Reprocess",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ConsumirProduccion/Consume",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ConsumirProduccion/Consume",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/ConsumirProduccion/Reprocess",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2031
+        }
+      ],
+      "DownstreamPathTemplate": "/ConsumirProduccion/Reprocess",
+      "SwaggerKey": "wms_api",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Automatismo/NotificacionAjusteStock/Send",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2046
+        }
+      ],
+      "DownstreamPathTemplate": "/NotificacionAjusteStock/Send",
+      "SwaggerKey": "automation_manager",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Automatismo/ConfirmacionEntrada/Send",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2046
+        }
+      ],
+      "DownstreamPathTemplate": "/ConfirmacionEntrada/Send",
+      "SwaggerKey": "automation_manager",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/api/Automatismo/ConfirmacionSalida/Send",
+      "UpsreamHttpMethod": [ "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 1800000
+      },
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "desarrollo221.lis-cloud.com",
+          "Port": 2046
+        }
+      ],
+      "DownstreamPathTemplate": "/ConfirmacionSalida/Send",
+      "SwaggerKey": "automation_manager",
+      "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+        "ClientWhitelist": [],
+        "EnableRateLimiting": false,
+        "Period": "3s",
+        "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+        "Limit": 1 // 1 peticion cada 3s
+      }
+    } //,
+    //{
+    //  "UpstreamPathTemplate": "/api/PedidoPuntoEntrega/UpdatePedidosPuntoEntrega",
+    //  "UpsreamHttpMethod": [ "POST" ],
+    //  "QoSOptions": {
+    //    "ExceptionsAllowedBeforeBreaking": 3,
+    //    "DurationOfBreak": 1000,
+    //    "TimeoutValue": 1800000
+    //  },
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "desarrollo221.lis-cloud.com",
+    //      "Port": 2017
+    //    }
+    //  ],
+    //  "DownstreamPathTemplate": "/PedidoPuntoEntrega/UpdatePedidosPuntoEntrega",
+    //  "SwaggerKey": "wms_tracking_api",
+    //  "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+    //    "ClientWhitelist": [],
+    //    "EnableRateLimiting": false,
+    //    "Period": "3s",
+    //    "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+    //    "Limit": 1 // 1 petición cada 3s
+    //  }
+    //},
+    //{
+    //  "UpstreamPathTemplate": "/api/Ruta/GetRuta",
+    //  "UpsreamHttpMethod": [ "GET" ],
+    //  "QoSOptions": {
+    //    "ExceptionsAllowedBeforeBreaking": 3,
+    //    "DurationOfBreak": 1000,
+    //    "TimeoutValue": 1800000
+    //  },
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "desarrollo221.lis-cloud.com",
+    //      "Port": 2017
+    //    }
+    //  ],
+    //  "DownstreamPathTemplate": "/Ruta/GetRuta",
+    //  "SwaggerKey": "wms_tracking_api",
+    //  "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+    //    "ClientWhitelist": [],
+    //    "EnableRateLimiting": false,
+    //    "Period": "3s",
+    //    "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+    //    "Limit": 1 // 1 petición cada 3s
+    //  }
+    //},
+    //{
+    //  "UpstreamPathTemplate": "/api/Ruta/AddRuta",
+    //  "UpsreamHttpMethod": [ "POST" ],
+    //  "QoSOptions": {
+    //    "ExceptionsAllowedBeforeBreaking": 3,
+    //    "DurationOfBreak": 1000,
+    //    "TimeoutValue": 1800000
+    //  },
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "desarrollo221.lis-cloud.com",
+    //      "Port": 2017
+    //    }
+    //  ],
+    //  "DownstreamPathTemplate": "/Ruta/AddRuta",
+    //  "SwaggerKey": "wms_tracking_api",
+    //  "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+    //    "ClientWhitelist": [],
+    //    "EnableRateLimiting": false,
+    //    "Period": "3s",
+    //    "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+    //    "Limit": 1 // 1 petición cada 3s
+    //  }
+    //},
+    //{
+    //  "UpstreamPathTemplate": "/api/Ruta/UpdateRuta",
+    //  "UpsreamHttpMethod": [ "POST" ],
+    //  "QoSOptions": {
+    //    "ExceptionsAllowedBeforeBreaking": 3,
+    //    "DurationOfBreak": 1000,
+    //    "TimeoutValue": 1800000
+    //  },
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "desarrollo221.lis-cloud.com",
+    //      "Port": 2017
+    //    }
+    //  ],
+    //  "DownstreamPathTemplate": "/Ruta/UpdateRuta",
+    //  "SwaggerKey": "wms_tracking_api",
+    //  "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+    //    "ClientWhitelist": [],
+    //    "EnableRateLimiting": false,
+    //    "Period": "3s",
+    //    "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+    //    "Limit": 1 // 1 petición cada 3s
+    //  }
+    //},
+    //{
+    //  "UpstreamPathTemplate": "/api/Automatismo/PtlConfirmation/ConfirmCommand",
+    //  "UpsreamHttpMethod": [ "POST" ],
+    //  "QoSOptions": {
+    //    "ExceptionsAllowedBeforeBreaking": 3,
+    //    "DurationOfBreak": 1000,
+    //    "TimeoutValue": 1800000
+    //  },
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "desarrollo221.lis-cloud.com",
+    //      "Port": 2046
+    //    }
+    //  ],
+    //  "DownstreamPathTemplate": "/PtlConfirmation/ConfirmCommand",
+    //  "SwaggerKey": "automation_manager",
+    //  "RateLimitOptions": { // Limita la cantidad de peticiones en un tiempo determinado para evitar ataques de DoS
+    //    "ClientWhitelist": [],
+    //    "EnableRateLimiting": false,
+    //    "Period": "3s",
+    //    "PeriodTimespan": 5, // Cantidad de segundos que esperar para volver a aceptar peticiones en caso de fallo
+    //    "Limit": 1 // 1 peticion cada 3s
+    //  }
+    //},
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "wms_api",
+      "Config": [
+        {
+          "Name": "WMS API",
+          "Version": "es",
+          "Url": "https://desarrollo221.lis-cloud.com:2031/swagger/WMSAPIDoc-es/swagger.json?lang=es"
+        },
+        {
+          "Name": "WMS API",
+          "Version": "en",
+          "Url": "https://desarrollo221.lis-cloud.com:2031/swagger/WMSAPIDoc-en/swagger.json?lang=en"
+        },
+        {
+          "Name": "WMS API",
+          "Version": "pt",
+          "Url": "https://desarrollo221.lis-cloud.com:2031/swagger/WMSAPIDoc-pt/swagger.json?lang=pt"
+        }
+      ]
+    },
+    {
+      "Key": "automation_manager",
+      "Config": [
+        {
+          "Name": "Automation Manager",
+          "Version": "es",
+          "Url": "https://desarrollo221.lis-cloud.com:2046/swagger/AutomationManagerDoc-es/swagger.json?lang=es"
+        },
+        {
+          "Name": "Automation Manager",
+          "Version": "en",
+          "Url": "https://desarrollo221.lis-cloud.com:2046/swagger/AutomationManagerDoc-en/swagger.json?lang=en"
+        },
+        {
+          "Name": "Automation Manager",
+          "Version": "pt",
+          "Url": "https://desarrollo221.lis-cloud.com:2046/swagger/AutomationManagerDoc-pt/swagger.json?lang=pt"
+        }
+      ]
+    } //,
+    //{
+    //  "Key": "wms_tracking_api",
+    //  "Config": [
+    //    {
+    //      "Name": "WMS Tracking API",
+    //      "Version": "es",
+    //      "Url": "https://desarrollo221.lis-cloud.com:2017/swagger/WMSTrackingAPIDoc-es/swagger.json?lang=es"
+    //    },
+    //    {
+    //      "Name": "WMS Tracking API",
+    //      "Version": "en",
+    //      "Url": "https://desarrollo221.lis-cloud.com:2017/swagger/WMSTrackingAPIDoc-en/swagger.json?lang=en"
+    //    },
+    //    {
+    //      "Name": "WMS Tracking API",
+    //      "Version": "pt",
+    //      "Url": "https://desarrollo221.lis-cloud.com:2017/swagger/WMSTrackingAPIDoc-pt/swagger.json?lang=pt"
+    //    }
+    //  ]
+    //}
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://desarrollo221.lis-cloud.com:2030"
+  }
+}

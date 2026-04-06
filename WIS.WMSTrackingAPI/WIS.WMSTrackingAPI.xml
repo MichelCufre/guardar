@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WIS.WMSTrackingAPI</name>
+    </assembly>
+    <members>
+        <member name="M:WIS.WMSTrackingAPI.Controllers.PedidoPuntoEntregaController.UpdatePedidosPuntoEntrega(WIS.Domain.Tracking.Models.PuntoEntregaAgentesRequest)">
+            <summary>
+                swagger_summary_pedidopuntoentrega_updatepedidospuntoentrega
+            </summary>
+            <remarks>swagger_remarks_pedidopuntoentrega_updatepedidospuntoentrega</remarks>
+            <param name="request"></param>
+        </member>
+        <member name="M:WIS.WMSTrackingAPI.Controllers.RutaController.GetRutaByZona(System.String)">
+            <summary>
+                swagger_summary_ruta_getrutabyzona
+            </summary>
+            <remarks>swagger_remarks_ruta_getrutabyzona</remarks>
+            <param name="zona" example="S/G">swagger_param_zona_ruta_getrutabyzona</param>
+        </member>
+        <member name="M:WIS.WMSTrackingAPI.Controllers.RutaController.AddRutaByZona(WIS.Domain.Tracking.Models.RutaZonaRequest)">
+            <summary>
+                swagger_summary_ruta_addruta
+            </summary>
+            <remarks>swagger_remarks_ruta_addruta</remarks>
+            <param name="request"></param>
+        </member>
+        <member name="M:WIS.WMSTrackingAPI.Controllers.RutaController.UpdateRutaByZona(WIS.Domain.Tracking.Models.RutaZonaRequest)">
+            <summary>
+                swagger_summary_ruta_updateruta
+            </summary>
+            <remarks>swagger_remarks_ruta_updateruta</remarks>
+            <param name="request"></param>
+        </member>
+        <member name="T:WIS.WMSTrackingAPI.Extensions.ControllerBaseExtension">
+            <summary>
+            
+            ]Nota: Los metodos de esta clase deben ser protegidos sino se rompe swagger
+            
+            </summary>
+        </member>
+    </members>
+</doc>

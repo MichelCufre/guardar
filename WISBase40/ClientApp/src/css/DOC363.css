@@ -1,0 +1,7 @@
+﻿.affected {
+    background-color: lightgreen !important;
+}
+
+.noAffected {
+    background-color: lightcoral !important;
+}

@@ -1,0 +1,128 @@
+﻿using Dapper;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using NLog;
+using NLog.Extensions.Logging;
+using System;
+using System.IO;
+using System.Reflection;
+using System.Threading;
+using System.Web;
+using WIS.Application.Security;
+using WIS.Configuration;
+using WIS.Domain.DataModel;
+using WIS.Domain.DataModel.Handlers;
+using WIS.Domain.DataModel.Mappers.Constants;
+using WIS.Domain.Services;
+using WIS.Domain.Services.Interfaces;
+using WIS.NotificationProcess.Models;
+using WIS.NotificationProcess.Services;
+using WIS.Persistence;
+using WIS.Security;
+
+namespace WIS.NotificationProcess
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            var services = new ServiceCollection();
+
+            ConfigureServices(services);
+
+            var logger = LogManager.GetCurrentClassLogger();
+
+            logger.Info("Iniciando aplicación");
+
+            try
+            {
+                using (var serviceProvider = services.BuildServiceProvider())
+                {
+                    var app = serviceProvider.GetService<INotificationService>();
+                    var settings = serviceProvider.GetService<IOptions<MailSettings>>()?.Value;
+                    var mutexId = settings?.MutexId ?? HttpUtility.UrlEncode(typeof(Program).Assembly.Location);
+                    var mutexTimeout = settings?.MutexTimeout ?? 3000;
+                    var hasHandle = false;
+
+                    SetIdentity(serviceProvider);
+
+                    using (var mutex = new Mutex(false, $"Global\\{mutexId}"))
+                    {
+                        try
+                        {
+                            hasHandle = mutex.WaitOne(mutexTimeout, false);
+
+                            if (hasHandle)
+                            {
+                                app.Run().Wait();
+                            }
+                            else
+                            {
+                                logger.Warn("No es posible obtener un bloqueo exclusivo para la aplicación");
+                            }
+                        }
+                        finally
+                        {
+                            if (hasHandle)
+                            {
+                                mutex.ReleaseMutex();
+                            }
+                        }
+                    }
+                }
+
+                logger.Info("Aplicación finalizada");
+            }
+            catch (Exception ex)
+            {
+                logger.Error(ex, "Ocurrió un error no controlado");
+            }
+            finally
+            {
+                LogManager.Shutdown();
+            }
+        }
+
+        public static void SetIdentity(ServiceProvider serviceProvider)
+        {
+            var identity = serviceProvider.GetService<IIdentityService>();
+            var manager = (IIdentityServiceManager)identity;
+            manager.SetUser(new BasicUserData
+            {
+                Language = "es",
+                UserId = -1
+            }, "JobNotif", GeneralDb.PredioSinDefinir);
+        }
+
+        public static void ConfigureServices(ServiceCollection services)
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location))
+                .AddJsonFile("appsettings.json");
+
+            var config = builder.Build();
+
+            services.Configure<DatabaseSettings>(config.GetSection(DatabaseSettings.Position));
+            services.Configure<MailSettings>(config.GetSection(MailSettings.Position));
+
+            services.AddScoped<IDatabaseConfigurationService, DatabaseConfigurationService>();
+            services.AddScoped<IIdentityService, IdentityService>();
+            services.AddScoped<IDatabaseFactory, DatabaseFactory>();
+            services.AddScoped<IDapper, DapperService>();
+            services.AddScoped<IFactoryService, FactoryService>();
+            services.AddScoped<IUnitOfWorkFactory, UnitOfWorkFactory>();
+            services.AddScoped<INotificationService, NotificationService>();
+
+            SqlMapper.RemoveTypeMap(typeof(bool));
+            SqlMapper.AddTypeHandler(new BoolFromStringTypeHandler());
+
+            services.AddLogging(builder =>
+            {
+                builder.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
+                builder.AddNLog("nlog.config");
+            });
+        }
+    }
+}

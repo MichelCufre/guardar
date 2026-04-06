@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>true</IsPackable>
+    <PackageId>WisBase40.Custom.Persistence</PackageId>
+    <VersionPrefix>10.4.4.0</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
+    <Authors>WIS</Authors>
+    <Description>WisBase40</Description>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <DebugType>full</DebugType>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <DebugSymbols>true</DebugSymbols>
+    <SourceLinkCreate>true</SourceLinkCreate>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RepositoryUrl>https://dev.azure.com/smartlog-group/Galys/_git/wisbase40</RepositoryUrl>
+    <Version>10.4.4.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="EFCore.NamingConventions" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+    <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NLog.Extensions.Logging" Version="5.3.4" />
+    <PackageReference Include="Oracle.EntityFrameworkCore" Version="7.21.11" />
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="3.21.110" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIS.Persistence\WIS.Persistence.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,32 @@
+
+var resource_globalization = {
+    "Name": "Nome",
+    "Description": "Descri\u00E7\u00E3o",
+    "SelectDefinition": "Selecione uma defini\u00E7\u00E3o",
+    "TryItOut": "Tentar",
+    "Cancel": "Cancelar",
+    "Execute:": "Executar",
+    "Clear": "Limpar",
+    "AvailableValues": "Valores dispon\u00EDveis",
+    "ExampleValue": "Exemplo",
+    "Schema": "Esquema",
+    "Responses": "Respostas",
+    "RequestUrl": "Request URL",
+    "ServerResponse": "Server response",
+    "Code": "C\u00F3digo",
+    "Details": "Detalhes",
+    "RequestBody": "Request body",
+    "ResponseBody": "Response body",
+    "ResponseHeaders": "Response headers",
+    "Schemas": "Esquemas",
+    "Authorize": "Autorizar",
+    "MediaType": "Media type",
+    "Download": "Baixar",
+    "Close": "Fechar",
+    "AvailableAuth": "Autoriza\u00E7\u00F5es dispon\u00EDveis",
+    "Links": "Links",
+    "NoLinks": "Sem links",
+    "SendEmptyValue": "Enviar valor vazio",
+    "DownloadApiDocument": "Baixar Documento da API"
+
+};

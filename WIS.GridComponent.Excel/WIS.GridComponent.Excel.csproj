@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <IsPackable>true</IsPackable>
+    <PackageId>WisBase40.WIS.GridComponent.Excel</PackageId>
+    <VersionPrefix>10.4.4.0</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
+    <Authors>WIS</Authors>
+    <Description>WisBase40</Description>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <DebugType>full</DebugType>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <DebugSymbols>true</DebugSymbols>
+    <SourceLinkCreate>true</SourceLinkCreate>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RepositoryUrl>https://dev.azure.com/smartlog-group/Galys/_git/wisbase40</RepositoryUrl>
+    <Version>10.4.4.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.102.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIS.Data\WIS.Data.csproj" />
+    <ProjectReference Include="..\WIS.Exceptions\WIS.Exceptions.csproj" />
+    <ProjectReference Include="..\WIS.GridComponent.Build\WIS.GridComponent.Build.csproj" />
+    <ProjectReference Include="..\WIS.GridComponent\WIS.GridComponent.csproj" />
+    <ProjectReference Include="..\WIS.Sorting\WIS.Sorting.csproj" />
+    <ProjectReference Include="..\WIS.Translation\WIS.Translation.csproj" />
+  </ItemGroup>
+</Project>

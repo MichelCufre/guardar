@@ -1,0 +1,85 @@
+trigger:
+  branches:
+    include:
+      - 'Versiones/Compatible_v10.4'
+      
+pool:  
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildRuntime: 'win-x64'
+  buildConfiguration: 'Release'    
+  feedWIS: '7af02e0b-b774-4a83-909e-16f4afac8608/746bd93a-617c-46b1-a8a8-63515d0c3118' #WIS
+
+steps:
+
+# Paso 1. Instalar .NET 8.0 SDK
+  - task: UseDotNet@2
+    displayName: 'Instalar.NET 8.0 SDK'
+    inputs:
+      packageType: 'sdk'
+      version: '8.0.x'
+      installationPath: $(Agent.ToolsDirectory)/dotnet
+
+# Paso 2. Restaurar dependencias de NuGet para todos los proyectos
+  - task: DotNetCoreCLI@2
+    displayName: 'Restaurar dependencias de NuGet para todos los proyectos'
+    inputs:
+      command: 'restore'
+      projects: '$(solution)'
+      feedsToUse: 'select'
+      vstsFeed: '$(feedWIS)'      
+
+# Paso 3. Generar los paquetes NuGet para los proyectos .NET con dotnet pack utilizando VersionPrefix y VersionSuffix
+  - task: PowerShell@2
+    displayName: 'Crear paquetes NuGet'
+    inputs:
+      targetType: 'inline'
+      script: |
+        Get-ChildItem -Recurse -Filter *.csproj | ForEach-Object {
+            Write-Host "Creando paquete NuGet para el proyecto: $($_.FullName)"
+            $project = $_.FullName
+            
+            # Leer las propiedades del archivo .csproj
+            [xml]$csprojXml = Get-Content $project
+            
+            # Obtener VersionPrefix y VersionSuffix, con un valor predeterminado si no están definidos
+            $versionPrefix = $csprojXml.Project.PropertyGroup.VersionPrefix
+            $versionSuffix = $csprojXml.Project.PropertyGroup.VersionSuffix
+            $versionPrefix = "$versionPrefix".Trim()
+            $versionSuffix = "$versionSuffix".Trim()
+            
+            # Si no se encuentra VersionPrefix, usar un valor predeterminado (por ejemplo, 1.0.0.0)
+            if ([string]::IsNullOrEmpty($versionPrefix)) {
+                $versionPrefix = "1.0.0.0"
+            }
+
+            # Generar el paquete con la versión especificada
+            if (-not [string]::IsNullOrEmpty($versionSuffix)) {
+                # Si hay un sufijo, usarlo para generar la versión completa
+                $fullVersion = "$versionPrefix-$versionSuffix"
+                dotnet pack $project --configuration $(buildConfiguration) --include-symbols --runtime $(buildRuntime) --output $(Build.ArtifactStagingDirectory) /p:Version=$fullVersion
+            } else {
+                # Si no hay sufijo, usar solo el prefijo
+                dotnet pack $project --configuration $(buildConfiguration) --include-symbols --runtime $(buildRuntime) --output $(Build.ArtifactStagingDirectory)
+            }
+        }
+
+# Paso 4: Publicar los elementos del build
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publicar los elementos del build en la pipeline'
+    inputs:
+      pathToPublish: '$(Build.ArtifactStagingDirectory)'
+      artifactName: 'PublishBuildArtifacts'
+      publishLocation: 'Container'
+      
+# Paso 5: Publicar el paquete en Azure Artifacts
+  - task: NuGetCommand@2
+    displayName: 'Publicar los artefactos en el feed'
+    inputs:
+      command: 'push'
+      packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;$(Build.ArtifactStagingDirectory)/**/*.snupkg'    
+      nuGetFeedType: 'internal'
+      publishVstsFeed: '$(feedWIS)'
+      allowPackageConflicts: true

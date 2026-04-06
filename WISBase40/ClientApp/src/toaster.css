@@ -1,0 +1,37 @@
+﻿.toast-message {
+    display: flex;
+}
+
+    .toast-message .toast-close-button {
+        margin-left: auto;
+        opacity: 0.5;
+        transition: opacity ease-out 0.3s;
+    }
+
+    .toast-message .toast-close-button:hover {
+        opacity: 1;
+    }
+
+    .toast-message .toast-message-content{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+.Toastify__toast {
+    min-height: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.Toastify__toast-container {
+    margin-left: 0;
+    transform: translateX(-50%);
+    width: auto;
+    min-width: 320px;
+    max-width: 600px;
+
+}
+
+    .Toastify__toast--info {
+        
+    }

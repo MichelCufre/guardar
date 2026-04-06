@@ -1,0 +1,18 @@
+﻿.gr-grid .gr-row.alertaBaja .gr-cell {
+    background-color: #F5CEA9;
+}
+
+
+.gr-grid .gr-row.alertaBaja.selected .gr-cell {
+    background-color: #FF8C00;
+}
+
+
+.gr-grid .gr-row.alertaAlta .gr-cell {
+    background-color: #F8B8B8;
+}
+
+
+.gr-grid .gr-row.alertaAlta.selected .gr-cell {
+    background-color: #F5A4A4;
+}

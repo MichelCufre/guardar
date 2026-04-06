@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <IsPackable>true</IsPackable>
+    <PackageId>WisBase40.WIS.SincronizarAutomatismoProcess</PackageId>
+    <VersionPrefix>10.4.4.0</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
+    <Authors>WIS</Authors>
+    <Description>WisBase40</Description>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <DebugType>full</DebugType>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <DebugSymbols>true</DebugSymbols>
+    <SourceLinkCreate>true</SourceLinkCreate>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RepositoryUrl>https://dev.azure.com/smartlog-group/Galys/_git/wisbase40</RepositoryUrl>
+    <Version>10.4.4.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="appsettings.alfa.json" />
+    <None Remove="appsettings.demo_galys.json" />
+    <None Remove="appsettings.demo_wis.json" />
+    <None Remove="appsettings.json" />
+    <None Remove="appsettings.qa.json" />
+    <None Remove="NLog.alfa.config" />
+    <None Remove="nlog.config" />
+    <None Remove="NLog.demo_galys.config" />
+    <None Remove="NLog.demo_wis.config" />
+    <None Remove="NLog.qa.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appsettings.demo_galys.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>false</Pack>
+    </Content>
+    <Content Include="appsettings.demo_wis.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>false</Pack>
+    </Content>
+    <Content Include="appsettings.alfa.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>false</Pack>
+    </Content>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="appsettings.qa.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>false</Pack>
+    </Content>
+    <Content Include="NLog.demo_galys.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>false</Pack>
+    </Content>
+    <Content Include="NLog.demo_wis.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>false</Pack>
+    </Content>
+    <Content Include="NLog.alfa.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>false</Pack>
+    </Content>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="NLog.qa.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>false</Pack>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIS.Application\WIS.Application.csproj" />
+  </ItemGroup>
+</Project>

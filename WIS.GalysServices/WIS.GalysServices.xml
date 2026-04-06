@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WIS.GalysServices</name>
+    </assembly>
+    <members>
+        <member name="M:WIS.GalysServices.Controllers.Entrada.CodigoBarraController.Add(WIS.Automation.Galys.CodigoBarraGalysRequest)">
+            <summary>
+                swagger_summary_codigobarra_add
+            </summary>
+            <remarks>swagger_remarks_codigobarra_add</remarks>
+            <param name="codigoBarra"></param>
+            <returns>swagger_returns_codigobarra_add</returns>
+        </member>
+        <member name="M:WIS.GalysServices.Controllers.Entrada.EntradaController.Add(WIS.Automation.Galys.EntradaStockGalysRequest)">
+            <summary>
+                swagger_summary_entrada_add
+            </summary>
+            <remarks>swagger_remarks_entrada_add</remarks>
+            <param name="entrada"></param>
+            <returns>swagger_returns_entrada_add</returns>
+        </member>
+        <member name="M:WIS.GalysServices.Controllers.Entrada.GalysController.Articulo(WIS.GalysServices.Models.ProductoRequest)">
+            <summary>
+                dummy_galys 
+            </summary>
+            <remarks>producto</remarks>
+            <param name="producto"></param>
+            <returns>producto</returns>
+        </member>
+        <member name="M:WIS.GalysServices.Controllers.Entrada.GalysController.CodigoBarras(WIS.GalysServices.Models.CodigoBarrasRequest)">
+            <summary>
+                dummy_galys 
+            </summary>
+            <remarks>codigoBarras</remarks>
+            <param name="codigoBarras"></param>
+            <returns>codigoBarras</returns>
+        </member>
+        <member name="M:WIS.GalysServices.Controllers.Entrada.GalysController.CodigoBarrasDelete(System.String,System.String,System.String)">
+            <summary>
+                dummy_galys 
+            </summary>
+            <remarks>codigoBarras</remarks>
+            <param name="codigoBarras"></param>
+            <returns>codigoBarras</returns>
+        </member>
+        <member name="M:WIS.GalysServices.Controllers.Entrada.GalysController.OrdenEntrada(WIS.GalysServices.Models.OrdenEntradaRequest)">
+            <summary>
+                dummy_galys 
+            </summary>
+            <remarks>ordenEntrada</remarks>
+            <param name="ordenEntrada"></param>
+            <returns>ordenEntrada</returns>
+        </member>
+        <member name="M:WIS.GalysServices.Controllers.Entrada.GalysController.OrdenSalida(WIS.GalysServices.Models.OrdenSalidaRequest)">
+            <summary>
+                dummy_galys 
+            </summary>
+            <remarks>OrdenSalida</remarks>
+            <param name="OrdenSalida"></param>
+            <returns>OrdenSalida</returns>
+        </member>
+        <member name="M:WIS.GalysServices.Controllers.Entrada.ProductoController.Add(WIS.Automation.Galys.ProductoGalysRequest)">
+            <summary>
+                swagger_summary_producto_add
+            </summary>
+            <remarks>swagger_remarks_producto_add</remarks>
+            <param name="producto"></param>
+            <returns>swagger_returns_producto_add</returns>
+        </member>
+        <member name="M:WIS.GalysServices.Controllers.Entrada.SalidaController.Add(WIS.Automation.Galys.SalidaStockGalysRequest)">
+            <summary>
+                swagger_summary_salida_add
+            </summary>
+            <remarks>swagger_remarks_salida_add</remarks>
+            <param name="salida"></param>
+            <returns>swagger_returns_salida_add</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WIS.GalysServices.Controllers.Salida.ConfirmacionEntradaController.Confirmar(WIS.Automation.Galys.ConfirmacionEntradaStockGalysRequest)" -->
+        <!-- Badly formed XML comment ignored for member "M:WIS.GalysServices.Controllers.Salida.ConfirmacionSalidaController.Confirmar(WIS.Automation.Galys.ConfirmacionSalidaStockGalysRequest)" -->
+        <member name="M:WIS.GalysServices.Controllers.Salida.NotificacionAjusteController.Notificar(WIS.Automation.Galys.NotificacionAjusteStockGalysRequest)">
+            <summary>
+                swagger_summary_notificacionajuste_notificar
+            </summary>
+            <remarks>swagger_remarks_notificacionajuste_notificar</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_notificacionajuste_notificar</returns>
+        </member>
+    </members>
+</doc>

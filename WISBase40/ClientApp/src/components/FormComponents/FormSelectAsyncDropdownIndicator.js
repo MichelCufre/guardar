@@ -1,0 +1,24 @@
+﻿import React from 'react';
+import { defaultTheme } from 'react-select';
+
+export function FormDropdownIndicator() {
+    const { colors } = defaultTheme;
+
+    return (
+        <div className="form-select-dropdown-indicator" style={{ color: colors.neutral20 }}>
+            <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                focusable="false"
+                role="presentation"
+            >
+                <path
+                    d="M16.436 15.085l3.94 4.01a1 1 0 0 1-1.425 1.402l-3.938-4.006a7.5 7.5 0 1 1 1.423-1.406zM10.5 16a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z"
+                    fill="currentColor"
+                    fillRule="evenodd"
+                />
+            </svg>
+        </div>
+    );
+}

@@ -1,0 +1,1228 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WIS.WebhookClient</name>
+    </assembly>
+    <members>
+        <member name="M:WIS.WebhookClient.Controllers.WebhookClientController.Callback(WIS.WebhookClient.Models.EventRequest)">
+            <summary>
+                swagger_summary_webhookclient_callback
+            </summary>
+            <remarks>swagger_remarks_webhookclient_callback</remarks>
+            <param name="request"></param>
+            <returns></returns>
+            <response code="200">swagger_response_200_webhookclient_callback</response>
+            <response code="400">swagger_response_400_webhookclient_callback</response>
+            <response code="401">swagger_response_401_webhookclient_callback</response>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaDetalleRequest.Producto">
+            <summary>
+            Código del producto
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaDetalleRequest.Identificador">
+            <summary>
+            Serie o Lote del producto en caso que lo maneje.
+            Es un valor opcional y WIS lo manejará en modalidad automática si no viene especificado
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaDetalleRequest.CantidadTeorica">
+            <summary>
+            Cantidad teórica 
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaDetalleRequest.CantidadRecibida">
+            <summary>
+            Cantidad recibida 
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaDetalleRequest.FechaVencimiento">
+            <summary>
+            Fecha de vencimiento
+            </summary>
+            <example>10/10/2022</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaRequest.Agenda">
+            <summary>
+            Número de agenda asignado por WIS
+            </summary>
+            <example>100</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaRequest.Empresa">
+            <summary>
+            Código de empresa
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaRequest.TipoAgente">
+            <summary>
+            Tipo de agente 
+            PRO (Proveedor) - CLI (Cliente)
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaRequest.CodigoAgente">
+            <summary>
+            Código del agente
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaRequest.TipoRecepcion">
+            <summary>
+            Identificación del tipo de recepción o flujo dentro de WIS
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaRequest.NumeroDocumento">
+            <summary>
+            Número de referencia si el ingreso es contra un documento único. En otro caso, vacío
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaRequest.FechaIngreso">
+            <summary>
+            Fecha de ingreso
+            </summary>
+            <example>12/06/2016 13:19</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaRequest.FechaCierre">
+            <summary>
+            Cierre de agenda
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaRequest.Anexo1">
+            <summary>
+            Información anexa
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaRequest.Anexo2">
+            <summary>
+            Información anexa
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaRequest.Anexo3">
+            <summary>
+            Información anexa
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaRequest.Anexo4">
+            <summary>
+            Información anexa
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AgendaRequest.Predio">
+            <summary>
+            Predio
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.Aplicacion">
+            <summary>
+            Módulo de WIS que generó el ajuste
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.Empresa">
+            <summary>
+            Código de la empresa
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.Ubicacion">
+            <summary>
+            Ubicación de WIS correspondiente al ajuste
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.Funcionario">
+            <summary>
+            Usuario de WIS que realizó el ajuste
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.TipoAjuste">
+            <summary>
+            Tipo de ajuste
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.Motivo">
+            <summary>
+            Código de motivo de ajuste
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.DescripcionMotivo">
+            <summary>
+            Descripción de motivo
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.FechaMotivo">
+            <summary>
+            Fecha de motivo
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.Producto">
+            <summary>
+            Código del producto
+            </summary>
+            <example>PROD-1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.Faixa">
+            <summary>
+            Código faixa
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.Identificador">
+            <summary>
+            Identificador del producto (Serie o lote)
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.FechaRealizacion">
+            <summary>
+            Fecha de realización
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.FechaUltimaModificacion">
+            <summary>
+            Fecha de última modificación
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.AreaAveria">
+            <summary>
+            Indica si el ajuste fue realizado sobre una ubicación de avería
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.NumeroAjusteStock">
+            <summary>
+            Número de ajuste de stock en WIS
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.InterfazEjecucion">
+            <summary>
+            Número de interfaz asociada
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.FechaVencimiento">
+            <summary>
+            Fecha de vencimiento del producto
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.Predio">
+            <summary>
+            Número de predio
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.CantidadMovimiento">
+            <summary>
+            Cantidad del movimiento - / +
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.Serializado">
+            <summary>
+            Serializado
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.NroLogInventario">
+            <summary>
+            Número de Log de inventario
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AjusteRequest.Atributos">
+            <summary>
+            Atributos del LPN asociado al ajuste
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AlmacenamientoRequest.Agenda">
+            <summary>
+            Número de agenda
+            </summary>
+            <example>100</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AlmacenamientoRequest.TipoAgente">
+            <summary>
+            Tipo de agente 
+            PRO (Proveedor) - CLI (Cliente)
+            </summary>
+            <example>PRO</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AlmacenamientoRequest.CodigoAgente">
+            <summary>
+            Código del agente
+            </summary>
+            <example>PRO</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AlmacenamientoRequest.Etiqueta">
+            <summary>
+            Numero de etiqueta que se almacenó
+            </summary>
+            <example>22</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AlmacenamientoRequest.TipoEtiqueta">
+            <summary>
+            Tipo de etiqeuta
+            </summary>
+            <example>WE</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.AlmacenamientoRequest.Serializado">
+            <summary>
+            Serializado
+            En este campo se puede enviar información serializada que sea útil para personalizar el funcionamiento.
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.DetalleAlmacenamientoRequest.Empresa">
+            <summary>
+            Código de la empresa
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.DetalleAlmacenamientoRequest.Producto">
+            <summary>
+            Código del producto
+            </summary>
+            <example>PROD-01</example>    
+        </member>
+        <member name="P:WIS.WebhookClient.Models.DetalleAlmacenamientoRequest.Faixa">
+            <summary>
+            Código de embalaje
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.DetalleAlmacenamientoRequest.Identificador">
+            <summary>
+            Identificador del producto (serie o lote)
+            </summary>
+            <example>*</example>  
+        </member>
+        <member name="P:WIS.WebhookClient.Models.DetalleAlmacenamientoRequest.Vencimiento">
+            <summary>
+            Fecha de vencimiento del producto
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.DetalleAlmacenamientoRequest.CantidadAlmacenada">
+            <summary>
+            Cantidad almacenada
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.DetalleAlmacenamientoRequest.CantidadDisponible">
+            <summary>
+            Cantidad disponible en la etiqueta post-almacenado para el producto/lote
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.DetalleAlmacenamientoRequest.Serializado">
+            <summary>
+            Serializado
+            En este campo se puede enviar información serializada que sea útil para personalizar el funcionamiento.
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.DetalleAlmacenamientoRequest.Ubicacion">
+            <summary>
+            Ubicación donde se almacenó el producto
+            </summary>
+            <example>1AA00000</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.DetalleAlmacenamientoRequest.FechaOperacion">
+            <summary>
+            Fecha de almacenamiento
+            </summary>
+            <example>10/10/2023</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.DetalleAlmacenamientoRequest.Funcionario">
+            <summary>
+            Código del funcionario
+            </summary>
+            <example>0</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionMercaderiaPreparadaRequest.CodigoCamion">
+            <summary>
+            Código del camión
+            </summary>
+            <example>1111</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionMercaderiaPreparadaRequest.DescripcionCamion">
+            <summary>
+             Descripción del camión
+            </summary>
+            <example>TEXTO LIBRE</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionMercaderiaPreparadaRequest.PuertaExpedicion">
+            <summary>
+            Puerta de expedición
+            Número de puerta donde se está realizando el egreso.
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionMercaderiaPreparadaRequest.Ruta">
+            <summary>
+            Ruta
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionMercaderiaPreparadaRequest.Vehiculo">
+            <summary>
+            Código del vehículo
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionMercaderiaPreparadaRequest.MatriculaCamion">
+            <summary>
+             Matrícula del camión
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionMercaderiaPreparadaRequest.Transportadora">
+            <summary>
+            Código de la transportadora
+            </summary>
+            <example>0</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionMercaderiaPreparadaRequest.FechaFacturacion">
+            <summary>
+            Fecha de facturación
+            </summary>
+            <example>10/06/2016 12:25</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionMercaderiaPreparadaRequest.Predio">
+            <summary>
+            Número de predio.
+            Este valor se notifica en el cabezal del camión y del pedido. 
+            Como referencia debe tomarse siempre el del camión.
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionPedidoRequest.Camion">
+            <summary>
+            Código del camión
+            </summary>
+            <example>1111</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionPedidoRequest.DescripcionCamion">
+            <summary>
+             Descripción del camión
+            </summary>
+            <example>TEXTO LIBRE</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionPedidoRequest.PuertaExpedicion">
+            <summary>
+            Puerta de expedición
+            Número de puerta donde se está realizando el egreso.
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionPedidoRequest.Ruta">
+            <summary>
+            Ruta
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionPedidoRequest.Vehiculo">
+            <summary>
+            Código del vehículo
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionPedidoRequest.Matricula">
+            <summary>
+             Matrícula del camión
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionPedidoRequest.Transportadora">
+            <summary>
+            Código de la transportadora
+            </summary>
+            <example>0</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionPedidoRequest.FechaCierre">
+            <summary>
+            Fecha de cierre del camión
+            </summary>
+            <example>10/06/2016 12:25</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionPedidoRequest.FechaFacturacion">
+            <summary>
+            Fecha de facturación
+            </summary>
+            <example>10/06/2016 12:25</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ConfirmacionPedidoRequest.Predio">
+            <summary>
+            Número de predio.
+            Este valor se notifica en el cabezal del camión y del pedido. 
+            Como referencia debe tomarse siempre el del camión.
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorDetalleRequest.Pedido">
+            <summary>
+            Número de pedido
+            </summary>
+            <example>PED1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorDetalleRequest.CodigoAgente">
+            <summary>
+            Código del agente
+            </summary>
+            <example>1555AAA</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorDetalleRequest.TipoAgente">
+            <summary>
+            Tipo de agente 
+            PRO (Proveedor) - CLI (Cliente)
+            </summary>
+            <example>CLI</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorDetalleRequest.Producto">
+            <summary>
+            Código del producto
+            </summary>
+            <example>PR1AAA</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorDetalleRequest.Identificador">
+            <summary>
+            Identificador del producto (serie o lote)
+            </summary>
+            <example>LOTEAAAAA</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorDetalleRequest.FechaVencimientoPickeo">
+            <summary>
+            Fecha de vencimiento del pickeo
+            </summary>
+            <example>10/5/2018</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorDetalleRequest.AveriaPickeo">
+            <summary>
+            Avería pickeo 
+            S (Sí) - N (No) 
+            </summary>
+            <example>N</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorDetalleRequest.CantidadPreparada">
+            <summary>
+            Cantidad preparada 
+            </summary>
+            <example>120</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.Preparacion">
+            <summary>
+            Número de preparación
+            </summary>
+            <example>1111</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.NumeroContenedor">
+            <summary>
+            Número de contenedor
+            </summary>
+            <example>2000</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.IdExternoContenedor">
+            <summary>
+            Identificador externo del contenedor
+            </summary>
+            <example>ID-EXT-01</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.TipoContenedor">
+            <summary>
+             Tipo de contenedor
+            </summary>
+            <example>W</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.SubClase">
+            <summary>
+            Código de sub clase
+            La sub-clase identifica y restringe la compatilidad con los productos al realizar un pickeo.
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.FechaExpedicion">
+            <summary>
+            Fecha de expedición
+            </summary>
+            <example>10/5/2016 14:30</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.PesoReal">
+            <summary>
+            Peso real
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.Altura">
+            <summary>
+            Altura
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.Largo">
+            <summary>
+            Largo
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.Volumen">
+            <summary>
+            Volumen
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.Profundidad">
+            <summary>
+            Profundidad
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.CodigoUnidadBulto">
+            <summary>
+            Código de unidad de bultos 
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.CantidadBultos">
+            <summary>
+            Cantidad de bultos 
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.DescripcionContenedor">
+            <summary>
+            Descripción del contenedor
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.Precinto1">
+            <summary>
+            Id. Precinto 1
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.Precinto2">
+            <summary>
+            Id. Precinto 2
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.CodigoBarras">
+            <summary>
+            Código de barras del contenedor
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ContenedorRequest.NroLpn">
+            <summary>
+            Número de Lpn asociado al contenedor
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.EntregaRequest.NumeroEntrega">
+            <summary>
+            Número de entrega
+            </summary>
+            <example>1111</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.EntregaRequest.TipoEntrega">
+            <summary>
+            Tipo de entrega
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.EntregaRequest.DescripcionEntrega">
+            <summary>
+            Drecipción de la entrega
+            </summary>
+            <example></example>      
+        </member>
+        <member name="P:WIS.WebhookClient.Models.EntregaRequest.CodigoAgente">
+            <summary>
+            Código del agente
+            </summary>
+            <example>LOCAL11</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.EntregaRequest.TipoAgente">
+            <summary>
+            Tipo de agente 
+            PRO (Proveedor) - CLI (Cliente)
+            </summary>
+            <example>CLI</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.EntregaRequest.Empresa">
+            <summary>
+            Código de la empresa
+            </summary>
+            <example>10</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.EntregaRequest.CodigoBarras">
+            <summary>
+            Código de barras del producto
+            </summary>
+            <example>1111</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.EntregaRequest.NumeroContenedor">
+            <summary>
+            Número de contenedor
+            </summary>
+            <example>20000</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.EntregaRequest.NumeroPreparacion">
+            <summary>
+            Número de preparación
+            </summary>
+            <example>1111</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.EntregaRequest.Agrupacion">
+            <summary>
+            Agrupación
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.EntregaRequest.PuntoEntrega">
+            <summary>
+            Código de punto de entrega
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.EntregaRequest.Anexo">
+            <summary>
+            Información adicional
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.EventRequest.Id">
+            <summary>
+            Identifica el tipo de evento notificado. 
+            Para cada tipo de evento se define una propiedad con el mismo nombre que contiene el detalle de la información notificada.
+            </summary>
+            <example>confirmacionRecepcion</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaDetalleRequest.Producto">
+            <summary>
+            Código del producto
+            </summary>
+            <example>PRO-1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaDetalleRequest.Identificador">
+            <summary>
+            Serie o Lote del producto en caso que lo maneje.
+            Es un valor opcional y WIS lo manejará en modalidad automática si no viene especificado
+            </summary>
+            <example>AAA</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaDetalleRequest.CantidadFacturada">
+            <summary>
+            Cantidad facturada
+            </summary>
+            <example>100</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaDetalleRequest.CantidadValidada">
+            <summary>
+            Cantidad validada
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaDetalleRequest.CantidadRecibida">
+            <summary>
+            Cantidad recibida
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaDetalleRequest.FechaVencimiento">
+            <summary>
+            Fecha de vencimiento
+            </summary>
+            <example>12/06/2016 13:19</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaDetalleRequest.ImporteUnitario">
+            <summary>
+            Importe unitario
+            </summary>
+            <example>100</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.Serie">
+            <summary>
+            Número de serie
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.Factura">
+            <summary>
+            Número de factura
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.TipoFactura">
+            <summary>
+            Tipo de Factura
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.FechaEmision">
+            <summary>
+            Fecha de emisión de la factura
+            </summary>
+            <example>12/06/2016 13:19</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.TotalDigitado">
+            <summary>
+            Total digitado
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.Origen">
+            <summary>
+            Identificador de origen
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.CodigoCliente">
+            <summary>
+            Codigo cliente factura
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.CodigoEmpresa">
+            <summary>
+            Codigo cliente factura
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.CodigoMoneda">
+            <summary>
+            Codigo moneda
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.CodigoSituacion">
+            <summary>
+            Codigo situacion factura
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.Anexo1">
+            <summary>
+            Informacion adicional 1
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.Anexo2">
+            <summary>
+            Informacion adicional 2
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.Anexo3">
+            <summary>
+            Informacion adicional 3
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.Observacion">
+            <summary>
+            Observacion
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.FechaCreacion">
+            <summary>
+            Fecha creacion factura
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.FechaVencimiento">
+            <summary>
+            Fecha vencimiento factura
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.Estado">
+            <summary>
+            Estado factura
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.NumeroOrdenCompra">
+            <summary>
+            Numero Orden Compra factura
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.Predio">
+            <summary>
+            Predio factura
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.FacturaRequest.NumeroRemito">
+            <summary>
+            Numero remito
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoAnuladoDetalleRequest.Producto">
+            <summary>
+            Código del producto
+            </summary>
+            <example>PROD-01</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoAnuladoDetalleRequest.Identificador">
+            <summary>
+            Identificador del producto (serie o lote)
+            </summary>
+            <example>*</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoAnuladoDetalleRequest.Embalaje">
+            <summary>
+            Código de embalaje
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoAnuladoDetalleRequest.CantidadAnulada">
+            <summary>
+            Cantidad anulada
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoAnuladoDetalleRequest.Funcionario">
+            <summary>
+            Código del funcionario
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoAnuladoDetalleRequest.Motivo">
+            <summary>
+            Información adicional
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoAnuladoDetalleRequest.Aplicacion">
+            <summary>
+            Código de la aplicación
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoAnuladoDetalleRequest.FechaAlta">
+            <summary>
+            Fecha de alta de registro
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoAnuladoDetalleRequest.EspecificaIdentificador">
+            <summary>
+            Id. Específica Identificador
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoAnuladoRequest.Pedido">
+            <summary>
+            Número de pedido
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoAnuladoRequest.Empresa">
+            <summary>
+            Código de la empresa
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoAnuladoRequest.CodigoAgente">
+            <summary>
+            Código del agente
+            </summary>
+            <example>LOCAL11</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoAnuladoRequest.TipoAgente">
+            <summary>
+            Tipo de agente 
+            PRO (Proveedor) - CLI (Cliente)
+            </summary>
+            <example>CLI</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoDetalleDuplicadoRequest.IdLineaSistemaExterno">
+            <summary>
+            Identificación en el ERP o sistema externo para la línea del pedido. 
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoDetalleDuplicadoRequest.TipoLinea">
+            <summary>
+            Tipo de línea. 
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoDetalleDuplicadoRequest.CantidadProducto">
+            <summary>
+            Cantidad de producto para el pedido. En caso de confirmación de mercadería preparada, refiere a la cantidad preparada. En caso de cierre de egreso, refiere a la cantidad expedida en el camión.
+            </summary>
+            <example>100</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoDetalleDuplicadoRequest.Serializado">
+            <summary>
+            Serializado
+            </summary>
+            <example>Valor de ejemplo</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoDetalleRequest.Producto">
+            <summary>
+            Código del producto
+            </summary>
+            <example>PR1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoDetalleRequest.Identificador">
+            <summary>
+            Identificador del producto (serie o lote)
+            </summary>
+            <example>LOTEAAA</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoDetalleRequest.EspecificaIdentificador">
+            <summary>
+            Especifica identificador
+            S (Sí) - N (No) 
+            </summary>
+            <example>S</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoDetalleRequest.CantidadProducto">
+            <summary>
+            Cantidad de producto para el pedido. En caso de confirmación de mercadería preparada, refiere a la cantidad preparada. En caso de cierre de egreso, refiere a la cantidad expedida en el camión.
+            </summary>
+            <example>100</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoDetalleRequest.Memo">
+            <summary>
+            Información adicional
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoDetalleRequest.Serializado">
+            <summary>
+            Serializado
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoRequest.Empresa">
+            <summary>
+            Código de la empresa
+            </summary>
+            <example>10</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoRequest.TipoAgente">
+            <summary>
+            Tipo de agente 
+            PRO (Proveedor) - CLI (Cliente)
+            </summary>
+            <example>CLI</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoRequest.CodigoAgente">
+            <summary>
+            Código del agente
+            </summary>
+            <example>LOCAL11</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoRequest.Pedido">
+            <summary>
+            Número de pedido
+            </summary>
+            <example>ORDEN-100</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoRequest.CodigoOrigen">
+            <summary>
+            Código de origen
+            </summary>
+            <example>WPRE100</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoRequest.Memo">
+            <summary>
+            Información adicional
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoRequest.Memo1">
+            <summary>
+            Información adicional
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoRequest.CondicionLiberacion">
+            <summary>
+            Código de condición de liberación
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoRequest.Predio">
+            <summary>
+            Número de predio.
+            Este valor se notifica en el cabezal del camión y del pedido. 
+            Como referencia debe tomarse siempre el del camión.
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoRequest.TipoPedido">
+            <summary>
+            Tipo de pedido
+            </summary>
+            <example>URG</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoRequest.TipoExpedicion">
+            <summary>
+            Tipo de expedición
+            </summary>
+            <example>NORMAL</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoRequest.Direccion">
+            <summary>
+            Destino de la expedición
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoRequest.PuntoEntrega">
+            <summary>
+            Código de punto de entrega
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.PedidoRequest.Serializado">
+            <summary>
+            Serializado
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaDetalleRequest.IdLineaSistemaExterno">
+            <summary>
+            Identificación en el ERP o sistema externo para la línea de la referencia.  
+            Si está definido después en la confirmación, se retorna para un matcheo en el sistema externo.
+            </summary>
+            <example>LIN1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaDetalleRequest.Producto">
+            <summary>
+            Código del producto
+            </summary>
+            <example>PRO-1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaDetalleRequest.Identificador">
+            <summary>
+            Serie o Lote del producto en caso que lo maneje.
+            Es un valor opcional y WIS lo manejará en modalidad automática si no viene especificado
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaDetalleRequest.CantidadReferencia">
+            <summary>
+            Cantidad de la Referencia
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaDetalleRequest.CantidadConsumida">
+            <summary>
+            Cantidad consumida
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaDetalleRequest.Anexo">
+            <summary>
+            Información adicional
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaDetalleRequest.CantidadConsumidaAgenda">
+            <summary>
+            Cantidad consumida agendada
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaDetalleRequest.FechaVencimiento">
+            <summary>
+            Fecha de vencimiento
+            </summary>
+            <example>10/10/2022</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaRequest.NumeroReferencia">
+            <summary>
+             Identificador de la referencia para recepción (número de OC, de devolución, etc.)
+            </summary>
+            <example>1999</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaRequest.TipoReferencia">
+            <summary>
+            Tipo de referencia
+            OC (Orden de Compra) - RR (Referencia de Recepción) - OD (Orden de Devolución) - ODC (Devolución Canje)
+            OC y RR corresponden al tipo de agente PRO
+            OD y ODC corresponden al tipo de agente CLI
+            </summary>
+            <example>OD</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaRequest.TipoAgente">
+            <summary>
+            Tipo de agente 
+            PRO (Proveedor) - CLI (Cliente)
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaRequest.CodigoAgente">
+            <summary>
+            Código del agente
+            </summary>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaRequest.Memo">
+            <summary>
+            Información adicional devuelta en la confirmación de la recepción
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaRequest.Anexo1">
+            <summary>
+            Información anexa
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaRequest.Anexo2">
+            <summary>
+            Información anexa
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaRequest.Anexo3">
+            <summary>
+            Información anexa
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaRequest.Serializado">
+            <summary>
+            Serializado
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.ReferenciaRequest.Predio">
+            <summary>
+            Número de predio
+            </summary>
+            <example></example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.StockRequest.Producto">
+            <summary>
+            Código del producto
+            </summary>
+            <example>PROD-1</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.StockRequest.StockDisponible">
+            <summary>
+            Stock disponible en el local (elegible)
+            </summary>
+            <example>100</example>
+        </member>
+        <member name="P:WIS.WebhookClient.Models.StockRequest.StockGeneral">
+            <summary>
+            Stock disponible + stock en camiones, bloqueados y otros.
+            </summary>
+            <example>100</example>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,11 @@
+﻿.solapadoCabezal {
+    background: #FEF2B9;
+}
+
+.gr-grid .gr-row.solapado .gr-cell {
+    background-color: #FEF2B9;
+}
+
+.gr-grid .gr-row.solapado.selected .gr-cell {
+    background-color: #FCEEA8;
+}

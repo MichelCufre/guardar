@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>true</IsPackable>
+    <PackageId>WisBase40.Custom.Domain</PackageId>
+    <VersionPrefix>10.4.4.0</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
+    <Authors>WIS</Authors>
+    <Description>WisBase40</Description>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <DebugType>full</DebugType>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <DebugSymbols>true</DebugSymbols>
+    <SourceLinkCreate>true</SourceLinkCreate>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RepositoryUrl>https://dev.azure.com/smartlog-group/Galys/_git/wisbase40</RepositoryUrl>
+    <Version>10.4.4.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="DataModel\Constants\**" />
+    <Compile Remove="DataModel\General\**" />
+    <Compile Remove="DataModel\Middlewares\**" />
+    <Compile Remove="DataModel\Queries\**" />
+    <Compile Remove="Properties\**" />
+    <Compile Remove="Services\**" />
+    <Compile Remove="Stock\**" />
+    <EmbeddedResource Remove="DataModel\Constants\**" />
+    <EmbeddedResource Remove="DataModel\General\**" />
+    <EmbeddedResource Remove="DataModel\Middlewares\**" />
+    <EmbeddedResource Remove="DataModel\Queries\**" />
+    <EmbeddedResource Remove="Properties\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <EmbeddedResource Remove="Stock\**" />
+    <None Remove="DataModel\Constants\**" />
+    <None Remove="DataModel\General\**" />
+    <None Remove="DataModel\Middlewares\**" />
+    <None Remove="DataModel\Queries\**" />
+    <None Remove="Properties\**" />
+    <None Remove="Services\**" />
+    <None Remove="Stock\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Services\BatchWmsApiService.cs" />
+    <Compile Include="Services\Interfaces\IMiddlewareService.cs" />
+    <Compile Include="Services\MiddlewareService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Dapper" Version="2.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+    <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="NLog" Version="5.2.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Custom.Common\Custom.Common.csproj" />
+    <ProjectReference Include="..\Custom.Persistence\Custom.Persistence.csproj" />
+    <ProjectReference Include="..\WIS.Domain\WIS.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="General\API\Dtos\Entrada\" />
+    <Folder Include="General\API\Dtos\Salida\" />
+    <Folder Include="Services\Configuration\" />
+  </ItemGroup>
+</Project>

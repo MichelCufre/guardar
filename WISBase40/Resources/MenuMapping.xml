@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+	<item id="WREG000_Section_Access_Registro" label="Master_Menu_lbl_WREGISTRO" icon="fa fa-plus-circle">
+		<submenu>
+			<item id="WREG000_Section_Access_Productos" label="Master_Menu_lbl_WPRODUCTOS">
+				<submenu>
+					<item id="REG009_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG009" url="/registro/REG009" module="evo40" />
+					<item id="REG015_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG015" url="/registro/REG015" module="evo40" />
+					<item id="REG020_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG020" url="/registro/REG020" module="evo40" />
+					<item id="REG090_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG090" url="/registro/REG090" module="evo40" />
+					<!--<item id="WREG030_Page_Access_Rotatividad" label="Master_Menu_lbl_WREGISTRO_WREG030" url="/PAGINAS/WREGISTRO/WREG030.aspx" module="base" />
+					<item id="WREG400_Page_Access_UnidadesAlternas" label="Master_Menu_lbl_WREGISTRO_WREG400" url="/PAGINAS/WREGISTRO/WREG400.aspx" module="base" />-->
+					<item id="REG410_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG410" url="/registro/REG410" module="evo40" />
+					<item id="REG603_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG603" url="/registro/REG603" module="evo40" />
+					<item id="REG605_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG605" url="/registro/REG605" module="evo40" />
+					<item id="REG060_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG060" url="/registro/REG060" module="evo40" />
+					<!--<item id="WREG011_Page_Access_Registro" label="Master_Menu_lbl_WREGISTRO_WREG011" url="/PAGINAS/WREGISTRO/WREG011.aspx" module="base" />-->
+					<item id="REG300_Page_Access_Allow" label="Master_Menu_lbl_GRUPOS_REG300" url="/registro/REG300" module="evo40" />
+					<item id="REG310_Page_Access_Allow" label="Master_Menu_lbl_GRUPOS_REG310" url="/registro/REG310" module="evo40" />
+				</submenu>
+			</item>
+			<item id="WREG000_Section_Access_Mantenimientos" label="Master_Menu_lbl_WMANTENIMIENTO">
+				<submenu>
+					<item id="WREG000_Section_Access_Mantenimientos_PreparacionExpedicion" label="Master_Menu_lbl_WMANTENIMIENTO_PREPEXP">
+						<submenu>
+							<item id="REG220_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG220" url="/registro/REG220" module="evo40" />
+              <item id="REG221_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG221" url="/registro/REG221" module="evo40" />
+							<item id="REG140_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG140" url="/registro/REG140" module="evo40" />
+							<item id="REG130_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG130" url="/registro/REG130" module="evo40" />
+							<item id="REG036_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG036" url="/registro/REG036" module="evo40" />
+							<item id="REG010_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG010" url="/registro/REG010" module="evo40" />
+							<!--<item id="WREG141_Page_Access_MotivosAjusteStock" label="Master_Menu_lbl_WREGISTRO_WREG141" url="/PAGINAS/WREGISTRO/WREG141.aspx" module="base" />-->
+							<item id="REG240_Page_Access_Allow" label="Master_Menu_lbl_REGISTRO_REG240" url="/registro/REG240" module="evo40" />
+							<item id="REG250_Page_Access_Allow" label="Master_Menu_lbl_REGISTRO_REG250" url="/registro/REG250" module="evo40" />
+						</submenu>
+					</item>
+					<item id="WREG000_Section_Access_Mantenimientos_Ubicaciones" label="Master_Menu_lbl_WMANTENIMIENTO_UBICACION">
+						<submenu>
+							<item id="REG035_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG035" url="/registro/REG035" module="evo40" />
+							<item id="REG040_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG040" url="/registro/REG040" module="evo40" />
+							<item id="REG080_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG080" url="/registro/REG080" module="evo40" />
+							<item id="REG050_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG050" url="/registro/REG050" module="evo40" />
+							<item id="REG070_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG070" url="/registro/REG070" module="evo40" />
+						</submenu>
+					</item>
+					<item id="WREG000_Section_Access_Mantenimientos_Recorridos" label="Master_Menu_lbl_WMANTENIMIENTO_RECORRIDO">
+						<submenu>
+							<item id="REG700_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG700" url="/registro/REG700" module="evo40" />
+							<item id="REG701_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG701" url="/registro/REG701" module="evo40" />
+							<item id="REG702_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG702" url="/registro/REG702" module="evo40" />
+						</submenu>
+					</item>
+					<!--<item id="WREG110_Page_Access_MantenimientoPaises" label="Master_Menu_lbl_WREGISTRO_WREG110" url="/PAGINAS/WREGISTRO/WREG110.aspx" module="base" />-->
+					<item id="WREG100_Page_Access_Empresas" label="Master_Menu_lbl_WREGISTRO_WREG100" url="/registro/REG100" module="evo40" />
+					<item id="REG104_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_REG104" url="/registro/REG104" module="evo40" />
+				</submenu>
+			</item>
+			<!--<item id="WREG000_Section_Access_Traspaso" label="Master_Menu_lbl_WREG_TRASPASO">
+				<submenu>
+					  <item id="WREG120_Page_Access_ConversionCodigosTraspaso" label="Master_Menu_lbl_WREGISTRO_WREG120" url="/PAGINAS/WREGISTRO/WREG120.aspx" module="base" />
+					  <item id="WREG125_Page_Access_CrearProductosTraspaso" label="Master_Menu_lbl_WREGISTRO_WREG125" url="/PAGINAS/WREGISTRO/WREG125.aspx" module="base" />
+				</submenu>
+			</item>-->
+			<item id="WREG000_Section_Access_ControlCalidad" label="Master_Menu_lbl_CONTROL_CALIDAD">
+				<submenu>
+					<item id="REG601_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG601" url="/registro/REG601" module="evo40" />
+					<item id="REG602_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG602" url="/registro/REG602" module="evo40" />
+				</submenu>
+			</item>
+			<item id="WREG000_Section_Access_Dominios" label="Master_Menu_lbl_WDOMINIOS">
+				<submenu>
+					<item id="REG910_Page_Access_Allow" label="Master_Menu_lbl_WREGISTRO_WREG910" url="/registro/REG910" module="evo40" />
+					<!--<item id="WREG911_Page_Access_DominioDetalle" label="Master_Menu_lbl_WREGISTRO_WREG911" url="/PAGINAS/WREGISTRO/WREG911.aspx" module="base" />-->
+				</submenu>
+			</item>
+		</submenu>
+	</item>
+	<item id="WREC000_Section_Access_Recepcion" label="Master_Menu_lbl_WRECEPCION" icon="fa fa-truck">
+		<submenu>
+			<item id="REC170_Page_Access_Allow" label="Master_Menu_lbl_WRECEPCION_WREC170" url="/recepcion/REC170" module="evo40" />
+			<item id="REC171_Page_Access_Allow" label="Master_Menu_lbl_WRECEPCION_WREC171" url="/recepcion/REC171" module="evo40" />
+			<item id="REC150_Page_Access_Allow" label="Master_Menu_lbl_WRECEPCION_WREC150" url="/recepcion/REC150" module="evo40" />
+			<item id="REC180_Page_Access_Allow" label="Master_Menu_lbl_WRECEPCION_WREC180" url="/recepcion/REC180" module="evo40" />
+			<item id="REC141_Page_Access_Allow" label="Master_Menu_lbl_WRECEPCION_WREC141" url="/recepcion/REC141" module="evo40" />
+			<item id="WREC010_Page_Access_RefRecepcion" label="Master_Menu_lbl_WRECEPCION_WREC010" url="/recepcion/REC010" module="evo40" />
+			<item id="REC011_Page_Access_Allow" label="Master_Menu_lbl_WRECEPCION_WREC011" url="/recepcion/REC011" module="evo40" />
+			<!--<item id="WREC340_Page_Access_PanelRecepcion" label="WREC340_Sec0_pageTitle_Titulo" url="/PAGINAS/WRECEPCION/WREC340.aspx" module="base" />-->
+			<item id="WREC000_Section_Access_CrossDocking" label="Master_Menu_lbl_WCROSSDOCKING">
+				<submenu>
+					<item id="REC270_Page_Access_Allow" label="Master_Menu_lbl_WRECEPCION_WREC270" url="/recepcion/REC270" module="evo40" />
+					<item id="WREC240_Page_Access_ConsultaCrossDocking" label="Master_Menu_lbl_WRECEPCION_WREC240" url="/recepcion/REC210" module="evo40" />
+					<item id="REC220_Page_Access_Allow" label="Master_Menu_lbl_WRECEPCION_WREC220" url="/recepcion/REC220" module="evo40" />
+				</submenu>
+			</item>
+			<item id="WREC000_Section_Access_ReglasDeAlmacenaje" label="Master_Menu_lbl_ReglasDeAlmacenaje">
+				<submenu>
+					<item id="REC275_Page_Access_Allow" label="Master_Menu_lbl_WRECEPCION_WREC275" url="/recepcion/REC275" module="evo40" />
+					<item id="REC280_Page_Access_Allow" label="Master_Menu_lbl_WRECEPCION_WREC280" url="/recepcion/REC280" module="evo40" />
+				</submenu>
+			</item>
+			<!--<item id="WREC310_Page_Access_Container" label="Master_Menu_lbl_WRECEPCION_WREC310" url="/PAGINAS/WRECEPCION/WREC310.aspx" module="base" />
+			<item id="WREC320_Page_Access_Tarja" label="Master_Menu_lbl_WRECEPCION_WREC320" url="/PAGINAS/WRECEPCION/WREC320.aspx" module="base" />
+			<item id="WREC330_Page_Access_TarjaDet" label="Master_Menu_lbl_WRECEPCION_WREC330" url="/PAGINAS/WRECEPCION/WREC330.aspx" module="base" />-->
+			<item id="REC250_Page_Access_Allow" label="Master_Menu_lbl_WRECEPCION_WREC250" url="/recepcion/REC250" module="evo40" />
+			<item id="REC300_Page_Access_Allow" label="Master_Menu_lbl_WRECEPCION_WREC300" url="/recepcion/REC300" module="evo40" />
+			<item id="WREC400_Section_Access_MesaClasificacion" label="Master_Menu_lbl_MESACLASIFICACION">
+				<submenu>
+					<item id="REC400_Page_Access_Allow" label="Master_Menu_lbl_ESTACIONES_CLASIFICACION" url="/recepcion/REC400" module="evo40" />
+					<item id="REC410_Page_Access_Allow" label="Master_Menu_lbl_CLASIFICACION_RECEPCIONES" url="/recepcion/REC410" module="evo40" />
+				</submenu>
+			</item>
+			<item id="REC500_Section_Access_Facturas" label="Master_Menu_lbl_FACTURAS" >
+				<submenu>
+					<item id="REC500_Page_Access_Allow" label="Master_Menu_lbl_WRECEPCION_WREC500" url="/recepcion/REC500" module="evo40" />
+					<item id="REC500GrillaDetalleFactura_Page_Access_Allow" label="REC500GrillaDetalleFactura_Page_Access_Allow" url="/recepcion/REC500GrillaDetalleFactura" module="evo40" />
+				</submenu>
+			</item>
+				</submenu>
+	</item>
+	<item id="LSTO000_Section_Access_Stock" label="Master_Menu_lbl_LSTOCK" icon="fa fa-cubes">
+		<submenu>
+			<item id="STO498_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO498" url="/stock/STO498" module="evo40" />
+			<item id="STO150_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO150" url="/stock/STO150" module="evo40" />
+			<item id="LSTO000_Section_Access_CtrlCalidad" label="Master_Menu_lbl_ControlesCalidad">
+				<submenu>
+					<item id="STO110_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO110" url="/stock/STO110" module="evo40" />
+					<item id="STO152_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO152" url="/stock/STO152" module="evo40" />
+					<item id="STO153_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO153" url="/stock/STO153" module="evo40" />
+					<item id="STO060_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO060" url="/stock/STO060" module="evo40" />
+				</submenu>
+			</item>
+			<!--<item id="WSTO040_Page_Access_TraspasoStock" label="Master_Menu_lbl_WSTOCK_WSTO040" url="/PAGINAS/WSTOCK/WSTO040.aspx" module="base" />-->
+			<item id="STO395_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO395" url="/stock/STO395" module="evo40" />
+			<item id="STO210_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO210" url="/stock/STO210" module="evo40" />
+			<item id="STO211_Page_Access_Allow" label="STO211_Sec0_pageTitle_Titulo" url="/stock/STO211" module="evo40" />
+			<!--<item id="WSTO090_Page_Access_MovimientosDeInventario" label="Master_Menu_lbl_WSTOCK_WSTO090" url="/PAGINAS/WSTOCK/WSTO090.aspx" module="base" />
+			<item id="WSTO155_Page_Access_UbicacionesDisponivles" label="Master_Menu_lbl_WSTOCK_WSTO155" url="/PAGINAS/WSTOCK/WSTO155.aspx" module="base" />-->
+			<item id="STO500_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO500" url="/stock/STO500" module="evo40" />
+			<item id="STO030_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO030" url="/stock/STO030" module="evo40" />
+			<item id="STO310_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO310" url="/stock/STO310" module="evo40" />
+			<item id="STO005_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO005" url="/stock/STO005" module="evo40" />
+			<!--<item id="WSTO580_Page_Access_Existencia" label="Master_Menu_lbl_WSTOCK_WSTO580" url="/PAGINAS/WSTOCK/WSTO580.aspx" module="base" />
+			<item id="WSTO600_Page_Access_Traspaso" label="Master_Menu_lbl_WSTOCK_WSTO600" url="/PAGINAS/WSTOCK/WSTO580.aspx" module="base" />
+			<item id="WSTO550_Page_Access_ProductoConMasReservaQueStock" label="Master_Menu_lbl_WSTOCK_WSTO550" url="/PAGINAS/WSTOCK/WSTO580.aspx" module="base" />
+			<item id="WSTO620_Page_Access_STOCK_Producto" label="WSTO620_Page_Access_STOCK_Producto" url="/PAGINAS/WSTOCK/WSTO580.aspx" module="base" />
+			<item id="WSTO630_Page_Access_StockProblemaPadron" label="Master_Menu_lbl_WSTOCK_WSTO630" url="/PAGINAS/WSTOCK/WSTO580.aspx" module="base" />-->
+			<!--<item id="STO640_Page_Access_Allow" label="STO640_Sec0_pageTitle_Titulo" url="/stock/STO640" module="evo40" />-->
+			<item id="LSTO000_Section_Access_LPN" label="Master_Menu_lbl_LPN" icon="fa fa-cubes">
+				<submenu>
+					<item id="STO700_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO700" url="/stock/STO700" module="evo40" />
+					<item id="STO710_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO710" url="/stock/STO710" module="evo40" />
+					<item id="STO720_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO720" url="/stock/STO720" module="evo40" />
+					<item id="STO740_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO740" url="/stock/STO740" module="evo40" />
+					<item id="STO730_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO730" url="/stock/STO730" module="evo40" />
+				</submenu>
+			</item>
+			<item id="STO750_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO750" url="/stock/STO750" module="evo40" />
+			<item id="LSTO000_Section_Access_TraspasoEmpresas" label="Master_Menu_lbl_TraspasoEmpresas">
+				<submenu>
+					<item id="STO800_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO800" url="/stock/STO800" module="evo40" />
+					<item id="STO810_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO810" url="/stock/STO810" module="evo40" />
+					<item id="STO820_Page_Access_Allow" label="Master_Menu_lbl_WSTOCK_WSTO820" url="/stock/STO820" module="evo40" />
+				</submenu>
+			</item>
+		</submenu>
+	</item>
+	<item id="WINV000_Section_Access_Inventario" label="Master_Menu_lbl_WINVENTARIO" icon="fa fa-list">
+		<submenu>
+			<item id="INV410_Page_Access_Allow" label="WINV410_Page_Access_PanelInventarios" url="/inventario/INV410" module="evo40" />
+			<item id="INV050_Page_Access_Allow" label="WINV050_Page_Access_AvanceInventario" url="/inventario/INV050" module="evo40" />
+			<item id="INV412_Page_Access_Allow" label="Master_Menu_lbl_WINVETARIO_WINV412" url="/inventario/INV412" module="evo40" />
+			<item id="INV100_Page_Access_Allow" label="Master_Menu_lbl_WINVENTARIO_WINV100" url="/inventario/INV100" module="evo40" />
+			<item id="INV414_Page_Access_Allow" label="WINV414_Sec0_pageTitle_Titulo" url="/inventario/INV414" module="evo40" />
+			<item id="INV030_Page_Access_Allow" label="WINV030_Page_Access_AjustesDeSotck" url="/inventario/INV030" module="evo40" />
+			<item id="INV060_Page_Access_Allow" label="WINV060_Page_Access_AsignarMotivosAjuste" url="/inventario/INV060" module="evo40" />
+		</submenu>
+	</item>
+	<item id="LPRE000_Section_Access_Preparacion" label="Master_Menu_lbl_LPREPARACION" icon="fa fa-paste">
+		<submenu>
+			<item id="WPRE000_Section_Access_Pedidos" label="Master_Menu_lbl_WPREPARACION_PEDIDOS">
+				<submenu>
+					<item id="PRE100_Page_Access_Allow" label="Master_Menu_lbl_WPREPARACION_WPRE100" url="/preparacion/PRE100" module="evo40" />
+					<item id="PRE150_Page_Access_Allow" label="Master_Menu_lbl_WPREPARACION_WPRE150" url="/preparacion/PRE150" module="evo40" />
+
+					<item id="PRE110_Page_Access_Allow" label="Master_Menu_lbl_ANULACIONPEDIDO">
+						<submenu>
+							<item id="PRE110_Page_Access_Allow" label="Master_Menu_lbl_WPREPARACION_WPRE110" url="/preparacion/PRE110" module="evo40" />
+							<item id="PRE110Lpn_Page_Access_Allow" label="Master_Menu_lbl_WPREPARACION_WPRE111" url="/preparacion/PRE110AnulacionDetPedidoLpn" module="evo40" />
+							<item id="PRE110Atr_Page_Access_Allow" label="Master_Menu_lbl_WPREPARACION_WPRE112" url="/preparacion/PRE110AnulacionDetPedidoAtri" module="evo40" />
+						</submenu>
+					</item>
+					<item id="PRE080_Page_Access_Allow" label="PRE080_Sec0_pageTitle_Titulo" url="/preparacion/PRE080" module="evo40" />
+					<item id="PRE640_Page_Access_Allow" label="Master_Menu_lbl_WPREPARACION_WPRE640" url="/preparacion/PRE640" module="evo40" />
+					<item id="PRE660_Page_Access_Allow" label="PRE660_Sec0_pageTitle_Titulo" url="/preparacion/PRE660" module="evo40" />
+				</submenu>
+			</item>
+			<item id="WPRE000_Section_Access_Preparaciones" label="Master_Menu_lbl_WPREPARACION_PREPARACION">
+				<submenu>
+					<item id="PRE052_Page_Access_Allow" label="Master_Menu_lbl_WPREPARACION_WPRE052" url="/preparacion/PRE052" module="evo40" />
+					<item id="PRE130_Page_Access_Allow" label="Master_Menu_lbl_WPREPARACION_WPRE130" url="/preparacion/PRE130" module="evo40" />
+					<item id="PRE160_Page_Access_Allow" label="Master_Menu_lbl_WPREPARACION_WPRE160" url="/preparacion/PRE160" module="evo40" />
+					<item id="PRE120_Page_Access_Allow" label="Master_Menu_lbl_WPREPARACION_WPRE121" url="/preparacion/PRE120" module="evo40" />
+					<item id="PRE250_Page_Access_Allow" label="Master_Menu_lbl_WPREPARACION_WPRE250" url="/preparacion/PRE250" module="evo40" />
+					<item id="PRE170_Page_Access_Allow" label="Master_Menu_lbl_WPREPARACION_WPRE170" url="/preparacion/PRE170" module="evo40" />
+					<!--<item id="WPRE410_Page_Access_PanelAnulacion" label="Master_Menu_lbl_WPREPARACION_WPRE410" url="/PAGINAS/WPREPARACION/WPRE410.aspx" module="base" />-->
+					<item id="PRE060_Page_Access_Allow" label="Master_Menu_lbl_WPREPARACION_WPRE060" url="/preparacion/PRE060" module="evo40" />
+					<item id="PRE220_Page_Access_Allow" label="Master_Menu_lbl_WPREPARACION_WPRE220" url="/preparacion/PRE220" module="evo40" />
+					<!--<item id="WPRE520_Page_Access_LogAnulacion" label="WPRE520_Sec0_pageTitle_Titulo" url="/PAGINAS/WPREPARACION/WPRE520.aspx" module="base" />
+					<item id="WPRE530_Page_Access_Cont" label="WPRE530_Sec0_pageTitle_Titulo" url="/PAGINAS/WPREPARACION/WPRE530.aspx" module="base" />
+					<item id="WPRE600_Page_Access_Pedido" label="WPRE600_Sec0_pageTitle_Titulo" url="/PAGINAS/WPREPARACION/WPRE600.aspx" module="base" />
+					<item id="WPRE610_Page_Access_Pedido" label="WPRE610_Sec0_pageTitle_Titulo" url="/PAGINAS/WPREPARACION/WPRE610.aspx" module="base" />
+					<item id="WPRE620_Page_Access_Pedido" label="WPRE620_Sec0_pageTitle_Titulo" url="/PAGINAS/WPREPARACION/WPRE620.aspx" module="base" />-->
+					<!--<item id="PRE450_Page_Access_Allow" label="Master_Menu_lbl_NoAnularPrep_WPRE450" url="/preparacion/PRE450" module="evo40" />-->
+					<item id="PRE460_Page_Access_Allow" label="Master_Menu_lbl_WPREPARACION_WPRE460" url="/preparacion/PRE460" module="evo40" />
+				</submenu>
+			</item >
+      <item id="WPRE000_Section_Access_ColasDeTrabajo" label="Master_Menu_lbl_WCOLASDE_TRABAJO">
+        <submenu>
+          <item id="PRE810_Page_Access_Allow" label="PRE810_Sec0_pageTitle_Titulo" url="/preparacion/PRE810" module="evo40" />
+          <item id="PRE811_Page_Access_Allow" label="PRE811_Sec0_pageTitle_Titulo" url="/preparacion/PRE811" module="evo40" />
+          <item id="PRE812_Page_Access_Allow" label="PRE812_Sec0_pageTitle_Titulo" url="/preparacion/PRE812" module="evo40" />
+        </submenu>
+      </item>
+			<item id="WPRE000_Section_Access_Picking" label="Master_Menu_lbl_WPREPARACION_PICKING">
+				<submenu>
+					<item id="PRE360_Page_Access_Allow" label="Master_Menu_lbl_WPREPARACION_WPRE360" url="/preparacion/PRE360" module="evo40" />
+				</submenu>
+			</item>
+			<item id="PRE350_Page_Access_Allow" label="Master_Menu_lbl_WPREPARACION_WPRE350" url="/preparacion/PRE350" module="evo40" />
+			<!--<item id="WPRE370_Page_Access_UbicacionesReabastecimiento" label="WPRE370_Sec0_pageTitle_Titulo" url="/PAGINAS/WPREPARACION/WPRE370.aspx" module="base" />-->
+		</submenu>
+	</item>
+
+	<item id="DOC000_Section_Access_ControlDocumental" label="Master_Menu_lbl_DOCUMENTAL" icon="fa fa-folder-open">
+		<submenu>
+			<item id="DOC080_Page_Access_Allow" label="Master_Menu_lbl_DOCUMENTAL_DOC080" url="/documento/DOC080" module="evo40" />
+			<!--<item id="DOC320_Page_Access_Allow" label="Master_Menu_lbl_CONTROLDOCUMENTAL_DOC320" url="/documento/DOC320" module="evo40" />-->
+			<item id="DOC020_Page_Access_Allow" label="Master_Menu_lbl_CONTROLDOCUMENTAL_DOC020" url="/documento/DOC020" module="evo40" />
+			<item id="DOC095_Page_Access_Allow" label="Master_Menu_lbl_CONTROLDOCUMENTAL_DOC095" url="/documento/DOC095" module="evo40" />
+			<item id="DOC035_Page_Access_Allow" label="Master_Menu_lbl_CONTROLDOCUMENTAL_DOC035" url="/documento/DOC035" module="evo40" />
+			<item id="DOC036_Page_Access_Allow" label="Master_Menu_lbl_CONTROLDOCUMENTAL_DOC036" url="/documento/DOC036" module="evo40" />
+			<item id="DOC260_Page_Access_Allow" label="Master_Menu_lbl_CONTROLDOCUMENTAL_DOC260" url="/documento/DOC260" module="evo40" />
+			<item id="DOC290_Page_Access_Allow" label="Master_Menu_lbl_CONTROLDOCUMENTAL_DOC290" url="/documento/DOC290" module="evo40" />
+			<item id="DOC300_Page_Access_Allow" label="Master_Menu_lbl_CONTROLDOCUMENTAL_DOC300" url="/documento/DOC300" module="evo40" />
+			<item id="DOC310_Page_Access_Allow" label="Master_Menu_lbl_CONTROLDOCUMENTAL_DOC310" url="/documento/DOC310" module="evo40" />
+			<item id="DOC360_Page_Access_Allow" label="Master_Menu_lbl_CONTROLDOCUMENTAL_DOC360" url="/documento/DOC360" module="evo40" />
+			<!--<item id="DOC400_Page_Access_Allow" label="DOC400_Sec0_pageTitle_Titulo" url="/documento/DOC400" module="evo40" />
+			<item id="DOC401_Page_Access_Allow" label="DOC401_Sec0_pageTitle_Titulo" url="/documento/DOC401" module="evo40" />
+			<item id="DOC402_Page_Access_Allow" label="DOC402_Sec0_pageTitle_Titulo" url="/documento/DOC402" module="evo40" />
+			<item id="DOC410_Page_Access_Allow" label="DOC410_Sec0_pageTitle_Titulo" url="/documento/DOC410" module="evo40" />
+			<item id="DOC501_Page_Access_Allow" label="DOC501_Sec0_pageTitle_Titulo" url="/documento/DOC501" module="evo40" />-->
+			<item id="DOC100_Page_Access_Allow" label="Master_Menu_lbl_CONTROLDOCUMENTAL_DOC100" url="/documento/DOC100" module="evo40" />
+		</submenu>
+	</item>
+	<!--
+	<item id="REP000_Section_Access_ReportesBH" label="Master_Menu_lbl_BHREPORT" icon="fa fa-archive">
+    <submenu>
+      -->
+	<!--ENTRADA-->
+	<!--
+      <item id="REP001_Section_Access_Entrada_Rep" label="Master_Menu_lbl_ENTRADA_REPORT" icon="fa fa-archive">
+        <submenu>
+          <item id="REP010_Page_Access_MovEntradaDA" label="Master_Menu_lbl_BHREPORT_REP010" url="/reportes/REP010" module="doc" />
+          <item id="REP020_Page_Access_MovEntradaNF" label="Master_Menu_lbl_BHREPORT_REP020" url="/reportes/REP020" module="doc" />
+          <item id="REP050_Page_Access_ConsultaRTMPeriodo" label="Master_Menu_lbl_BHREPORT_REP050" url="/reportes/REP050" module="doc" />
+          <item id="REP080_Page_Access_BenPeriodoNF" label="Master_Menu_lbl_BHREPORT_REP080" url="/reportes/REP080" module="doc" />
+          <item id="REP150_Page_Access_MovVehiEnt" label="Master_Menu_lbl_BHREPORT_REP150" url="/reportes/REP150" module="doc" />
+        </submenu>
+      </item>
+      -->
+	<!--ESTOQUE-->
+	<!--
+      <item id="REP001_Section_Access_Estoque_Rep" label="Master_Menu_lbl_ESTOQUE_REPORT" icon="fa fa-archive">
+        <submenu>
+          <item id="REP040_Page_Access_PrazoPermanencia" label="Master_Menu_lbl_BHREPORT_REP040" url="/reportes/REP040" module="doc" />
+          <item id="REP090_Page_Access_PerdasBene" label="Master_Menu_lbl_BHREPORT_REP090" url="/reportes/REP090" module="doc" />
+          <item id="REP130_Page_Access_ItemSusp" label="Master_Menu_lbl_BHREPORT_REP130" url="/reportes/REP130" module="doc" />
+          <item id="REP160_Page_Access_InvGralImp" label="Master_Menu_lbl_BHREPORT_REP160" url="/reportes/REP160" module="doc" />
+          <item id="REP170_Page_Access_InvGralNac" label="Master_Menu_lbl_BHREPORT_REP170" url="/reportes/REP170" module="doc" />
+        </submenu>
+      </item>
+      -->
+	<!--SAIDA-->
+	<!--
+      <item id="REP001_Section_Access_Saida_Rep" label="Master_Menu_lbl_SAIDA_REPORT" icon="fa fa-archive">
+        <submenu>
+          <item id="REP030_Page_Access_NFSaida" label="Master_Menu_lbl_BHREPORT_REP030" url="/reportes/REP030" module="doc" />
+          <item id="REP060_Page_Access_MovSaidaExp" label="Master_Menu_lbl_BHREPORT_REP060" url="/reportes/REP060" module="doc" />
+          <item id="REP070_Page_Access_MovSaidaMI" label="Master_Menu_lbl_BHREPORT_REP070" url="/reportes/REP070" module="doc" />
+          <item id="REP100_Page_Access_MovRTMBen" label="Master_Menu_lbl_BHREPORT_REP100" url="/reportes/REP100" module="doc" />
+          <item id="REP110_Page_Access_Nacionalizacion" label="Master_Menu_lbl_BHREPORT_REP110" url="/reportes/REP110" module="doc" />
+          <item id="REP120_Page_Access_Exportacion" label="Master_Menu_lbl_BHREPORT_REP120" url="/reportes/REP120" module="doc" />
+          <item id="REP140_Page_Access_MovVehiSal" label="Master_Menu_lbl_BHREPORT_REP140" url="/reportes/REP140" module="doc" />
+          <item id="REP180_Page_Access_DesMercAdm" label="Master_Menu_lbl_BHREPORT_REP180" url="/reportes/REP180" module="doc" />
+        </submenu>
+      </item>
+      -->
+	<!--<item id="REP190_Page_Access_ProdItemConsumo" label="Master_Menu_lbl_BHREPORT_REP190" url="/reportes/REP190" module="doc" />
+      <item id="REP200_Page_Access_ProdExportProd" label="Master_Menu_lbl_BHREPORT_REP200" url="/reportes/REP200" module="doc" /> -->
+	<!--
+    </submenu>
+  </item>-->
+
+	<item id="LEXP000_Section_Access_Expedicion" label="Master_Menu_lbl_LEXPEDICION" icon="fa fa-truck mirror">
+		<submenu>
+			<item id="EXP040_Page_Access_Allow" label="Master_Menu_lbl_WEXPEDICION_WEXP040" url="/expedicion/EXP040" module="evo40" />
+			<item id="EXP041_Page_Access_Allow" label="Master_Menu_lbl_WEXPEDICION_WEXP041" url="/expedicion/EXP041" module="evo40"  />
+			<item id="EXP110EmpaquetadoPicking_Page_Access_Allow" label="Master_Menu_lbl_EXPEDICION_EXP110" url="/expedicion/EXP110" module="evo40"/>
+			<item id="EXP150PedidoComplSinEmpaque_Page_Access_Allow" label="Master_Menu_lbl_EXPEDICION_EXP150" url="/expedicion/EXP150" module="evo40" />
+			<item id="EXP090_Page_Access_Allow" label="Master_Menu_lbl_WEXPEDICION_WEXP090" url="/expedicion/EXP090" module="evo40" />
+			<item id="EXP320_Page_Access_Allow" label="Master_Menu_lbl_WEXPEDICION_WEXP320" url="/expedicion/EXP320" module="evo40" />
+			<item id="EXP330_Page_Access_Allow" label="Master_Menu_lbl_WEXPEDICION_WEXP330" url="/expedicion/EXP330" module="evo40" />
+			<!--<item id="WEXP080_Page_Access_ModificarNumCarga" label="Master_Menu_lbl_WEXPEDICION_WEXP080" url="/PAGINAS/WEXPEDICION/WEXP080.aspx" module="base" />
+			<item id="WEXP110_Page_Access_FacturarPedidos" label="Master_Menu_lbl_WEXPEDICION_WEXP110" url="/PAGINAS/WEXPEDICION/WEXP110.aspx" module="base" />-->
+			<item id="EXP340_Page_Access_Allow" label="EXP340_Sec0_pageTitle_Titulo" url="/expedicion/EXP340" module="evo40" />
+		</submenu>
+	</item>
+	<item id="WINT000_Section_Access_Interfaz" label="Master_Menu_lbl_WINTERFAZ" icon="fa fa-compress">
+		<submenu>
+			<item id="INT050_Page_Access_Allow" label="Master_Menu_lbl_WINTERFAZ_WINT050" url="/interfaz/INT050" module="evo40" />
+			<!--<item id="WINT030_Page_Access_InterfacesExternas" label="Master_Menu_lbl_WINTERFAZ_WINT030" url="/PAGINAS/WINTERFAZ/WINT030.aspx" module="base" />
+			<item id="WINT031_Page_Access_DetalleInterfacesExternas" label="Master_Menu_lbl_WINTERFAZ_WINT031" url="/PAGINAS/WINTERFAZ/WINT031.aspx" module="base" />-->
+		</submenu>
+	</item>
+	<item id="WFAC000_Section_Access_Facturacion" label="Master_Menu_lbl_WFACTURACION" icon="fa fa-file">
+		<submenu>
+			<item id="FAC001_Page_Access_Allow" label="Master_Menu_lbl_WFACTURACION_WFAC001" url="/facturacion/FAC001" module="evo40" />
+			<item id="FAC003_Page_Access_Allow" label="Master_Menu_lbl_WFACTURACION_WFAC003" url="/facturacion/FAC003" module="evo40" />
+			<item id="FAC006_Page_Access_Allow" label="Master_Menu_lbl_WFACTURACION_WFAC006" url="/facturacion/FAC006" module="evo40" />
+			<item id="WFAC000_Section_Access_FacturacionConfiguracion" label="Master_Menu_lbl_WCONFIGURACION">
+				<submenu>
+					<item id="FAC405_Page_Access_Allow" label="Master_Menu_lbl_WFACTURACION_WFAC405" url="/facturacion/FAC405" module="evo40" />
+					<item id="FAC249_Page_Access_Allow" label="Master_Menu_lbl_WFACTURACION_WFAC249" url="/facturacion/FAC249" module="evo40" />
+					<item id="FAC250_Page_Access_Allow" label="Master_Menu_lbl_WFACTURACION_WFAC250" url="/facturacion/FAC250" module="evo40" />
+					<item id="FAC251_Page_Access_Allow" label="Master_Menu_lbl_WFACTURACION_WFAC251" url="/facturacion/FAC251" module="evo40" />
+					<!--<item id="FAC200_Page_Access_Allow" label="Master_Menu_lbl_WFACTURACION_WFAC200" url="/facturacion/FAC200" module="evo40" /> 
+					<item id="FAC230_Page_Access_Allow" label="Master_Menu_lbl_WFACTURACION_WFAC230" url="/facturacion/FAC230" module="evo40" /> -->
+					<item id="FAC005_Page_Access_Allow" label="Master_Menu_lbl_WFACTURACION_WFAC005" url="/facturacion/FAC005" module="evo40" />
+					<item id="FAC255_Page_Access_Allow" label="Master_Menu_lbl_WFACTURACION_WFAC255" url="/facturacion/FAC255" module="evo40" />
+					<item id="FAC256_Page_Access_Allow" label="Master_Menu_lbl_WFACTURACION_WFAC256" url="/facturacion/FAC256" module="evo40" />
+					<item id="FAC011_Page_Access_Allow" label="Master_Menu_lbl_WFACTURACION_WFAC011" url="/facturacion/FAC011" module="evo40" />
+				</submenu>
+			</item>
+			<item id="WORT000_Section_Access_Facturacion" label="Master_Menu_lbl_WORDENTAREA_TAREAS">
+				<submenu>
+					<item id="ORT010_Page_Access_Allow" label="Master_Menu_lbl_WORDENTAREA_TAREAS" url="/ordenTarea/ORT010" module="evo40" />
+					<item id="ORT020_Page_Access_Allow" label="Master_Menu_lbl_WORDENTAREA_INSUMOS" url="/ordenTarea/ORT020" module="evo40" />
+					<item id="ORT030_Page_Access_Allow" label="Master_Menu_lbl_WORDENTAREA_WORT030" url="/ordenTarea/ORT030" module="evo40" />
+					<item id="ORT090_Page_Access_Allow" label="Master_Menu_lbl_WORDENTAREA_WORT090" url="/ordenTarea/ORT090" module="evo40" />
+					<item id="ORT120_Page_Access_Allow" label="Master_Menu_lbl_WORDENTAREA_WORT120" url="/ordenTarea/ORT120" module="evo40" />
+				</submenu>
+			</item>
+		</submenu>
+	</item>
+	<item id="LIMP000_Section_Access_Impresion" label="Master_Menu_lbl_LIMPRESION" icon="fa fa-print">
+		<submenu>
+			<item id="IMP010_Page_Access_Allow" label="Master_Menu_lbl_LIMPRESION_LIMP010"  url="/impresion/IMP010" module="evo40" />
+			<item id="COF070_Page_Access_Allow" label="Master_Menu_lbl_COF070"  url="/configuracion/COF070" module="evo40" />
+		</submenu>
+	</item>
+	<item id="WEVT000_Section_Access_Eventos" label="Master_Menu_lbl_WEVENTO" icon="fa fa-calendar">
+		<submenu>
+			<!--<item id="WEVT000_Section_Access_Archivos" label="Master_Menu_lbl_EVTArchivos">
+				<submenu>
+					<item id="WEVT000_Page_Access_ArchivosAdjuntos" label="EVT000_Sec0_pageTitle_Titulo"  url="/evento/EVT000" module="evo40" />
+					<item id="WEVT000_Page_Access_ArchivosInactivos" label="EVT002_Sec0_pageTitle_Titulo"  url="/evento/EVT002" module="evo40" />
+				</submenu>
+			</item>-->
+			<item id="EVT010_Page_Access_Allow" label="Master_Menu_lbl_WEVENTO_WEVT010"  url="/evento/EVT010" module="evo40" />
+			<item id="EVT020_Page_Access_Allow" label="Master_Menu_lbl_WEVENTO_WEVT020" url="/evento/EVT020" module="evo40" />
+			<item id="EVT030_Page_Access_Allow" label="Master_Menu_lbl_WEVENTO_WEVT030" url="/evento/EVT030" module="evo40" />
+			<item id="EVT040_Page_Access_Allow" label="Master_Menu_lbl_WEVENTO_WEVT040" url="/evento/EVT040" module="evo40" />
+			<item id="EVT050_Page_Access_Allow" label="Master_Menu_lbl_WEVENTO_WEVT050" url="/evento/EVT050" module="evo40" />
+			<item id="EVT060_Page_Access_Allow" label="Master_Menu_lbl_WEVENTO_WEVT060" url="/evento/EVT060" module="evo40" />
+		</submenu>
+	</item>
+	<!--<item id="WPOR000_Section_Access_Poteria" label="Master_Menu_lbl_WPORTERIA" icon="fa fa-road">
+		<submenu>
+		  <item id="POR080_Section_Access_RegitroPreEntrada" label="POR080_Sec0_pageTitle_Titulo" url="/porteria/POR080" module="evo40" />
+		  <item id="WPOR010_Section_Access_RegitroEntrada" label="Master_Menu_lbl_WPOTERIA_WPOR010" url="/PAGINAS/WPORTERIA/WPOR010.aspx" module="base" />
+		  <item id="WPOR020_Section_Access_RegitroSalida" label="Master_Menu_lbl_WPOTERIA_WPOR020" url="/PAGINAS/WPORTERIA/WPOR020.aspx" module="base" />
+		  <item id="WPOR030_Section_Access_vheiculosDeposito" label="Master_Menu_lbl_WPOTERIA_WPOR030" url="/porteria/POR030" module="evo40" />
+		  <item id="WPOR040_Section_Access_AgendasVehiculo" label="Master_Menu_lbl_WPOTERIA_WPOR040" url="/porteria/POR040" module="evo40" />
+		  <item id="WPOR050_Section_Access_CamionesVehiculo" label="Master_Menu_lbl_WPOTERIA_WPOR050" url="/porteria/POR050" module="evo40" />
+		  <item id="POR060_Section_Access_VehiculosSinAgenda" label="POR060_Sec0_pageTitle_Titulo" url="/porteria/POR060" module="evo40" />
+		  <item id="POR070_Section_Access_VehiculosSinCamion" label="POR070_Sec0_pageTitle_Titulo" url="/porteria/POR070" module="evo40" />
+		</submenu>
+	  </item>-->
+
+	<!--<item id="WTRA010_Section_Access_Transito" label="Master_Menu_lbl_WTRANSITO" icon="fa fa-road">
+		<submenu>
+		  <item id="WTRA010_Page_Access_Transito" label="Master_Menu_lbl_WTRANSITO_WTRA010" url="/PAGINAS/WTRANSITO/WTRA010.aspx" module="base" />
+		  <item id="WTRA020_Page_Access_Transito" label="Master_Menu_lbl_WTRANSITO_WTRA020" url="/PAGINAS/WTRANSITO/WTRA020.aspx" module="base" />
+		</submenu>
+	  </item>
+	-->
+	<item id="WPRO000_Section_Access_Productividad" label="Master_Menu_lbl_WPRODUCTIVIDAD" icon="fa fa-chart-line">
+		<submenu>
+			<item id="PRO030_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRO030" url="/productividad/PRO030" module="evo40" />
+			<!--<item id="WPRO010_Page_Access_Productividad" label="Master_Menu_lbl_WPRODUCTIVIDAD_WPRO010" url="/PAGINAS/WPRODUCTIVIDAD/WPRO010.aspx" module="base" />-->
+			<!--<item id="WPRO020_Page_Access_Productividad" label="Master_Menu_lbl_WPRODUCTIVIDAD_WPRO020" url="/PAGINAS/WPRODUCTIVIDAD/WPRO020.aspx" module="base" />-->
+			<!--<item id="WPRO030_Page_Access_Productividad" label="Master_Menu_lbl_WPRODUCTIVIDAD_WPRO030" url="/PAGINAS/WPRODUCTIVIDAD/WPRO030.aspx" module="base" />-->
+		</submenu>
+	</item>
+	<item id="PRD000_Section_Access_Produccion" label="Master_Menu_lbl_PRODUCCION" icon="fa fa-tasks">
+		<submenu>
+			<!--<item id="PRD000_Section_Access_BlackBox" label="Master_Menu_lbl_BLACKBOX">
+				<submenu>
+					<item id="PRD200_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD200" url="/produccion/PRD200" module="evo40" />
+					<item id="PRD210_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD210" url="/produccion/PRD210" module="evo40" />
+					<item id="PRD220_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD220" url="/produccion/PRD220" module="evo40" />
+					<item id="PRD230_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD230" url="/produccion/PRD230" module="evo40" />
+					<item id="PRD240_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD240" url="/produccion/PRD240" module="evo40" />
+					<item id="PRD250_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD250" url="/produccion/PRD250" module="evo40" />
+					<item id="PRD260_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD260" url="/produccion/PRD260" module="evo40" />
+				</submenu>
+			</item>-->
+			<item id="PRD100_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD100" url="/produccion/PRD100" module="evo40" />
+			<item id="PRD110_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD110" url="/produccion/PRD110" module="evo40" />
+			<item id="PRD111_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD111" url="/produccion/PRD111" module="evo40" />
+			<!--<item id="PRD120_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD120" url="/produccion/PRD120" module="evo40" />
+			<item id="PRD130_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD130" url="/produccion/PRD130" module="evo40" />-->
+			<!--<item id="PRD150_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD150" url="/produccion/PRD150" module="evo40" />-->
+			<!--<item id="PRD170_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD170" url="/produccion/PRD170" module="evo40" />-->
+			<!--<item id="PRD180_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD180" url="/produccion/PRD180" module="evo40" />
+			<item id="PRD190_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD190" url="/produccion/PRD190" module="evo40" />
+			<item id="PRD191_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD191" url="/produccion/PRD191" module="evo40" />
+			<item id="PRD400_Page_Access_Allow" label="Master_Menu_lbl_PRODUCCION_PRD400" url="/produccion/PRD400" module="evo40" />-->
+		</submenu>
+	</item>
+	<item id="AUT000_Section_Access_Automatizacion" label="Master_Menu_lbl_AUTOMATIZACION" icon="fa fa-robot">
+		<submenu>
+			<item id="AUT100_Page_Access_Allow" label="AUT100_Sec0_pageTitle_Titulo" url="/automatizacion/AUT100" module="evo40" />
+			<item id="AUT101_Page_Access_Allow" label="AUT101_Sec0_pageTitle_Titulo" url="/automatizacion/AUT101" module="evo40" />
+		</submenu>
+	</item>
+	<item id="WCOF000_Section_Access_Configuracion" label="Master_Menu_lbl_WCONFIGURACION" icon="fa fa-wrench">
+		<submenu>
+			<item id="WPAR000_Section_Access_Parametrizacion" label="Master_Menu_lbl_WPARAMETRIZACION">
+				<submenu>
+					<item id="PAR050_Page_Access_Allow" label="Master_Menu_lbl_WPARAMETRIZACION_WPAR050" url="/parametrizacion/PAR050" module="evo40" />
+					<item id="PAR604_Page_Access_Allow" label="Master_Menu_lbl_WPARAMETRIZACION_WPAR604" url="/parametrizacion/PAR604" module="evo40" />
+					<item id="PAR110_Page_Access_Allow" label="Master_Menu_lbl_WPARAMETRIZACION_WPAR110" url="/parametrizacion/PAR110" module="evo40" />
+
+					<!--<item id="WPAR160_Page_Access_TipoDocumento" label="Master_Menu_lbl_WPARAMETRIZACION_WPAR160" url="/PAGINAS/WPARAMETRIZACION/WPAR160.aspx" module="base" />
+					<item id="WPAR090_Page_Access_Situaciones" label="Master_Menu_lbl_WPARAMETRIZACION_WPAR090" url="/PAGINAS/WPARAMETRIZACION/WPAR090.aspx" module="base" />
+					<item id="WPAR170_Page_Access_OperacionesStock" label="Master_Menu_lbl_WPARAMETRIZACION_WPAR170" url="/PAGINAS/WPARAMETRIZACION/WPAR170.aspx" module="base" />
+					<item id="WPAR200_Page_Access_Secuencias" label="Master_Menu_lbl_WPARAMETRIZACION_WPAR200" url="/PAGINAS/WPARAMETRIZACION/WPAR200.aspx" module="base" />
+					<item id="WPAR260_Page_Access_TiposDeVehiculos" label="Master_Menu_lbl_WPARAMETRIZACION_WPAR260" url="/PAGINAS/WPARAMETRIZACION/WPAR260.aspx" module="base" />
+					<item id="WPAR310_Page_Access_TiposDeAreas" label="Master_Menu_lbl_WPARAMETRIZACION_WPAR310" url="/PAGINAS/WPARAMETRIZACION/WPAR310.aspx" module="base" />
+					<item id="WPAR325_Page_Access_TiposEstructuraStock" label="Master_Menu_lbl_WPREPARACION_WPAR325" url="/PAGINAS/WPARAMETRIZACION/WPAR325.aspx" module="base" />-->
+					<item id="PAR400_Page_Access_Allow" label="Master_Menu_lbl_WPARAMETRIZACION_PAR400" url="/parametrizacion/PAR400" module="evo40" />
+					<item id="PAR401_Page_Access_Allow" label="Master_Menu_lbl_WPARAMETRIZACION_PAR401" url="/parametrizacion/PAR401" module="evo40" />
+				</submenu>
+			</item>
+			<item id="WSEG000_Section_Access_Seguridad" label="Master_Menu_lbl_WSEGURIDAD">
+				<submenu>
+					<item id="SEG070_Page_Access_Allow" label="Master_Menu_lbl_WSEGURIDAD_WSEG010" url="/seguridad/SEG070" module="evo40" />
+					<item id="SEG020_Page_Access_Allow" label="Master_Menu_lbl_WSEGURIDAD_WSEG020" url="/seguridad/SEG020" module="evo40" />
+					<item id="SEG030_Page_Access_Allow" label="Master_Menu_lbl_WSEGURIDAD_WSEG030" url="/seguridad/SEG030" module="evo40" />
+					<!--<item id="SEG800_Page_Access_Allow" label="Master_Menu_lbl_WSEGURIDAD_WSEG800" url="/seguridad/SEG800" module="evo40" />-->
+					<item id="SEG210_Page_Access_Allow" label="Master_Menu_lbl_WSEGURIDAD_SEG210" url="/seguridad/SEG210" module="evo40" />
+				</submenu>
+			</item>
+			<item id="WIMP000_Section_Access_ConfiguracionImpresion" label="Master_Menu_lbl_LIMPRESION">
+				<submenu>
+					<item id="WIMP000_Section_Access_ConfiguracionEstilos" label="Master_Menu_lbl_ESTILOS">
+						<submenu>
+							<item id="COF020_Page_Access_Allow" label="Master_Menu_lbl_WCONFIGURACION_WCOF020" url="/configuracion/COF020" module="evo40" />
+							<item id="COF025_Page_Access_Allow" label="Master_Menu_lbl_WCONFIGURACION_WCOF025" url="/configuracion/COF025" module="evo40" />
+						</submenu>
+					</item>
+					<item id="COF010_Page_Access_Allow" label="Master_Menu_lbl_WCONFIGURACION_WCOF010" url="/configuracion/COF010" module="evo40" />
+					<item id="COF040_Page_Access_Allow" label="Master_Menu_lbl_WCONFIGURACION_WCOF040" url="/configuracion/COF040" module="evo40" />
+					<item id="COF060_Page_Access_Allow" label="Master_Menu_lbl_WCONFIGURACION_WCOF060" url="/configuracion/COF060" module="evo40" />
+					<item id="COF030_Page_Access_Allow" label="Master_Menu_lbl_WCONFIGURACION_WCOF030" url="/configuracion/COF030" module="evo40" />
+				</submenu>
+			</item>
+			<item id="COF050_Page_Access_Allow" label="Master_Menu_lbl_WCONFIGURACION_WCOF050" url="/configuracion/COF050" module="evo40" />
+			<item id="CON010_Page_Access_Allow" label="Master_Menu_lbl_LPARAMETROS_LCON010" url="/configuracion/CON010" module="evo40" />
+			<item id="COF100_Page_Access_Allow" label="Master_Menu_lbl_CONFIGURACION_COF100" url="/configuracion/COF100" module="evo40" />
+			<item id="COF110_Page_Access_Allow" label="Master_Menu_lbl_CONFIGURACION_COF110" url="/configuracion/COF110" module="evo40" />
+		</submenu>
+	</item>
+</menu>

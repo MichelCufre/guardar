@@ -1,0 +1,10 @@
+﻿
+
+.form-field-range div:nth-child(2) {
+    display: none;
+}
+
+.form-field-range div:nth-child(1) .col-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}

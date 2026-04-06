@@ -1,0 +1,36 @@
+﻿.gr-grid .gr-row.liberado .gr-cell {
+    background-color: #FEF2B9;
+}
+
+.gr-grid .gr-row.ultPrepVacia .gr-cell {
+    background-color: #CAFECA;
+}
+
+.gr-grid .gr-row.ultPrep .gr-cell {
+    background-color: #F3C9C9;
+}
+
+
+.gr-grid .gr-row.liberado.selected .gr-cell {
+    background-color: #FCEEA8;
+}
+
+.gr-grid .gr-row.ultPrepVacia.selected .gr-cell {
+    background-color: #B4FFB4;
+}
+
+.gr-grid .gr-row.ultPrep.selected .gr-cell {
+    background-color: #F4C1C1;
+}
+
+.liberadoCabezal {
+    background: #FEF2B9;
+}
+
+.ultPrepCabezal {
+    background: #F3C9C9
+}
+
+.ultPrepVaciaCabezal {
+    background: #CAFECA
+}

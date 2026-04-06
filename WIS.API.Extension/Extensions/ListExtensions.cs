@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace WIS.API.Extension.Extensions
+{
+    public static class ListExtensions
+    {
+        public static void Move<T>(this List<T> list, Predicate<T> itemSelector, int newIndex)
+        {
+            if (list == null || list.Count == 0)
+                return;
+
+            if (newIndex < 0 || newIndex > list.Count - 1)
+                return;
+
+            var currentIndex = list.FindIndex(itemSelector);
+            if (currentIndex < 0)
+                return;
+
+            // Copy the current item
+            var item = list[currentIndex];
+
+            // Remove the item
+            list.RemoveAt(currentIndex);
+
+            // Finally add the item at the new index
+            list.Insert(newIndex, item);
+        }
+    }
+}

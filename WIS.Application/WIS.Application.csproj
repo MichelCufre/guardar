@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>true</IsPackable>
+    <PackageId>WisBase40.WIS.Application</PackageId>
+    <VersionPrefix>10.4.4.0</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
+    <Authors>WIS</Authors>
+    <Description>WisBase40</Description>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <DebugType>full</DebugType>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <DebugSymbols>true</DebugSymbols>
+    <SourceLinkCreate>true</SourceLinkCreate>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RepositoryUrl>https://dev.azure.com/smartlog-group/Galys/_git/wisbase40</RepositoryUrl>
+    <Version>10.4.4.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\REG\NewFolder\**" />
+    <Compile Remove="Validation\Modules\FormModules\NewFolder\**" />
+    <Compile Remove="Validation\Rules\NewFolder1\**" />
+    <EmbeddedResource Remove="Controllers\REG\NewFolder\**" />
+    <EmbeddedResource Remove="Validation\Modules\FormModules\NewFolder\**" />
+    <EmbeddedResource Remove="Validation\Rules\NewFolder1\**" />
+    <None Remove="Controllers\REG\NewFolder\**" />
+    <None Remove="Validation\Modules\FormModules\NewFolder\**" />
+    <None Remove="Validation\Rules\NewFolder1\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\PRE\CPRE052.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIS.Components.Common\WIS.Components.Common.csproj" />
+    <ProjectReference Include="..\WIS.Data\WIS.Data.csproj" />
+    <ProjectReference Include="..\WIS.Domain\WIS.Domain.csproj" />
+    <ProjectReference Include="..\WIS.Exceptions\WIS.Exceptions.csproj" />
+    <ProjectReference Include="..\WIS.File.Execution\WIS.File.Execution.csproj" />
+    <ProjectReference Include="..\WIS.Filtering\WIS.Filtering.csproj" />
+    <ProjectReference Include="..\WIS.FormComponent.Execution\WIS.FormComponent.Execution.csproj" />
+    <ProjectReference Include="..\WIS.FormComponent.Validation\WIS.FormComponent.Validation.csproj" />
+    <ProjectReference Include="..\WIS.FormComponent\WIS.FormComponent.csproj" />
+    <ProjectReference Include="..\WIS.GridComponent.Build\WIS.GridComponent.Build.csproj" />
+    <ProjectReference Include="..\WIS.GridComponent.Excel\WIS.GridComponent.Excel.csproj" />
+    <ProjectReference Include="..\WIS.GridComponent.Validation\WIS.GridComponent.Validation.csproj" />
+    <ProjectReference Include="..\WIS.GridComponent\WIS.GridComponent.csproj" />
+    <ProjectReference Include="..\WIS.PageComponent.Execution\WIS.PageComponent.Execution.csproj" />
+    <ProjectReference Include="..\WIS.Report.Execution\WIS.Report.Execution.csproj" />
+    <ProjectReference Include="..\WIS.Security\WIS.Security.csproj" />
+    <ProjectReference Include="..\WIS.Session\WIS.Session.csproj" />
+    <ProjectReference Include="..\WIS.Sorting\WIS.Sorting.csproj" />
+    <ProjectReference Include="..\WIS.Translation\WIS.Translation.csproj" />
+    <ProjectReference Include="..\WIS.Validation\WIS.Validation.csproj" />
+    <ProjectReference Include="..\WIS.Webhook.Execution\WIS.Webhook.Execution.csproj" />
+  </ItemGroup>
+</Project>

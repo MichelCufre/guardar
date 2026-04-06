@@ -1,0 +1,15 @@
+﻿.gr-grid .gr-row.pendAsignar .gr-cell {
+    background-color: #F8B8B8;
+}
+
+.gr-grid .gr-row.pendAsignar.selected .gr-cell {
+    background-color: #F5A4A4;
+}
+
+.gr-grid .gr-row.pendLiberar .gr-cell {
+    background-color: #F8B8B8;
+}
+
+.gr-grid .gr-row.pendLiberar.selected .gr-cell {
+    background-color: #F5A4A4;
+}

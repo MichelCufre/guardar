@@ -1,0 +1,17 @@
+﻿.gr-grid .gr-row.noAceptado .gr-cell {
+    background-color: #F5CEA9;
+}
+
+
+.gr-grid .gr-row.noAceptado.selected .gr-cell {
+    background-color: #FF8C00;
+}
+
+.gr-grid .gr-row.aceptado .gr-cell {
+    background-color: #62ab35;
+}
+
+
+.gr-grid .gr-row.aceptado.selected .gr-cell {
+    background-color: #62ab35;
+}

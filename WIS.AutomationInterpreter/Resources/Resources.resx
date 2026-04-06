@@ -1,0 +1,876 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="accept-language" xml:space="preserve">
+    <value>Lenguajes aceptados</value>
+  </data>
+  <data name="supported_languages" xml:space="preserve">
+    <value>Lenguajes soportados</value>
+  </data>
+  <data name="swagger_description" xml:space="preserve">
+    <value>Documentación de APIs disponibles para el sistema WMS</value>
+  </data>
+  <data name="swagger_remarks_automationinterpreter_sendcodigosbarras" xml:space="preserve">
+    <value>Descripción:
+         
+             A partir de los datos provistos notifica la creación, sobrescritura o eliminación de códigos de barras al automatismo. 
+             
+             Al consumir esta API, el Automation Manager incluye un header HTTP "X-Hub-Signature" que contiene el hash del JSON del parametro entrante
+             calculado a partir del algoritmo "HMACSHA512" y de un secreto compartido con la aplicación cliente que disponibiliza esta API.
+             La implementación específica de esta API podrá utilizar el header antes mencionado para corroborar la autenticidad del mensaje recibido.        
+             Para ello, recalcula el hash del JSON entrante, aplicando el mismo algoritmo y secreto compartido con el Automation Manager
+             y corrobora que coincida con el recibido mediante el header HTTP. 
+             
+             Los decimales se deben enviar con '.'. 
+             Los formatos de fechas aceptados son: [yyyy-MM-dd], [yyyy/MM/dd], [MM/dd/yyyy] y [MM-dd-yyyy]</value>
+  </data>
+  <data name="swagger_remarks_automationinterpreter_sendentrada" xml:space="preserve">
+    <value>A partir de los datos provistos notifica la entrada de stock al automatismo. 
+         
+             Al consumir esta API, el Automation Manager incluye un header HTTP "X-Hub-Signature" que contiene el hash del JSON del parametro entrante
+             calculado a partir del algoritmo "HMACSHA512" y de un secreto compartido con la aplicación cliente que disponibiliza esta API.
+             La implementación específica de esta API podrá utilizar el header antes mencionado para corroborar la autenticidad del mensaje recibido.        
+             Para ello, recalcula el hash del JSON entrante, aplicando el mismo algoritmo y secreto compartido con el Automation Manager
+             y corrobora que coincida con el recibido mediante el header HTTP. 
+         
+             Los decimales se deben enviar con '.'. 
+             Los formatos de fechas aceptados son: [yyyy-MM-dd], [yyyy/MM/dd], [MM/dd/yyyy] y [MM-dd-yyyy]</value>
+  </data>
+  <data name="swagger_remarks_automationinterpreter_sendproductos" xml:space="preserve">
+    <value>Descripción:
+         
+             A partir de los datos provistos notifica la actualización de productos al automatismo. 
+            
+            Al consumir esta API, el Automation Manager incluye un header HTTP "X-Hub-Signature" que contiene el hash del JSON del parametro entrante
+             calculado a partir del algoritmo "HMACSHA512" y de un secreto compartido con la aplicación cliente que disponibiliza esta API.
+             La implementación específica de esta API podrá utilizar el header antes mencionado para corroborar la autenticidad del mensaje recibido.        
+            Para ello, recalcula el hash del JSON entrante, aplicando el mismo algoritmo y secreto compartido con el Automation Manager
+             y corrobora que coincida con el recibido mediante el header HTTP. 
+             
+             Los decimales se deben enviar con '.'. 
+             Los formatos de fechas aceptados son: [yyyy-MM-dd], [yyyy/MM/dd], [MM/dd/yyyy] y [MM-dd-yyyy]</value>
+  </data>
+  <data name="swagger_remarks_automationinterpreter_sendsalida" xml:space="preserve">
+    <value>Descripción:
+        
+             A partir de los datos provistos notifica la salida de stock al automatismo. 
+             
+             Al consumir esta API, el Automation Manager incluye un header HTTP "X-Hub-Signature" que contiene el hash del JSON del parametro entrante
+             calculado a partir del algoritmo "HMACSHA512" y de un secreto compartido con la aplicación cliente que disponibiliza esta API.
+             La implementación específica de esta API podrá utilizar el header antes mencionado para corroborar la autenticidad del mensaje recibido.        
+             Para ello, recalcula el hash del JSON entrante, aplicando el mismo algoritmo y secreto compartido con el Automation Manager
+             y corrobora que coincida con el recibido mediante el header HTTP. 
+             
+             Los decimales se deben enviar con '.'. 
+             Los formatos de fechas aceptados son: [yyyy-MM-dd], [yyyy/MM/dd], [MM/dd/yyyy] y [MM-dd-yyyy]</value>
+  </data>
+  <data name="swagger_remarks_galysnotification_confirmarentradas" xml:space="preserve">
+    <value>Descripción:
+         
+             A partir de los datos provistos por Galys transfiere el stock confirmado a ubicaciones de picking y el remanente no confirmado a ubicaciones de rechazo por integración con el Automation Manager. 
+             Los decimales se deben enviar con '.'. 
+             Los formatos de fechas aceptados son: [yyyy-MM-dd]</value>
+  </data>
+  <data name="swagger_remarks_galysnotification_confirmarsalida" xml:space="preserve">
+    <value>Descripción:
+         
+             A partir de los datos provistos por Galys prepara el stock confirmado y anula el remanente no confirmado por integración con el Automation Manager. 
+             Los decimales se deben enviar con '.'. 
+             Los formatos de fechas aceptados son: [yyyy-MM-dd]</value>
+  </data>
+  <data name="swagger_remarks_galysnotification_notificarajustes" xml:space="preserve">
+    <value>Descripción:
+         
+             A partir de los datos provistos por Galys genera ajustes de stock por integración con el Automation Manager. 
+             Los decimales se deben enviar con '.'. 
+             Los formatos de fechas aceptados son: [yyyy-MM-dd]</value>
+  </data>
+  <data name="swagger_remarks_notificacionautomatismo_confirmarentrada" xml:space="preserve">
+    <value>Descripción:
+         
+             A partir de los datos provistos por el automatismo transfiere el stock confirmado a ubicaciones de picking y el remanente no confirmado a ubicaciones de rechazo por integración con el Automation Manager. 
+             Los decimales se deben enviar con '.'. 
+             Los formatos de fechas aceptados son: [yyyy-MM-dd], [yyyy/MM/dd], [MM/dd/yyyy] y [MM-dd-yyyy]</value>
+  </data>
+  <data name="swagger_remarks_notificacionautomatismo_confirmarsalida" xml:space="preserve">
+    <value>Descripción:
+         
+            A partir de los datos provistos por el automatismo prepara el stock confirmado y anula el remanente no confirmado por integración con el Automation Manager. 
+            Los decimales se deben enviar con '.'. 
+            Los formatos de fechas aceptados son: [yyyy-MM-dd], [yyyy/MM/dd], [MM/dd/yyyy] y [MM-dd-yyyy]</value>
+  </data>
+  <data name="swagger_remarks_notificacionautomatismo_notificarajuste" xml:space="preserve">
+    <value>Descripción:
+         
+             A partir de los datos provistos por el automatismo genera ajustes de stock por integración con el Automation Manager. 
+             Los decimales se deben enviar con '.'. 
+             Los formatos de fechas aceptados son: [yyyy-MM-dd], [yyyy/MM/dd], [MM/dd/yyyy] y [MM-dd-yyyy]</value>
+  </data>
+  <data name="swagger_response_200_automationinterpreter_sendcodigosbarras" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_200_automationinterpreter_sendentrada" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_200_automationinterpreter_sendproductos" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_200_automationinterpreter_sendsalida" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_200_galysnotification_confirmarentradas" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_200_galysnotification_confirmarsalida" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_200_galysnotification_notificarajustes" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_200_notificacionautomatismo_confirmarentrada" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_200_notificacionautomatismo_confirmarsalida" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_200_notificacionautomatismo_notificarajuste" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_400_automationinterpreter_sendcodigosbarras" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_response_400_automationinterpreter_sendentrada" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_response_400_automationinterpreter_sendproductos" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_response_400_automationinterpreter_sendsalida" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_response_400_notificacionautomatismo_confirmarentrada" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_response_400_notificacionautomatismo_confirmarsalida" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_response_400_notificacionautomatismo_notificarajuste" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_response_404_galysnotification_confirmarentradas" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_response_404_galysnotification_confirmarsalida" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_response_404_galysnotification_notificarajustes" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_returns_automationinterpreter_sendcodigosbarras" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_returns_automationinterpreter_sendentrada" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_returns_automationinterpreter_sendproductos" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_returns_automationinterpreter_sendsalida" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_returns_galysnotification_confirmarentradas" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_returns_galysnotification_confirmarsalida" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_returns_galysnotification_notificarajustes" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_returns_notificacionautomatismo_confirmarentrada" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_returns_notificacionautomatismo_confirmarsalida" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_returns_notificacionautomatismo_notificarajuste" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_summary_ajustestockautomatismorequest_cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="swagger_summary_ajustestockautomatismorequest_causa" xml:space="preserve">
+    <value>Causa</value>
+  </data>
+  <data name="swagger_summary_ajustestockautomatismorequest_fechavencimiento" xml:space="preserve">
+    <value>Fecha Vencimiento</value>
+  </data>
+  <data name="swagger_summary_ajustestockautomatismorequest_identificador" xml:space="preserve">
+    <value>Identificador</value>
+  </data>
+  <data name="swagger_summary_ajustestockautomatismorequest_predio" xml:space="preserve">
+    <value>Predio</value>
+  </data>
+  <data name="swagger_summary_ajustestockautomatismorequest_producto" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="swagger_summary_automationinterpreter_sendcodigosbarras" xml:space="preserve">
+    <value>Notifica la creación, sobrescritura o eliminación de códigos de barras al automatismo</value>
+  </data>
+  <data name="swagger_summary_automationinterpreter_sendentrada" xml:space="preserve">
+    <value>Notificación de ajustes de stock al automatismo</value>
+  </data>
+  <data name="swagger_summary_automationinterpreter_sendproductos" xml:space="preserve">
+    <value>Notifica la actualización de productos al automatismo</value>
+  </data>
+  <data name="swagger_summary_automationinterpreter_sendsalida" xml:space="preserve">
+    <value>Notifica de ajustes de stock al automatismo</value>
+  </data>
+  <data name="swagger_summary_automatismoajustestockrequest_cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="swagger_summary_automatismoajustestockrequest_causa" xml:space="preserve">
+    <value>Causa</value>
+  </data>
+  <data name="swagger_summary_automatismoajustestockrequest_fechavencimiento" xml:space="preserve">
+    <value>Fecha de Vencimiento</value>
+  </data>
+  <data name="swagger_summary_automatismoajustestockrequest_identificador" xml:space="preserve">
+    <value>Identificador</value>
+  </data>
+  <data name="swagger_summary_automatismoajustestockrequest_predio" xml:space="preserve">
+    <value>Predio</value>
+  </data>
+  <data name="swagger_summary_automatismoajustestockrequest_producto" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="swagger_summary_automatismoresponse_iserror" xml:space="preserve">
+    <value>Es error </value>
+  </data>
+  <data name="swagger_summary_automatismoresponse_mensaje" xml:space="preserve">
+    <value>Mensaje</value>
+  </data>
+  <data name="swagger_summary_automatismoresponse_operacion" xml:space="preserve">
+    <value>Operación</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockautomatismorequest_archivo" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockautomatismorequest_codalmacen" xml:space="preserve">
+    <value>Código Almacen</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockautomatismorequest_detalles" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockautomatismorequest_dsreferencia" xml:space="preserve">
+    <value>Referencia</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockautomatismorequest_empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockautomatismorequest_fincabecera" xml:space="preserve">
+    <value>Fin Cabecera</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockautomatismorequest_identrada" xml:space="preserve">
+    <value>Id Entrada</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockautomatismorequest_predio" xml:space="preserve">
+    <value>Predio</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockautomatismorequest_puesto" xml:space="preserve">
+    <value>Puesto</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockautomatismorequest_ultimaoperacion" xml:space="preserve">
+    <value>Ultima Operacion</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockautomatismorequest_usuario" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockgalysrequest_codalmacen" xml:space="preserve">
+    <value>Código Almacen</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockgalysrequest_fincabecera" xml:space="preserve">
+    <value>Fin Cabecera</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockgalysrequest_identrada" xml:space="preserve">
+    <value>Id Entrada</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockgalysrequest_listalineas" xml:space="preserve">
+    <value>Lista de lineas</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockgalysrequest_puesto" xml:space="preserve">
+    <value>Puesto</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockgalysrequest_usuario" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineaautomatismorequest_caducidad" xml:space="preserve">
+    <value>Caducidad</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineaautomatismorequest_cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineaautomatismorequest_codarticulo" xml:space="preserve">
+    <value>Código Articulo</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineaautomatismorequest_fechavencimiento" xml:space="preserve">
+    <value>Fecha Vencimiento</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineaautomatismorequest_finlinea" xml:space="preserve">
+    <value> Fin de Linea</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineaautomatismorequest_identificador" xml:space="preserve">
+    <value>Identificador</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineaautomatismorequest_idlinea" xml:space="preserve">
+    <value>Id Linea</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineaautomatismorequest_lineaentrada" xml:space="preserve">
+    <value>Linea Entrada</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineaautomatismorequest_lote" xml:space="preserve">
+    <value>Lote</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineaautomatismorequest_producto" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineaautomatismorequest_secuencia" xml:space="preserve">
+    <value>Secuencia</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineaautomatismorequest_ultimaoperacion" xml:space="preserve">
+    <value>Ultima Operación</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineagalysrequest_caducidad" xml:space="preserve">
+    <value>Caducidad</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineagalysrequest_cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineagalysrequest_codarticulo" xml:space="preserve">
+    <value>Código Articulo</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineagalysrequest_finlinea" xml:space="preserve">
+    <value>Fin de Linea</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineagalysrequest_lineaentrada" xml:space="preserve">
+    <value>Linea Entrada</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineagalysrequest_lote" xml:space="preserve">
+    <value>Lote</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklineagalysrequest_secuencia" xml:space="preserve">
+    <value>Secuencia</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklinearequest_cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklinearequest_fechavencimiento" xml:space="preserve">
+    <value>Fecha Vencimiento</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklinearequest_identificador" xml:space="preserve">
+    <value>Identificador</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklinearequest_idlinea" xml:space="preserve">
+    <value>Id Linea</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklinearequest_producto" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklinearequest_ultimaoperacion" xml:space="preserve">
+    <value>Ultima Operación</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockrequest_archivo" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockrequest_dsreferencia" xml:space="preserve">
+    <value>Descripción Referencia</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockrequest_empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockrequest_identrada" xml:space="preserve">
+    <value>Id Entrada</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockrequest_predio" xml:space="preserve">
+    <value>Predio</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockrequest_puesto" xml:space="preserve">
+    <value>Puesto</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockrequest_ultimaoperacion" xml:space="preserve">
+    <value>Ultima Operación</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockautomatismorequest_archivo" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockautomatismorequest_codalmacen" xml:space="preserve">
+    <value>Código Almacen</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockautomatismorequest_codigoagente" xml:space="preserve">
+    <value>Código Agente</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockautomatismorequest_destinatario" xml:space="preserve">
+    <value>Destinatario</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockautomatismorequest_detalles" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockautomatismorequest_dsreferencia" xml:space="preserve">
+    <value>Referencia</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockautomatismorequest_empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockautomatismorequest_fincabecera" xml:space="preserve">
+    <value>Fin Cabecera</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockautomatismorequest_idsalida" xml:space="preserve">
+    <value>Id Salida</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockautomatismorequest_pedido" xml:space="preserve">
+    <value>Pedido</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockautomatismorequest_pedidocliente" xml:space="preserve">
+    <value>Pedido Cliente</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockautomatismorequest_predio" xml:space="preserve">
+    <value>Predio</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockautomatismorequest_preparacion" xml:space="preserve">
+    <value>Preparación</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockautomatismorequest_puesto" xml:space="preserve">
+    <value>Puesto</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockautomatismorequest_tipoagente" xml:space="preserve">
+    <value>Tipo Agente</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockautomatismorequest_ultimaoperacion" xml:space="preserve">
+    <value>Ultima Operacion</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockautomatismorequest_usuario" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockgalysrequest_codalmacen" xml:space="preserve">
+    <value>Código Almacen</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockgalysrequest_destinatario" xml:space="preserve">
+    <value>Destinatario</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockgalysrequest_empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockgalysrequest_fincabecera" xml:space="preserve">
+    <value>Fin Cabecera</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockgalysrequest_idsalida" xml:space="preserve">
+    <value>Id Salida</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockgalysrequest_listalineas" xml:space="preserve">
+    <value>Lista de lineas</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockgalysrequest_pedidocliente" xml:space="preserve">
+    <value>Pedido Cliente</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockgalysrequest_preparacion" xml:space="preserve">
+    <value>Preparación</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockgalysrequest_puesto" xml:space="preserve">
+    <value>Puesto</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockgalysrequest_usuario" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineaautomatismorequest_caducidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineaautomatismorequest_cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineaautomatismorequest_codarticulo" xml:space="preserve">
+    <value>Código Articulo</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineaautomatismorequest_contenedor" xml:space="preserve">
+    <value>Contenedor</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineaautomatismorequest_fechavencimiento" xml:space="preserve">
+    <value>Fecha Vencimiento</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineaautomatismorequest_identificador" xml:space="preserve">
+    <value>Identificador</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineaautomatismorequest_idlinea" xml:space="preserve">
+    <value>Id Linea</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineaautomatismorequest_idmatricula" xml:space="preserve">
+    <value>Id Matricula</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineaautomatismorequest_lineasalida" xml:space="preserve">
+    <value>Lienas Salida</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineaautomatismorequest_lote" xml:space="preserve">
+    <value>Lote</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineaautomatismorequest_producto" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineaautomatismorequest_secuencia" xml:space="preserve">
+    <value>Secuencia</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineagalysrequest_caducidad" xml:space="preserve">
+    <value>Caducidad</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineagalysrequest_cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineagalysrequest_codarticulo" xml:space="preserve">
+    <value>Código Articulo</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineagalysrequest_idmatricula" xml:space="preserve">
+    <value>Id Matricula</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineagalysrequest_lineasalida" xml:space="preserve">
+    <value>Linea Salida</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineagalysrequest_lote" xml:space="preserve">
+    <value>Lote </value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklineagalysrequest_secuencia" xml:space="preserve">
+    <value>Secuencia</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklinearequest_cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklinearequest_contenedor" xml:space="preserve">
+    <value>Contenedor</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklinearequest_fechavencimiento" xml:space="preserve">
+    <value>Fecha Vencimiento</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklinearequest_identificador" xml:space="preserve">
+    <value>Identificador</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklinearequest_idlinea" xml:space="preserve">
+    <value>Id Linea</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklinearequest_producto" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_archivo" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_codigoagente" xml:space="preserve">
+    <value>Código Agente</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_dsreferencia" xml:space="preserve">
+    <value>Descripcion Referencia</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_idsalida" xml:space="preserve">
+    <value>Id Salida</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_pedido" xml:space="preserve">
+    <value>Pedido</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_predio" xml:space="preserve">
+    <value>Predio</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_preparacion" xml:space="preserve">
+    <value>Preparacion</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_puesto" xml:space="preserve">
+    <value>Puesto</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_tipoagente" xml:space="preserve">
+    <value>Tipo Agente</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_ultimaoperacion" xml:space="preserve">
+    <value>Ultima Operación</value>
+  </data>
+  <data name="swagger_summary_galysnotification_confirmarentradas" xml:space="preserve">
+    <value>Confirmación de entrada de stock de Galys</value>
+  </data>
+  <data name="swagger_summary_galysnotification_confirmarsalida" xml:space="preserve">
+    <value>Confirmación de salida de stock de Galys</value>
+  </data>
+  <data name="swagger_summary_galysnotification_notificarajustes" xml:space="preserve">
+    <value>Notificación de ajustes de stock de Galys</value>
+  </data>
+  <data name="swagger_summary_galysresponse_desc_error" xml:space="preserve">
+    <value>Descripción Error</value>
+  </data>
+  <data name="swagger_summary_galysresponse_msg_success" xml:space="preserve">
+    <value>Mensaje Exitoso</value>
+  </data>
+  <data name="swagger_summary_galysresponse_resultado" xml:space="preserve">
+    <value>Resultado</value>
+  </data>
+  <data name="swagger_summary_integracionservicioconexionrequest_contenido" xml:space="preserve">
+    <value>Contenido</value>
+  </data>
+  <data name="swagger_summary_integracionservicioconexionrequest_interfaz" xml:space="preserve">
+    <value>Interfaz</value>
+  </data>
+  <data name="swagger_summary_integracionservicioconexionrequest_interfazexterna" xml:space="preserve">
+    <value>Interfaz Externa</value>
+  </data>
+  <data name="swagger_summary_integracionservicioconexionrequest_url" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="swagger_summary_integracionservicioconfigrequest_habilitado" xml:space="preserve">
+    <value>Habilitado</value>
+  </data>
+  <data name="swagger_summary_integracionservicioconfigrequest_scope" xml:space="preserve">
+    <value>Scope</value>
+  </data>
+  <data name="swagger_summary_integracionservicioconfigrequest_secret" xml:space="preserve">
+    <value>Secreto</value>
+  </data>
+  <data name="swagger_summary_integracionservicioconfigrequest_tipoautenticacion" xml:space="preserve">
+    <value>Tipo de Autenticación</value>
+  </data>
+  <data name="swagger_summary_integracionservicioconfigrequest_tipocomunicacion" xml:space="preserve">
+    <value>Tipo de Comunicación</value>
+  </data>
+  <data name="swagger_summary_integracionservicioconfigrequest_urlauthserver" xml:space="preserve">
+    <value>Url del servidor de Autenticación</value>
+  </data>
+  <data name="swagger_summary_integracionservicioconfigrequest_urlintegracion" xml:space="preserve">
+    <value>Url Integración</value>
+  </data>
+  <data name="swagger_summary_integracionservicioconfigrequest_user" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="swagger_summary_notificacionajustesstockautomatismorequest_ajustes" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="swagger_summary_notificacionajustesstockautomatismorequest_archivo" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="swagger_summary_notificacionajustesstockautomatismorequest_dsreferencia" xml:space="preserve">
+    <value>Referencia</value>
+  </data>
+  <data name="swagger_summary_notificacionajustesstockautomatismorequest_empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="swagger_summary_notificacionajustesstockautomatismorequest_puesto" xml:space="preserve">
+    <value>Puesto</value>
+  </data>
+  <data name="swagger_summary_notificacionajustesstockautomatismorequest_usuario" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="swagger_summary_notificacionajustesstockrequest_archivo" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="swagger_summary_notificacionajustesstockrequest_dsreferencia" xml:space="preserve">
+    <value>Descripcion Referencia</value>
+  </data>
+  <data name="swagger_summary_notificacionajustesstockrequest_empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="swagger_summary_notificacionajustesstockrequest_puesto" xml:space="preserve">
+    <value>Puesto</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockautomatismorequest_caducidad" xml:space="preserve">
+    <value>Caducidad</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockautomatismorequest_cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockautomatismorequest_codalmacen" xml:space="preserve">
+    <value>Código Almacén</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockautomatismorequest_codarticulo" xml:space="preserve">
+    <value>Código Articulo</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockautomatismorequest_codigocausa" xml:space="preserve">
+    <value>Código Causa</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockautomatismorequest_lote" xml:space="preserve">
+    <value>Lote</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockautomatismorequest_puesto" xml:space="preserve">
+    <value>Puesto</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockautomatismorequest_secuencia" xml:space="preserve">
+    <value>Secuencia</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockautomatismorequest_usuario" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockgalysrequest_caducidad" xml:space="preserve">
+    <value>Caducidad</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockgalysrequest_cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockgalysrequest_codalmacen" xml:space="preserve">
+    <value>Código Almacen</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockgalysrequest_codarticulo" xml:space="preserve">
+    <value>Código Articulo</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockgalysrequest_codigocausa" xml:space="preserve">
+    <value>Código Causa</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockgalysrequest_lote" xml:space="preserve">
+    <value>Lote</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockgalysrequest_puesto" xml:space="preserve">
+    <value>Puesto</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockgalysrequest_secuencia" xml:space="preserve">
+    <value>Secuencia </value>
+  </data>
+  <data name="swagger_summary_notificacionajustestockgalysrequest_usuario" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="swagger_summary_notificacionautomatismo_confirmarentrada" xml:space="preserve">
+    <value>Confirmación de entrada de stock del automatismo</value>
+  </data>
+  <data name="swagger_summary_notificacionautomatismo_confirmarsalida" xml:space="preserve">
+    <value>Confirmación de salida de stock del automatismo</value>
+  </data>
+  <data name="swagger_summary_notificacionautomatismo_notificarajuste" xml:space="preserve">
+    <value>Notificación de ajustes de stock del automatismo</value>
+  </data>
+  <data name="swagger_summary_usuariorequest_hash" xml:space="preserve">
+    <value>Hash</value>
+  </data>
+  <data name="swagger_summary_usuariorequest_loginname" xml:space="preserve">
+    <value>Nombre de Usuario</value>
+  </data>
+  <data name="swagger_tag_automatismo" xml:space="preserve">
+    <value>Instrucciones para el Automatismo</value>
+  </data>
+  <data name="swagger_tag_galysnotification" xml:space="preserve">
+    <value>Notificaciones de Galys</value>
+  </data>
+  <data name="swagger_tag_notificacionautomatismo" xml:space="preserve">
+    <value>Notificaciones del Automatismo</value>
+  </data>
+  <data name="swagger_tag_ptl" xml:space="preserve">
+    <value>Instrucciones para el PTL</value>
+  </data>
+  <data name="swagger_tag_ptlnotificationcontroller" xml:space="preserve">
+    <value>Notificaciones del PTL</value>
+  </data>
+</root>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>true</IsPackable>
+    <PackageId>WisBase40.WIS.Domain</PackageId>
+    <VersionPrefix>10.4.4.0</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
+    <Authors>WIS</Authors>
+    <Description>WisBase40</Description>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <DebugType>full</DebugType>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <DebugSymbols>true</DebugSymbols>
+    <SourceLinkCreate>true</SourceLinkCreate>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RepositoryUrl>https://dev.azure.com/smartlog-group/Galys/_git/wisbase40</RepositoryUrl>
+    <Version>10.4.4.0</Version>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>..\WIS.Domain\WIS.Domain.xml</DocumentationFile>
+    <OutputPath></OutputPath>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Automatismo\Configuracion\**" />
+    <Compile Remove="Automatismo\Services\**" />
+    <Compile Remove="Documento\TiposAgrupador\**" />
+    <Compile Remove="Expedicion\Facturacion\**" />
+    <Compile Remove="Integracion\Enums\**" />
+    <Compile Remove="Parametrizacion\Enums\**" />
+    <Compile Remove="Produccion\Queries\**" />
+    <Compile Remove="Properties\**" />
+    <EmbeddedResource Remove="Automatismo\Configuracion\**" />
+    <EmbeddedResource Remove="Automatismo\Services\**" />
+    <EmbeddedResource Remove="Documento\TiposAgrupador\**" />
+    <EmbeddedResource Remove="Expedicion\Facturacion\**" />
+    <EmbeddedResource Remove="Integracion\Enums\**" />
+    <EmbeddedResource Remove="Parametrizacion\Enums\**" />
+    <EmbeddedResource Remove="Produccion\Queries\**" />
+    <EmbeddedResource Remove="Properties\**" />
+    <None Remove="Automatismo\Configuracion\**" />
+    <None Remove="Automatismo\Services\**" />
+    <None Remove="Documento\TiposAgrupador\**" />
+    <None Remove="Expedicion\Facturacion\**" />
+    <None Remove="Integracion\Enums\**" />
+    <None Remove="Parametrizacion\Enums\**" />
+    <None Remove="Produccion\Queries\**" />
+    <None Remove="Properties\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Services\Interfaces\IPickingServiceContext.cs~RF115930a4.TMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.4" />
+    <PackageReference Include="Humanizer" Version="2.14.1" />
+    <PackageReference Include="IdentityModel" Version="6.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+    <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Services.Client" Version="16.205.1" />
+    <PackageReference Include="NLog" Version="5.2.4" />
+    <PackageReference Include="SerialQueue" Version="2.1.0" />
+    <PackageReference Include="SmartFormat.NET" Version="3.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIS.CheckboxListComponent\WIS.CheckboxListComponent.csproj" />
+    <ProjectReference Include="..\WIS.Common\WIS.Common.csproj" />
+    <ProjectReference Include="..\WIS.Configuration\WIS.Configuration.csproj" />
+    <ProjectReference Include="..\WIS.Data\WIS.Data.csproj" />
+    <ProjectReference Include="..\WIS.Documento.Execution\WIS.Documento.Execution.csproj" />
+    <ProjectReference Include="..\WIS.Exceptions\WIS.Exceptions.csproj" />
+    <ProjectReference Include="..\WIS.Extension\WIS.Extension.csproj" />
+    <ProjectReference Include="..\WIS.Filtering\WIS.Filtering.csproj" />
+    <ProjectReference Include="..\WIS.FormComponent.Execution\WIS.FormComponent.Execution.csproj" />
+    <ProjectReference Include="..\WIS.GridComponent.Build\WIS.GridComponent.Build.csproj" />
+    <ProjectReference Include="..\WIS.GridComponent.Excel\WIS.GridComponent.Excel.csproj" />
+    <ProjectReference Include="..\WIS.GridComponent.Execution\WIS.GridComponent.Execution.csproj" />
+    <ProjectReference Include="..\WIS.Persistence\WIS.Persistence.csproj" />
+    <ProjectReference Include="..\WIS.Report\WIS.Report.csproj" />
+    <ProjectReference Include="..\WIS.Security\WIS.Security.csproj" />
+    <ProjectReference Include="..\WIS.Serialization\WIS.Serialization.csproj" />
+    <ProjectReference Include="..\WIS.Sorting\WIS.Sorting.csproj" />
+    <ProjectReference Include="..\WIS.TrafficOfficer\WIS.TrafficOfficer.csproj" />
+    <ProjectReference Include="..\WIS.Translation\WIS.Translation.csproj" />
+    <ProjectReference Include="..\WIS.Validation\WIS.Validation.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="WIS.Domain.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,59 @@
+pool:
+  vmImage: 'windows-latest'
+  
+trigger: none
+
+variables:
+  projectFolder: 'wisbase40'
+  templatesFolder: 'Templates'
+
+resources:
+  repositories:
+  - repository: TemplateGeneratorRepository # In a different organization
+    type: git
+    name: Galys/templateGenerator
+    ref: 'refs/heads/master'
+
+steps:
+  - checkout: TemplateGeneratorRepository
+  - checkout: self
+ 
+  - task: DotNetCoreCLI@2
+    inputs:
+      azureSubscription: 'API Resource'
+      command: 'build'
+      projects: '$(Build.SourcesDirectory)/TemplateGenerator'
+      arguments: --configuration Release
+
+  - task: PowerShell@2
+    displayName: 'Ejecución de exe de templateGenerator'
+    inputs:
+      targetType: 'inline'
+      script: |
+        Write-Host "Ejecutando archivo EXE desde la raíz del repositorio... $(Build.SourcesDirectory)\$(projectFolder)"
+        $exePath = "$(Build.SourcesDirectory)\templateGenerator\TemplateGenerator\bin\Release\net8.0\TemplateGenerator.exe"
+        # Definir archivos de salida para la salida estándar y los errores
+        $outputFile = "$(Build.SourcesDirectory)\output.txt"
+        $errorFile = "$(Build.SourcesDirectory)\error.txt"
+        
+        # Ejecutar el EXE, redirigiendo la salida estándar y los errores a diferentes archivos
+        Start-Process -FilePath $exePath -ArgumentList $(Build.SourcesDirectory)\$(projectFolder) -RedirectStandardOutput $outputFile -RedirectStandardError $errorFile -Wait
+        
+        # Leer y mostrar la salida estándar
+        $output = Get-Content $outputFile
+        Write-Host "Salida del EXE:"
+        Write-Host $output
+
+        # Leer y mostrar los errores si los hubiera
+        $errors = Get-Content $errorFile
+        if ($errors) {
+          Write-Host "Errores del EXE:"
+          Write-Host $errors
+        }
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publicar las plantillas generadas'
+    inputs:
+      pathToPublish: '$(Build.SourcesDirectory)\$(projectFolder)\$(templatesFolder)'
+      artifactName: 'Templates'
+      publishLocation: 'Container'

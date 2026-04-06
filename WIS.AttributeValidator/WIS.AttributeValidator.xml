@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WIS.AttributeValidator</name>
+    </assembly>
+    <members>
+        <member name="M:WIS.AttributeValidator.Controllers.AttributeValidatorController.Validate(WIS.Common.API.Dtos.AttributeValidationRequest)">
+            <summary>
+                swagger_summary_attributevalidator_validate
+            </summary>
+            <remarks>swagger_remarks_attributevalidator_validate</remarks>
+            <param name="request"></param>
+            <returns></returns>
+            <response code="200">swagger_response_200_attributevalidator_validate</response>
+            <response code="400">swagger_response_400_attributevalidator_validate</response>
+        </member>
+    </members>
+</doc>

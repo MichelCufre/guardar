@@ -1,0 +1,737 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="accept-language" xml:space="preserve">
+    <value>Lenguajes Aceptados</value>
+  </data>
+  <data name="supported_languages" xml:space="preserve">
+    <value>Lenguajes Soportados</value>
+  </data>
+  <data name="swagger_description" xml:space="preserve">
+    <value>Documentación de APIs disponibles para el sistema WMS</value>
+  </data>
+  <data name="swagger_remarks_codigobarra_createupdateordelete" xml:space="preserve">
+    <value>Descripción:
+         
+             A partir de los datos provistos notifica la creación, sobrescritura o eliminación de códigos de barras al automatismo por integración con el Automation Interpreter. 
+             Los decimales se deben enviar con '.'. 
+             Los formatos de fechas aceptados son: [yyyy-MM-dd], [yyyy/MM/dd], [MM/dd/yyyy] y [MM-dd-yyyy]</value>
+  </data>
+  <data name="swagger_remarks_confirmacionentrada_send" xml:space="preserve">
+    <value>Descripción:
+         
+             A partir de los datos provistos por el Automation Interpreter transfiere el stock confirmado a ubicaciones de picking y el remanente no confirmado a ubicaciones de rechazo por integración con el WMS. 
+        
+             Al consumir esta API, el Automation Interpreter incluye un header HTTP "X-Hub-Signature" que contiene el hash del JSON del parametro entrante
+             calculado a partir del algoritmo "HMACSHA512" y de un secreto compartido con la aplicación cliente que disponibiliza esta API.
+             La implementación específica de esta API podrá utilizar el header antes mencionado para corroborar la autenticidad del mensaje recibido.        
+             Para ello, recalcula el hash del JSON entrante, aplicando el mismo algoritmo y secreto compartido con el Automation Interpreter
+             y corrobora que coincida con el recibido mediante el header HTTP.
+        
+             Los decimales se deben enviar con '.'. 
+             Los formatos de fechas aceptados son: [yyyy-MM-dd], [yyyy/MM/dd], [MM/dd/yyyy] y [MM-dd-yyyy]</value>
+  </data>
+  <data name="swagger_remarks_confirmacionsalida_send" xml:space="preserve">
+    <value>Descripción:
+         
+             A partir de los datos provistos por el Automation Interpreter prepara el stock confirmado y anula el remanente no confirmado por integración con el WMS. 
+             
+             Al consumir esta API, el Automation Interpreter incluye un header HTTP "X-Hub-Signature" que contiene el hash del JSON del parametro entrante
+             calculado a partir del algoritmo "HMACSHA512" y de un secreto compartido con la aplicación cliente que disponibiliza esta API.
+             La implementación específica de esta API podrá utilizar el header antes mencionado para corroborar la autenticidad del mensaje recibido.        
+             Para ello, recalcula el hash del JSON entrante, aplicando el mismo algoritmo y secreto compartido con el Automation Interpreter
+             y corrobora que coincida con el recibido mediante el header HTTP.  
+         
+             Los decimales se deben enviar con '.'. 
+             Los formatos de fechas aceptados son: [yyyy-MM-dd], [yyyy/MM/dd], [MM/dd/yyyy] y [MM-dd-yyyy]</value>
+  </data>
+  <data name="swagger_remarks_entrada_entradastock" xml:space="preserve">
+    <value>Descripción:
+         
+             A partir de los datos provistos notifica la entrada de stock al automatismo por integración con el Automation Interpreter. 
+             Los decimales se deben enviar con '.'. 
+             Los formatos de fechas aceptados son: [yyyy-MM-dd], [yyyy/MM/dd], [MM/dd/yyyy] y [MM-dd-yyyy]</value>
+  </data>
+  <data name="swagger_remarks_notificacionajustestock_send" xml:space="preserve">
+    <value>Descripción:
+         
+             A partir de los datos provistos por el Automation Interpreter genera ajustes de stock por integración con el WMS. 
+             
+             Al consumir esta API, el Automation Interpreter incluye un header HTTP "X-Hub-Signature" que contiene el hash del JSON del parametro entrante
+             calculado a partir del algoritmo "HMACSHA512" y de un secreto compartido con la aplicación cliente que disponibiliza esta API.
+             La implementación específica de esta API podrá utilizar el header antes mencionado para corroborar la autenticidad del mensaje recibido.        
+             Para ello, recalcula el hash del JSON entrante, aplicando el mismo algoritmo y secreto compartido con el Automation Interpreter
+             y corrobora que coincida con el recibido mediante el header HTTP.  
+             
+             Los decimales se deben enviar con '.'. 
+             Los formatos de fechas aceptados son: [yyyy-MM-dd], [yyyy/MM/dd], [MM/dd/yyyy] y [MM-dd-yyyy]</value>
+  </data>
+  <data name="swagger_remarks_producto_update" xml:space="preserve">
+    <value>Descripción:
+         
+             A partir de los datos provistos notifica la actualización de productos al automatismo por integración con el Automation Interpreter. 
+             Los decimales se deben enviar con '.'. 
+             Los formatos de fechas aceptados son: [yyyy-MM-dd], [yyyy/MM/dd], [MM/dd/yyyy] y [MM-dd-yyyy]</value>
+  </data>
+  <data name="swagger_remarks_salida_salidastock" xml:space="preserve">
+    <value>Descripción:
+         
+             A partir de los datos provistos notifica la salida de stock al automatismo por integración con el Automation Interpreter. 
+             Los decimales se deben enviar con '.'. 
+             Los formatos de fechas aceptados son: [yyyy-MM-dd], [yyyy/MM/dd], [MM/dd/yyyy] y [MM-dd-yyyy]</value>
+  </data>
+  <data name="swagger_remarks_ubicacionpicking_createupdateordelete" xml:space="preserve">
+    <value>Descripción:
+         
+             A partir de los datos provistos notifica la creación, actualización o eliminación de ubicaciones de picking al automatismo por integración con el Automation Interpreter. 
+             Los decimales se deben enviar con '.'. 
+             Los formatos de fechas aceptados son: [yyyy-MM-dd], [yyyy/MM/dd], [MM/dd/yyyy] y [MM-dd-yyyy]</value>
+  </data>
+  <data name="swagger_response_200_codigobarra_createupdateordelete" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_200_confirmacionentrada_send" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_200_confirmacionsalida_send" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_200_entrada_entradastock" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_200_notificacionajustestock_send" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_200_producto_update" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_200_salida_salidastock" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_200_ubicacionpicking_createupdateordelete" xml:space="preserve">
+    <value>Operación exitosa.</value>
+  </data>
+  <data name="swagger_response_400_codigobarra_createupdateordelete" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_response_400_confirmacionentrada_send" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_response_400_confirmacionsalida_send" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_response_400_entrada_entradastock" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_response_400_notificacionajustestock_send" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_response_400_producto_update" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_response_400_salida_salidastock" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_response_400_ubicacionpicking_createupdateordelete" xml:space="preserve">
+    <value>Error de validación.</value>
+  </data>
+  <data name="swagger_returns_codigobarra_createupdateordelete" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_returns_confirmacionentrada_send" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_returns_confirmacionsalida_send" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_returns_entrada_entradastock" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_returns_notificacionajustestock_send" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_returns_producto_update" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_returns_salida_salidastock" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_returns_ubicacionpicking_createupdateordelete" xml:space="preserve">
+    <value>Detalle de la interfaz generada</value>
+  </data>
+  <data name="swagger_summary_automatismoajustestockrequest_cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="swagger_summary_automatismoajustestockrequest_causa" xml:space="preserve">
+    <value>Causa</value>
+  </data>
+  <data name="swagger_summary_automatismoajustestockrequest_fechavencimiento" xml:space="preserve">
+    <value>Fecha Vencimiento</value>
+  </data>
+  <data name="swagger_summary_automatismoajustestockrequest_identificador" xml:space="preserve">
+    <value>Identificador</value>
+  </data>
+  <data name="swagger_summary_automatismoajustestockrequest_predio" xml:space="preserve">
+    <value>Predio</value>
+  </data>
+  <data name="swagger_summary_automatismoajustestockrequest_producto" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="swagger_summary_automatismoresponse_iserror" xml:space="preserve">
+    <value>Es Error</value>
+  </data>
+  <data name="swagger_summary_automatismoresponse_mensaje" xml:space="preserve">
+    <value>Mensaje</value>
+  </data>
+  <data name="swagger_summary_automatismoresponse_operacion" xml:space="preserve">
+    <value>Operación</value>
+  </data>
+  <data name="swagger_summary_codigobarraautomatismorequest_codigo" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="swagger_summary_codigobarraautomatismorequest_predio" xml:space="preserve">
+    <value>Predio</value>
+  </data>
+  <data name="swagger_summary_codigobarraautomatismorequest_producto" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="swagger_summary_codigobarraautomatismorequest_serializado" xml:space="preserve">
+    <value>Serializado</value>
+  </data>
+  <data name="swagger_summary_codigobarraautomatismorequest_tipooperacion" xml:space="preserve">
+    <value>Tipo Operación</value>
+  </data>
+  <data name="swagger_summary_codigobarra_createupdateordelete" xml:space="preserve">
+    <value>Crea, sobrescribe o elimina un código de barras sobre un producto ya existente en el automatismo</value>
+  </data>
+  <data name="swagger_summary_codigosbarrasautomatismorequest_archivo" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="swagger_summary_codigosbarrasautomatismorequest_codigosdebarras" xml:space="preserve">
+    <value>Códigos de Barra</value>
+  </data>
+  <data name="swagger_summary_codigosbarrasautomatismorequest_dsreferencia" xml:space="preserve">
+    <value>Descripción Referencia</value>
+  </data>
+  <data name="swagger_summary_codigosbarrasautomatismorequest_empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="swagger_summary_codigosbarrasautomatismorequest_serializado" xml:space="preserve">
+    <value>Serializado</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklinearequest_cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklinearequest_fechavencimiento" xml:space="preserve">
+    <value>Fecha Vencimiento</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklinearequest_identificador" xml:space="preserve">
+    <value>Identificador</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklinearequest_idlinea" xml:space="preserve">
+    <value>Id Linea</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklinearequest_producto" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastocklinearequest_ultimaoperacion" xml:space="preserve">
+    <value>Ultima Operación</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockrequest_archivo" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockrequest_detalles" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockrequest_dsreferencia" xml:space="preserve">
+    <value>Descripción Referencia</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockrequest_empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockrequest_identrada" xml:space="preserve">
+    <value>Id Entrada</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockrequest_predio" xml:space="preserve">
+    <value>Predio</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockrequest_puesto" xml:space="preserve">
+    <value>Puesto</value>
+  </data>
+  <data name="swagger_summary_confirmacionentradastockrequest_ultimaoperacion" xml:space="preserve">
+    <value>Ultima Operación</value>
+  </data>
+  <data name="swagger_summary_confirmacionentrada_send" xml:space="preserve">
+    <value>Confirmación de entrada de stock del automatismo</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklinearequest_cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklinearequest_contenedor" xml:space="preserve">
+    <value>Contenedor</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklinearequest_fechavencimiento" xml:space="preserve">
+    <value>Fecha Vencimiento</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklinearequest_identificador" xml:space="preserve">
+    <value>Identificador</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklinearequest_idlinea" xml:space="preserve">
+    <value>Id Linea</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastocklinearequest_producto" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_archivo" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_codigoagente" xml:space="preserve">
+    <value>Código Agente</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_detalles" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_dsreferencia" xml:space="preserve">
+    <value>Descripcion Referencia</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_idsalida" xml:space="preserve">
+    <value>Id Salida</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_pedido" xml:space="preserve">
+    <value>Pedido</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_predio" xml:space="preserve">
+    <value>Predio</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_preparacion" xml:space="preserve">
+    <value>Preparacion</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_puesto" xml:space="preserve">
+    <value>Puesto</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_tipoagente" xml:space="preserve">
+    <value>Tipo Agente</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalidastockrequest_ultimaoperacion" xml:space="preserve">
+    <value>Ultima Operacion</value>
+  </data>
+  <data name="swagger_summary_confirmacionsalida_send" xml:space="preserve">
+    <value>Confirmación de salida de stock del automatismo</value>
+  </data>
+  <data name="swagger_summary_entradastockautomatismorequest_archivo" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="swagger_summary_entradastockautomatismorequest_detalles" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
+  <data name="swagger_summary_entradastockautomatismorequest_dsreferencia" xml:space="preserve">
+    <value>Descripción Referencia</value>
+  </data>
+  <data name="swagger_summary_entradastockautomatismorequest_ejecucion" xml:space="preserve">
+    <value>Ejecución</value>
+  </data>
+  <data name="swagger_summary_entradastockautomatismorequest_empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="swagger_summary_entradastockautomatismorequest_predio" xml:space="preserve">
+    <value>Predio</value>
+  </data>
+  <data name="swagger_summary_entradastockautomatismorequest_serializado" xml:space="preserve">
+    <value>Serializado</value>
+  </data>
+  <data name="swagger_summary_entradastockautomatismorequest_ubicacion" xml:space="preserve">
+    <value>Ubicación</value>
+  </data>
+  <data name="swagger_summary_entradastocklineaautomatismorequest_cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="swagger_summary_entradastocklineaautomatismorequest_codigoagente" xml:space="preserve">
+    <value>Código Agente</value>
+  </data>
+  <data name="swagger_summary_entradastocklineaautomatismorequest_descripcionagente" xml:space="preserve">
+    <value>Descripción Agente</value>
+  </data>
+  <data name="swagger_summary_entradastocklineaautomatismorequest_etiquetacarro" xml:space="preserve">
+    <value>Etiqueta Carro</value>
+  </data>
+  <data name="swagger_summary_entradastocklineaautomatismorequest_etiquetainterna" xml:space="preserve">
+    <value>Etiqueta Interna</value>
+  </data>
+  <data name="swagger_summary_entradastocklineaautomatismorequest_etiquetaoperacion" xml:space="preserve">
+    <value>Etiqueta Operacion</value>
+  </data>
+  <data name="swagger_summary_entradastocklineaautomatismorequest_etiquetaposicion" xml:space="preserve">
+    <value>Etiqueta Posición </value>
+  </data>
+  <data name="swagger_summary_entradastocklineaautomatismorequest_fechavencimiento" xml:space="preserve">
+    <value>Fecha Vencimiento</value>
+  </data>
+  <data name="swagger_summary_entradastocklineaautomatismorequest_identificador" xml:space="preserve">
+    <value>Identificador</value>
+  </data>
+  <data name="swagger_summary_entradastocklineaautomatismorequest_lineaentrada" xml:space="preserve">
+    <value>Linea Entrada</value>
+  </data>
+  <data name="swagger_summary_entradastocklineaautomatismorequest_producto" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="swagger_summary_entradastocklineaautomatismorequest_productoexterno" xml:space="preserve">
+    <value>Producto Externo</value>
+  </data>
+  <data name="swagger_summary_entradastocklineaautomatismorequest_serializado" xml:space="preserve">
+    <value>Serializado</value>
+  </data>
+  <data name="swagger_summary_entradastocklineaautomatismorequest_tipoagente" xml:space="preserve">
+    <value>Tipo Agente</value>
+  </data>
+  <data name="swagger_summary_entrada_entradastock" xml:space="preserve">
+    <value>Servicio que permite notificar instrucciones de entrada de stock al automatismo</value>
+  </data>
+  <data name="swagger_summary_notificacionajustesstockrequest_ajustes" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="swagger_summary_notificacionajustesstockrequest_archivo" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="swagger_summary_notificacionajustesstockrequest_dsreferencia" xml:space="preserve">
+    <value>Descripción Referencia</value>
+  </data>
+  <data name="swagger_summary_notificacionajustesstockrequest_empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="swagger_summary_notificacionajustesstockrequest_puesto" xml:space="preserve">
+    <value>Puesto</value>
+  </data>
+  <data name="swagger_summary_notificacionajustestock_send" xml:space="preserve">
+    <value>Notificación de ajustes de stock del automatismo</value>
+  </data>
+  <data name="swagger_summary_problemdetails_detail" xml:space="preserve">
+    <value>Detalle</value>
+  </data>
+  <data name="swagger_summary_problemdetails_instance" xml:space="preserve">
+    <value>Instancia</value>
+  </data>
+  <data name="swagger_summary_problemdetails_status" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="swagger_summary_problemdetails_title" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="swagger_summary_problemdetails_type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="swagger_summary_productoautomatismorequest_altura" xml:space="preserve">
+    <value>Altura</value>
+  </data>
+  <data name="swagger_summary_productoautomatismorequest_ancho" xml:space="preserve">
+    <value>Ancho</value>
+  </data>
+  <data name="swagger_summary_productoautomatismorequest_codigo" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="swagger_summary_productoautomatismorequest_descripcion" xml:space="preserve">
+    <value>Descripción </value>
+  </data>
+  <data name="swagger_summary_productoautomatismorequest_manejoidentificador" xml:space="preserve">
+    <value>Manejo Identificador</value>
+  </data>
+  <data name="swagger_summary_productoautomatismorequest_pesobruto" xml:space="preserve">
+    <value>Peso Bruto</value>
+  </data>
+  <data name="swagger_summary_productoautomatismorequest_predio" xml:space="preserve">
+    <value>Predio</value>
+  </data>
+  <data name="swagger_summary_productoautomatismorequest_profundidad" xml:space="preserve">
+    <value>Profundidad</value>
+  </data>
+  <data name="swagger_summary_productoautomatismorequest_serializado" xml:space="preserve">
+    <value>Serializado</value>
+  </data>
+  <data name="swagger_summary_productoautomatismorequest_tipomanejofecha" xml:space="preserve">
+    <value>Tipo del manejo de la Fecha</value>
+  </data>
+  <data name="swagger_summary_productoautomatismorequest_tipooperacion" xml:space="preserve">
+    <value>Tipo Operación </value>
+  </data>
+  <data name="swagger_summary_productosautomatismorequest_archivo" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="swagger_summary_productosautomatismorequest_dsreferencia" xml:space="preserve">
+    <value>Descripción Referencia</value>
+  </data>
+  <data name="swagger_summary_productosautomatismorequest_empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="swagger_summary_productosautomatismorequest_productos" xml:space="preserve">
+    <value>Productos</value>
+  </data>
+  <data name="swagger_summary_productosautomatismorequest_serializado" xml:space="preserve">
+    <value>Serializado</value>
+  </data>
+  <data name="swagger_summary_producto_update" xml:space="preserve">
+    <value>Actualiza un producto en el automatismo</value>
+  </data>
+  <data name="swagger_summary_salidastockautomatismorequest_archivo" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="swagger_summary_salidastockautomatismorequest_detalles" xml:space="preserve">
+    <value>Detalles</value>
+  </data>
+  <data name="swagger_summary_salidastockautomatismorequest_dsreferencia" xml:space="preserve">
+    <value>Descripción Referencia</value>
+  </data>
+  <data name="swagger_summary_salidastockautomatismorequest_empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="swagger_summary_salidastockautomatismorequest_serializado" xml:space="preserve">
+    <value>Serializado</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_agrupacion" xml:space="preserve">
+    <value>Agrupación</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_carga" xml:space="preserve">
+    <value>Carga</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_codigoagente" xml:space="preserve">
+    <value>Código Agente</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_compartecontenedorpicking" xml:space="preserve">
+    <value>Comparte Contenedor Picking</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_descripcionagente" xml:space="preserve">
+    <value>Descripción Agente</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_fechaentrega" xml:space="preserve">
+    <value>Fecha Entrega</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_identificador" xml:space="preserve">
+    <value>Identificador</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_modolanzamiento" xml:space="preserve">
+    <value>Modo Lanzamiento</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_observacion" xml:space="preserve">
+    <value>Observación</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_pedido" xml:space="preserve">
+    <value>Pedido</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_predio" xml:space="preserve">
+    <value>Predio</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_preparacion" xml:space="preserve">
+    <value>Preparación</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_prioridad" xml:space="preserve">
+    <value>Prioridad</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_producto" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_serializado" xml:space="preserve">
+    <value>Serializado</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_tipoagente" xml:space="preserve">
+    <value>Tipo Agente</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_tiposalida" xml:space="preserve">
+    <value>Tipo Salida</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_valorlanzamiento" xml:space="preserve">
+    <value>Valor Lanzamiento</value>
+  </data>
+  <data name="swagger_summary_salidastocklineaautomatismorequest_zona" xml:space="preserve">
+    <value>Zona</value>
+  </data>
+  <data name="swagger_summary_salida_salidastock" xml:space="preserve">
+    <value>Servicio que permite notificar instrucciones de salida de stock al automatismo</value>
+  </data>
+  <data name="swagger_summary_ubicacionespickingautomatismorequest_archivo" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="swagger_summary_ubicacionespickingautomatismorequest_dsreferencia" xml:space="preserve">
+    <value>Descripción Referencia</value>
+  </data>
+  <data name="swagger_summary_ubicacionespickingautomatismorequest_empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="swagger_summary_ubicacionespickingautomatismorequest_serializado" xml:space="preserve">
+    <value>Serializado</value>
+  </data>
+  <data name="swagger_summary_ubicacionespickingautomatismorequest_ubicaciones" xml:space="preserve">
+    <value>Ubicaciones</value>
+  </data>
+  <data name="swagger_summary_ubicacionpickingautomatismorequest_producto" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="swagger_summary_ubicacionpickingautomatismorequest_serializado" xml:space="preserve">
+    <value>Serializado</value>
+  </data>
+  <data name="swagger_summary_ubicacionpickingautomatismorequest_tipooperacion" xml:space="preserve">
+    <value>Tipo Operación</value>
+  </data>
+  <data name="swagger_summary_ubicacionpickingautomatismorequest_ubicacion" xml:space="preserve">
+    <value>Ubicación</value>
+  </data>
+  <data name="swagger_summary_ubicacionpicking_createupdateordelete" xml:space="preserve">
+    <value>Crea, sobrescribe o elimina una ubicación de picking para un producto y una ubicación ya existentes en el automatismo</value>
+  </data>
+  <data name="swagger_summary_usuariorequest_hash" xml:space="preserve">
+    <value>Hash</value>
+  </data>
+  <data name="swagger_summary_usuariorequest_loginname" xml:space="preserve">
+    <value>Nombre de Usuario</value>
+  </data>
+  <data name="swagger_tag_codigobarra" xml:space="preserve">
+    <value>Manejo de Códigos de Barras para el Automatismo</value>
+  </data>
+  <data name="swagger_tag_confirmacionentrada" xml:space="preserve">
+    <value>Confirmaciones de Entrada de stock del Automatismo</value>
+  </data>
+  <data name="swagger_tag_confirmacionsalida" xml:space="preserve">
+    <value>Confirmaciones de Salida de stock del Automatismo</value>
+  </data>
+  <data name="swagger_tag_entrada" xml:space="preserve">
+    <value>Manejo de Entrada de stock para el Automatismo</value>
+  </data>
+  <data name="swagger_tag_notificacionajustestock" xml:space="preserve">
+    <value>Notificaciones de Ajuste de stock del Automatismo</value>
+  </data>
+  <data name="swagger_tag_producto" xml:space="preserve">
+    <value>Manejo de Productos para el Automatismo</value>
+  </data>
+  <data name="swagger_tag_ptl" xml:space="preserve">
+    <value>Instrucciones para el PTL</value>
+  </data>
+  <data name="swagger_tag_ptlconfirmation" xml:space="preserve">
+    <value>Confirmaciones del PTL</value>
+  </data>
+  <data name="swagger_tag_salida" xml:space="preserve">
+    <value>Manejo de Salida de stock para el Automatismo</value>
+  </data>
+  <data name="swagger_tag_ubicacionpicking" xml:space="preserve">
+    <value>Manejo de Ubicaciones de Picking para el Automatismo</value>
+  </data>
+</root>

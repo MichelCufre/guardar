@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WIS.TaskQueue</name>
+    </assembly>
+    <members>
+        <member name="M:WIS.TaskQueue.Controllers.TaskQueueController.Enqueue(WIS.TaskQueue.Dtos.TasksRequest)">
+            <summary>
+                swagger_summary_taskqueue_enqueue
+            </summary>
+            <remarks>swagger_remarks_taskqueue_enqueue</remarks>
+            <param name="request"></param>
+            <returns></returns>
+            <response code="200">swagger_response_200_taskqueue_validate</response>
+            <response code="400">swagger_response_400_taskqueue_validate</response>
+        </member>
+        <member name="M:WIS.TaskQueue.Controllers.TaskQueueController.Restart">
+            <summary>
+                swagger_summary_taskqueue_restart
+            </summary>
+            <remarks>swagger_remarks_taskqueue_restart</remarks>
+            /// <response code="200">swagger_response_200_taskqueue_restart</response>
+            <response code="400">swagger_response_400_taskqueue_restart</response>
+        </member>
+        <member name="P:WIS.TaskQueue.Dtos.TaskRequest.Category">
+            <summary>
+            Categoria de la tarea
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.TaskQueue.Dtos.TaskRequest.Data">
+            <summary>
+            Datos de la tarea
+            </summary>
+            <example></example>
+        </member>
+        <member name="T:WIS.TaskQueue.Extensions.ControllerBaseExtension">
+            <summary>
+            
+            ]Nota: Los metodos de esta clase deben ser protegidos sino se rompe swagger
+            
+            </summary>
+        </member>
+    </members>
+</doc>

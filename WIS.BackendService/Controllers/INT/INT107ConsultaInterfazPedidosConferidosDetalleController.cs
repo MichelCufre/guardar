@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using WIS.Application.Controllers.INT;
+using WIS.Application.Invocation;
+using WIS.GridComponent.Execution.Serialization;
+using WIS.PageComponent.Execution.Serialization;
+
+namespace WIS.BackendService.Controllers.INT
+{
+    [Route("api/INT/INT107Modal")]
+    [ApiController]
+    public class INT107ConsultaInterfazPedidosConferidosDetalleController : ControllerBase
+    {
+        private readonly IGridControllerInvocation _gridInvoker;
+        private readonly INT107ConsultaInterfazPedidosConferidosDetalle _controller;
+
+        public INT107ConsultaInterfazPedidosConferidosDetalleController(IGridControllerInvocation gridInvoker, INT107ConsultaInterfazPedidosConferidosDetalle controller)
+        {
+            this._gridInvoker = gridInvoker;
+            this._controller = controller;
+        }
+
+        [HttpPost]
+        [Route("[action]")]
+        public IActionResult Grid(GridWrapper data)
+        {
+            return Ok(this._gridInvoker.Invoke(data, this._controller));
+        }
+    }
+}

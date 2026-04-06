@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WIS.MultidataCodeConverter</name>
+    </assembly>
+    <members>
+        <member name="M:WIS.MultidataCodeConverter.Controllers.MultidataCodeConverterController.Convert(WIS.Common.API.Dtos.MultidataCodeConversionRequest)">
+            <summary>
+                swagger_summary_multidatacodeconverter_convert
+            </summary>
+            <remarks>swagger_remarks_multidatacodeconverter_convert</remarks>
+            <param name="request"></param>
+            <returns></returns>
+            <response code="200">swagger_response_200_multidatacodeconverter_convert</response>
+            <response code="400">swagger_response_400_multidatacodeconverter_convert</response>
+        </member>
+    </members>
+</doc>

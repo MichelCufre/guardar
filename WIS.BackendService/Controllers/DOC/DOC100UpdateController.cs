@@ -1,0 +1,41 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using WIS.Application.Controllers.DOC;
+using WIS.Application.Invocation;
+using WIS.FormComponent.Execution.Serialization;
+using WIS.PageComponent.Execution.Serialization;
+
+namespace WIS.BackendService.Controllers.DOC
+{
+    [Route("api/DOC/DOC100Update")]
+    [ApiController]
+    public class DOC100UpdateController : ControllerBase
+    {
+        private readonly IPageControllerInvocation _pageInvoker;
+        private readonly IFormControllerInvocation _formInvoker;
+        private readonly DOC100Update _controller;
+
+        public DOC100UpdateController(IPageControllerInvocation pageInvoker, IFormControllerInvocation formInvoker, DOC100Update controller)
+        {
+            this._pageInvoker = pageInvoker;
+            this._formInvoker = formInvoker;
+            this._controller = controller;
+        }
+
+        [HttpPost]
+        [Route("[action]")]
+        public IActionResult Page(PageWrapper data)
+        {
+            return Ok(this._pageInvoker.Invoke(data, this._controller));
+        }
+        [HttpPost]
+        [Route("[action]")]
+        public IActionResult Form(FormWrapper data)
+        {
+            return Ok(this._formInvoker.Invoke(data, this._controller));
+        }
+    }
+}

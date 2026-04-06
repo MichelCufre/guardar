@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ApplicationIcon />
+    <Win32Resource />
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>..\WIS.AutomationManager\WIS.AutomationManager.xml</DocumentationFile>
+    <IsPackable>true</IsPackable>
+    <PackageId>WisBase40.WIS.AutomationManager</PackageId>
+    <VersionPrefix>10.4.4.0</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
+    <Authors>WIS</Authors>
+    <Description>WisBase40</Description>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <DebugType>full</DebugType>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <DebugSymbols>true</DebugSymbols>
+    <SourceLinkCreate>true</SourceLinkCreate>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <RepositoryUrl>https://dev.azure.com/smartlog-group/Galys/_git/wisbase40</RepositoryUrl>
+    <Version>10.4.4.0</Version>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>..\WIS.AutomationManager\WIS.AutomationManager.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\script\custom.js" />
+    <Content Remove="wwwroot\script\jquery-3.6.3.min.js" />
+    <Content Remove="wwwroot\script\jquery.initialize.min.js" />
+    <Content Remove="wwwroot\script\rapipdf-min.js" />
+    <Content Remove="wwwroot\script\translate\en.js" />
+    <Content Remove="wwwroot\script\translate\es.js" />
+    <Content Remove="wwwroot\script\translate\pt.js" />
+    <Content Remove="wwwroot\script\translate\translate.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".config\dotnet-tools.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\script\jquery-3.6.3.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\script\jquery.initialize.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\script\rapipdf-min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\script\translate\en.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\script\translate\es.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\script\translate\pt.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\script\translate\translate.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.11" />
+    <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NLog" Version="5.2.4" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.4" />
+    <PackageReference Include="OpenIddict.Abstractions" Version="4.8.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIS.API.Extension\WIS.API.Extension.csproj" />
+    <ProjectReference Include="..\WIS.Application\WIS.Application.csproj" />
+    <ProjectReference Include="..\WIS.Automation\WIS.Automation.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\script\custom.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="appsettings.alfa.json">
+      <Pack>false</Pack>
+    </Content>
+    <Content Update="appsettings.demo_galys.json">
+      <Pack>false</Pack>
+    </Content>
+    <Content Update="appsettings.demo_wis.json">
+      <Pack>false</Pack>
+    </Content>
+    <Content Update="appsettings.qa.json">
+      <Pack>false</Pack>
+    </Content>
+    <Content Update="nlog.alfa.config">
+      <Pack>false</Pack>
+    </Content>
+    <Content Update="nlog.demo_galys.config">
+      <Pack>false</Pack>
+    </Content>
+    <Content Update="nlog.demo_wis.config">
+      <Pack>false</Pack>
+    </Content>
+    <Content Update="nlog.qa.config">
+      <Pack>false</Pack>
+    </Content>
+    <Content Update="web.alfa.config">
+      <Pack>false</Pack>
+    </Content>
+    <Content Update="web.demo_galys.config">
+      <Pack>false</Pack>
+    </Content>
+    <Content Update="web.demo_wis.config">
+      <Pack>false</Pack>
+    </Content>
+    <Content Update="web.qa.config">
+      <Pack>false</Pack>
+    </Content>
+  </ItemGroup>
+</Project>

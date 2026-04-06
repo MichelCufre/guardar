@@ -1,0 +1,7 @@
+﻿.gr-grid .gr-row.error .gr-cell {
+    background-color: #F2DEDE;
+}
+
+.gr-grid .gr-row.error.selected .gr-cell {
+    background-color: #F6B5B5;
+}

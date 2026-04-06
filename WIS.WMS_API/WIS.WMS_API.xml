@@ -1,0 +1,783 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WIS.WMS_API</name>
+    </assembly>
+    <members>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.AgendaController.Create">
+            <summary>swagger_summary_agenda_create</summary>
+            <remarks>swagger_remarks_agenda_create</remarks>
+            <returns>swagger_returns_create</returns>
+            <response code="200">swagger_response_200_agenda_create</response>
+            <response code="400">swagger_response_400_agenda_create</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.AgendaController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_agenda_reprocess
+            </summary>
+            <remarks>swagger_remarks_agenda_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_reprocess</returns>
+            <response code="200">swagger_response_200_agenda_reprocess</response>
+            <response code="400">swagger_response_400_agenda_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.AgendaController.GetAgenda(System.Int32)">
+            <summary>
+                swagger_summary_agenda_getagenda
+            </summary>
+            <remarks>swagger_remarks_agenda_getagenda</remarks>
+            <param name="nuAgenda"></param>
+            <returns>swagger_returns_getagenda</returns>
+            <response code="200">swagger_response_200_agenda_getagenda</response>
+            <response code="401">swagger_response_401_agenda_getagenda</response>
+            <response code="404">swagger_response_404_agenda_getagenda</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.AgenteController.CreateOrUpdate">
+            <summary>swagger_summary_agente_createorupdate</summary>
+            <remarks>swagger_remarks_agente_createorupdate</remarks>
+            <returns>swagger_returns_agente_createorupdate</returns>
+            <response code="200">swagger_response_200_agente_createorupdate</response>
+            <response code="400">swagger_response_400_agente_createorupdate</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.AgenteController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_agente_reprocess
+            </summary>
+            <remarks>swagger_remarks_agente_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_agente_reprocess</returns>
+            <response code="200">swagger_response_200_agente_reprocess</response>
+            <response code="400">swagger_response_400_agente_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.AgenteController.GetAgente(System.String,System.Int32,System.String)">
+            <summary>
+                swagger_summary_agente_getagente
+            </summary>
+            <remarks>swagger_remarks_agente_getagente</remarks>
+            <param name="codigo" example="CLI">swagger_param_codigo_agente_getagente</param>
+            <param name="empresa" example="1">swagger_param_empresa_agente_getagente</param>
+            <param name="tipo" example="CLI">swagger_param_tipo_agente_getagente</param>
+            <returns>swagger_returns_agente_getagente</returns>
+            <response code="200">swagger_response_200_agente_getagente</response>
+            <response code="401">swagger_response_401_agente_getagente</response>
+            <response code="404">swagger_response_404_agente_getagente</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.AnulacionReferenciaRecepcionController.Update">
+            <summary>swagger_summary_anulacionreferenciarecepcion_update</summary>
+            <remarks>swagger_remarks_anulacionreferenciarecepcion_update</remarks>
+            <returns>swagger_returns_anulacionreferenciarecepcion_update</returns>
+            <response code="200">swagger_response_200_anulacionreferenciarecepcion_update</response>
+            <response code="400">swagger_response_400_anulacionreferenciarecepcion_update</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.AnulacionReferenciaRecepcionController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_anulacionreferenciarecepcion_reprocess
+            </summary>
+            <remarks>swagger_remarks_anulacionreferenciarecepcion_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_anulacionreferenciarecepcion_reprocess</returns>
+            <response code="200">swagger_response_200_anulacionreferenciarecepcion_reprocess</response>
+            <response code="400">swagger_response_400_anulacionreferenciarecepcion_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.CodigoBarrasController.CreateUpdateOrDelete">
+            <summary>swagger_summary_codigobarras_createupdateordelete</summary>
+            <remarks>swagger_remarks_codigobarras_createupdateordelete</remarks>
+            <returns>swagger_returns_codigobarras_createupdateordelete</returns>
+            <response code="200">swagger_response_200_codigobarras_createupdateordelete</response>
+            <response code="400">swagger_response_400_codigobarras_createupdateordelete</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.CodigoBarrasController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_codigobarras_reprocess
+            </summary>
+            <remarks>swagger_remarks_codigobarras_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_codigobarras_reprocess</returns>
+            <response code="200">swagger_response_200_codigobarras_reprocess</response>
+            <response code="400">swagger_response_400_codigobarras_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.CodigoBarrasController.GetCodigoBarras(System.String,System.Int32)">
+            <summary>
+                swagger_summary_codigobarras_getcodigobarras
+            </summary>
+            <remarks>swagger_remarks_codigobarras_getcodigobarras</remarks>
+            <param name="codigo" example="PR1">swagger_param_codigo_codigobarras_getcodigobarras</param>
+            <param name="empresa" example="1">swagger_param_empresa_codigobarras_getcodigobarras</param>
+            <returns>swagger_returns_codigobarras_getcodigobarras</returns>
+            <response code="200">swagger_response_200_codigobarras_getcodigobarras</response>
+            <response code="401">swagger_response_401_codigobarras_getcodigobarras</response>
+            <response code="404">swagger_response_404_codigobarras_getcodigobarras</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ConsumirProduccionController.Consume">
+            <summary>swagger_summary_consumirproduccion_consume</summary>
+            <remarks>swagger_remarks_consumirproduccion_consume</remarks>
+            <returns>swagger_returns_consumirproduccion_consume</returns>
+            <response code="200">swagger_response_200_consumirproduccion_consume</response>
+            <response code="400">swagger_response_400_consumirproduccion_consume</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ConsumirProduccionController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_consumirproduccion_reprocess
+            </summary>
+            <remarks>swagger_remarks_consumirproduccion_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_consumirproduccion_reprocess</returns>
+            <response code="200">swagger_response_200_consumirproduccion_reprocess</response>
+            <response code="400">swagger_response_400_consumirproduccion_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ControlDeCalidadController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_controldecalidad_reprocess
+            </summary>
+            <remarks>swagger_remarks_controldecalidad_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_controldecalidad_reprocess</returns>
+            <response code="200">swagger_response_200_controldecalidad_reprocess</response>
+            <response code="400">swagger_response_400_controldecalidad_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ControlDeCalidadController.CreateOrUpdate">
+            <summary>swagger_summary_controldecalidad_createorupdate</summary>
+            <remarks>swagger_remarks_controldecalidad_createorupdate</remarks>
+            <returns>swagger_returns_controldecalidad_createorupdate</returns>
+            <response code="200">swagger_response_200_controldecalidad_createorupdate</response>
+            <response code="400">swagger_response_400_controldecalidad_createorupdate</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.CrossDockingController.CrossDockingUnaFase">
+            <summary>
+                CrossDocking en una fase
+            </summary>
+            <remarks>
+            
+            Descripción:
+            
+                Permite recepcionar una agenda, atendiendo un cliente del CrossDocking asociado.
+                
+            Notas:
+                Los decimales se deben enviar con '.'. 
+                Los formatos de fechas aceptados son: [yyyy-MM-dd], [yyyy/MM/dd], [MM/dd/yyyy] y [MM - dd yyyy]
+                
+            </remarks>
+            <returns>Detalle de la interfaz generada</returns>
+            <response code="200">Operación exitosa.</response>
+            <response code="400">Error de validación.</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.CrossDockingController.ReprocesarCrossDockingUnaFase(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                Reprocesa el CrossDocking
+            </summary>
+            <remarks>
+            
+            Descripción:
+            
+                Reprocesa la interfaz en error generada previamente el CrossDocking.  
+                
+            </remarks>
+            <param name="request"></param>
+            <returns>Detalle de la interfaz reprocesada</returns>
+            <response code="200">Operación exitosa.</response>
+            <response code="400">Error de validación.</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.EgresoController.Create">
+            <summary>swagger_summary_egreso_create</summary>
+            <remarks>swagger_remarks_egreso_create</remarks>
+            <returns>swagger_returns_egreso_create</returns>
+            <response code="200">swagger_response_200_egreso_create</response>
+            <response code="400">swagger_response_400_egreso_create</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.EgresoController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_egreso_reprocess
+            </summary>
+            <remarks>swagger_remarks_egreso_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_egreso_reprocess</returns>
+            <response code="200">swagger_response_200_egreso_reprocess</response>
+            <response code="400">swagger_response_400_egreso_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.EgresoController.GetEgresoPorCodigoCamion(System.Int32,System.Int32)">
+            <summary>
+                swagger_summary_egreso_getegresoporcodigocamion
+            </summary>
+            <remarks>swagger_remarks_egreso_getegresoporcodigocamion</remarks>
+            <param name="cdCamion" example="455">swagger_param_cdCamion_egreso_getegresoporcodigocamion</param>
+            <param name="empresa" example="455">swagger_param_empresa_egreso_getegresoporcodigocamion</param>
+            <returns>swagger_returns_egreso_getegresoporcodigocamion</returns>
+            <response code="200">swagger_response_200_egreso_getegresoporcodigocamion</response>
+            <response code="401">swagger_response_401_egreso_getegresoporcodigocamion</response>
+            <response code="404">swagger_response_404_egreso_getegresoporcodigocamion</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.EgresoController.GetEgresoPorIdExterno(System.String,System.Int32)">
+            <summary>
+                swagger_summary_egreso_getegresoporidexterno
+            </summary>
+            <remarks>swagger_remarks_egreso_getegresoporidexterno</remarks>
+            <param name="idExterno" example="455">swagger_param_idexterno_egreso_getegresoporidexterno</param>
+            <param name="empresa" example="1">swagger_param_empresa_egreso_getegresoporidexterno</param>
+            <returns>swagger_returns_egreso_getegresoporidexterno</returns>
+            <response code="200">swagger_response_200_egreso_getegresoporidexterno</response>
+            <response code="401">swagger_response_401_egreso_getegresoporidexterno</response>
+            <response code="404">swagger_response_404_egreso_getegresoporidexterno</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.EmpresaController.CreateOrUpdate">
+            <summary>swagger_summary_empresa_createorupdate</summary>
+            <remarks>swagger_remarks_empresa_createorupdate</remarks>
+            <returns>swagger_returns_empresa_createorupdate</returns>
+            <response code="200">swagger_response_200_empresa_createorupdate</response>
+            <response code="400">swagger_response_400_empresa_createorupdate</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.EmpresaController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_empresa_reprocess
+            </summary>
+            <remarks>swagger_remarks_empresa_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_empresa_reprocess</returns>
+            <response code="200">swagger_response_200_empresa_reprocess</response>
+            <response code="400">swagger_response_400_empresa_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.EmpresaController.GetEmpresa(System.Int32)">
+            <summary>
+                swagger_summary_empresa_getempresa
+            </summary>
+            <remarks>swagger_remarks_empresa_getempresa</remarks>
+            <param name="empresa" example="1">swagger_param_empresa_empresa_getempresa</param>
+            <returns>swagger_returns_empresa_getempresa</returns>
+            <response code="200">swagger_response_200_empresa_getempresa</response>
+            <response code="401">swagger_response_401_empresa_getempresa</response>
+            <response code="404">swagger_response_404_empresa_getempresa</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.FacturaController.Create">
+            <summary>
+                swagger_summary_factura_create
+            </summary>
+            <remarks>swagger_remarks_factura_create</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_create</returns>
+            <response code="200">swagger_response_200_factura_create</response>
+            <response code="400">swagger_response_400_factura_create</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.FacturaController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_factura_reprocess
+            </summary>
+            <remarks>swagger_remarks_factura_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_reprocess</returns>
+            <response code="200">swagger_response_200_factura_reprocess</response>
+            <response code="400">swagger_response_400_factura_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.FacturaController.GetFactura(System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>
+                swagger_summary_factura_getfactura
+            </summary>
+            <remarks>swagger_remarks_factura_getfactura</remarks>
+            <param name="nuFactura" example="FAC1">swagger_param_nufactura_factura_getfactura</param>
+            <param name="empresa" example="1">swagger_param_empresa_factura_getfactura</param>
+            <param name="serie" example="A">swagger_param_serie_factura_getfactura</param>
+            <param name="codigoAgente" example="AGE01">swagger_param_codigoagente_factura_getfactura</param>
+            <param name="tipoAgente" example="PRO">swagger_param_tipoagente_factura_getfactura</param>
+            <returns>swagger_returns_factura_getfactura</returns>
+            <response code="200">swagger_response_200_factura_getfactura</response>
+            <response code="401">swagger_response_401_factura_getfactura</response>
+            <response code="404">swagger_response_404_factura_getfactura</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.LpnController.Create">
+            <summary>swagger_summary_lpn_create</summary>
+            <remarks>swagger_remarks_lpn_create</remarks>
+            <returns>swagger_returns_lpn_create</returns>
+            <response code="200">swagger_response_200_lpn_create</response>
+            <response code="400">swagger_response_400_lpn_create</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.LpnController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_lpn_reprocess
+            </summary>
+            <remarks>swagger_remarks_lpn_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_lpn_reprocess</returns>
+            <response code="200">swagger_response_200_lpn_reprocess</response>
+            <response code="400">swagger_response_400_lpn_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.LpnController.GetLpn(System.Int64)">
+            <summary>
+                swagger_summary_lpn_getlpn
+            </summary>
+            <remarks>swagger_remarks_lpn_getlpn</remarks>
+            <param name="nuLpn"></param>
+            <returns>swagger_returns_lpn_getlpn</returns>
+            <response code="200">swagger_response_200_lpn_getlpn</response>
+            <response code="401">swagger_response_401_lpn_getlpn</response>
+            <response code="404">swagger_response_404_lpn_getlpn</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.LpnController.GetLpnByIdExternoTipo(System.String,System.String)">
+            <summary>
+                swagger_summary_lpn_getlpn
+            </summary>
+            <remarks>swagger_remarks_lpn_getlpnbyidexternotipo</remarks>
+            <param name="idExterno"></param>
+            <param name="tpLpn"></param>
+            <returns>swagger_returns_lpn_getlpnbyidexternotipo</returns>
+            <response code="200">swagger_response_200_lpn_getlpn</response>
+            <response code="401">swagger_response_401_lpn_getlpn</response>
+            <response code="404">swagger_response_404_lpn_getlpn</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ModificarDetalleReferenciaController.Update">
+            <summary>swagger_summary_modificardetallereferencia_update</summary>
+            <remarks>swagger_remarks_modificardetallereferencia_update</remarks>
+            <returns>swagger_returns_modificardetallereferencia_update</returns>
+            <response code="200">swagger_response_200_modificardetallereferencia_update</response>
+            <response code="400">swagger_response_400_modificardetallereferencia_update</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ModificarDetalleReferenciaController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_modificardetallereferencia_reprocess
+            </summary>
+            <remarks>swagger_remarks_modificardetallereferencia_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_modificardetallereferencia_reprocess</returns>
+            <response code="200">swagger_response_200_modificardetallereferencia_reprocess</response>
+            <response code="400">swagger_response_400_modificardetallereferencia_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ModificarPedidoController.Update">
+            <summary>swagger_summary_modificarpedido_update</summary>
+            <remarks>swagger_remarks_modificarpedido_update</remarks>
+            <returns>swagger_returns_modificarpedido_update</returns>
+            <response code="200">swagger_response_200_modificarpedido_update</response>
+            <response code="400">swagger_response_400_modificarpedido_update</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ModificarPedidoController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_modificarpedido_reprocess
+            </summary>
+            <remarks>swagger_remarks_modificarpedido_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_modificarpedido_reprocess</returns>
+            <response code="200">swagger_response_200_modificarpedido_reprocess</response>
+            <response code="400">swagger_response_400_modificarpedido_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.PedidoController.Create">
+            <summary>swagger_summary_pedido_create</summary>
+            <remarks>swagger_remarks_pedido_create</remarks>
+            <returns>swagger_returns_pedido_create</returns>
+            <response code="200">swagger_response_200_pedido_create</response>
+            <response code="400">swagger_response_400_pedido_create</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.PedidoController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_pedido_reprocess
+            </summary>
+            <remarks>swagger_remarks_pedido_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_pedido_reprocess</returns>
+            <response code="200">swagger_response_200_pedido_reprocess</response>
+            <response code="400">swagger_response_400_pedido_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.PedidoController.GetPedido(System.String,System.Int32,System.String,System.String)">
+            <summary>
+                swagger_summary_pedido_getpedido
+            </summary>
+            <remarks>swagger_remarks_pedido_getpedido</remarks>
+            <param name="numero" example="PED100">swagger_param_numero_pedido_getpedido</param>
+            <param name="empresa" example="1">swagger_param_empresa_pedido_getpedido</param>
+            <param name="tipoAgente" example="CLI">swagger_param_tipoagente_pedido_getpedido</param>
+            <param name="codigoAgente" example="AGE01">swagger_param_codigoagente_pedido_getpedido</param>
+            <returns>swagger_returns_pedido_getpedido</returns>
+            <response code="200">swagger_response_200_pedido_getpedido</response>
+            <response code="401">swagger_response_401_pedido_getpedido</response>
+            <response code="404">swagger_response_404_pedido_getpedido</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.PickingProductoController.CreateUpdateOrDelete">
+            <summary>
+                swagger_summary_pickingproducto_createupdateordelete
+            </summary>
+            <remarks>swagger_remarks_pickingproducto_createupdateordelete</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_pickingproducto_createupdateordelete</returns>
+            <response code="200">swagger_response_200_pickingproducto_createupdateordelete</response>
+            <response code="400">swagger_response_400_pickingproducto_createupdateordelete</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.PickingProductoController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_pickingproducto_reprocess
+            </summary>
+            <remarks>swagger_remarks_pickingproducto_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_pickingproducto_reprocess</returns>
+            <response code="200">swagger_response_200_pickingproducto_reprocess</response>
+            <response code="400">swagger_response_400_pickingproducto_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.PreparacionController.Picking">
+            <summary>swagger_summary_preparacion_picking</summary>
+            <remarks>swagger_remarks_preparacion_picking</remarks>
+            <returns>swagger_returns_preparacion_picking</returns>
+            <response code="200">swagger_response_200_preparacion_picking</response>
+            <response code="400">swagger_response_400_preparacion_picking</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.PreparacionController.ReprocesarPicking(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_preparacion_reprocesarpicking
+            </summary>
+            <remarks>swagger_remarks_preparacion_reprocesarpicking</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_preparacion_reprocesarpicking</returns>
+            <response code="200">swagger_response_200_preparacion_reprocesarpicking</response>
+            <response code="400">swagger_response_400_preparacion_reprocesarpicking</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.PreparacionController.AnularPickingPedidoPendiente">
+            <summary>swagger_summary_preparacion_anularpickingpedidopendiente</summary>
+            <remarks>swagger_remarks_preparacion_anularpickingpedidopendiente</remarks>
+            <returns>swagger_returns_preparacion_anularpickingpedidopendiente</returns>
+            <response code="200">swagger_response_200_preparacion_anularpickingpedidopendiente</response>
+            <response code="400">swagger_response_400_preparacion_anularpickingpedidopendiente</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.PreparacionController.ReprocesarAnulacionPreparacionPedidoPicking(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_preparacion_reprocesaranulacionpreparacionpedidopicking
+            </summary>
+            <remarks>swagger_remarks_preparacion_reprocesaranulacionpreparacionpedidopicking</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_preparacion_reprocesaranulacionpreparacionpedidopicking</returns>
+            <response code="200">swagger_response_200_preparacion_reprocesaranulacionpreparacionpedidopicking</response>
+            <response code="400">swagger_response_400_preparacion_reprocesaranulacionpreparacionpedidopicking</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.PreparacionController.AnularPickingPedidoPendienteAutomatismo(WIS.Domain.General.API.Dtos.Entrada.AnularPickingPedidoPendienteRequest)">
+            <summary>
+                swagger_summary_preparacion_anularpickingpedidopendiente
+            </summary>
+            <remarks>swagger_remarks_preparacion_anularpickingpedidopendiente</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_preparacion_anularpickingpedidopendiente</returns>
+            <response code="200">swagger_response_200_preparacion_anularpickingpedidopendiente</response>
+            <response code="400">swagger_response_400_preparacion_anularpickingpedidopendiente</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ProduccionController.Create">
+            <summary>swagger_summary_produccion_create</summary>
+            <remarks>swagger_remarks_produccion_create</remarks>
+            <returns>swagger_returns_produccion_create</returns>
+            <response code="200">swagger_response_200_produccion_create</response>
+            <response code="400">swagger_response_400_produccion_create</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ProduccionController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_produccion_reprocess
+            </summary>
+            <remarks>swagger_remarks_produccion_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_produccion_reprocess</returns>
+            <response code="200">swagger_response_200_produccion_reprocess</response>
+            <response code="400">swagger_response_400_produccion_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ProduccionController.GetProduccion(System.String)">
+            <summary>
+                swagger_summary_produccion_getproduccion
+            </summary>
+            <remarks>swagger_remarks_produccion_getproduccion</remarks>
+            <param name="nroIngresoProduccion"></param>
+            <returns>swagger_returns_produccion_getproduccion</returns>
+            <response code="200">swagger_response_200_produccion_getproduccion</response>
+            <response code="401">swagger_response_401_produccion_getproduccion</response>
+            <response code="404">swagger_response_404_produccion_getproduccion</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ProducirProduccionController.Produce">
+            <summary>swagger_summary_producirproduccion_produce</summary>
+            <remarks>swagger_remarks_producirproduccion_produce</remarks>
+            <returns>swagger_returns_producirproduccion_produce</returns>
+            <response code="200">swagger_response_200_producirproduccion_produce</response>
+            <response code="400">swagger_response_400_producirproduccion_produce</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ProducirProduccionController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_producirproduccion_reprocess
+            </summary>
+            <remarks>swagger_remarks_producirproduccion_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_producirproduccion_reprocess</returns>
+            <response code="200">swagger_response_200_producirproduccion_reprocess</response>
+            <response code="400">swagger_response_400_producirproduccion_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ProductoController.CreateOrUpdate">
+            <summary>swagger_summary_producto_createorupdate</summary>
+            <remarks>swagger_remarks_producto_createorupdate</remarks>
+            <returns>swagger_returns_producto_createorupdate</returns>
+            <response code="200">swagger_response_200_producto_createorupdate</response>
+            <response code="400">swagger_response_400_producto_createorupdate</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ProductoController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_producto_reprocess
+            </summary>
+            <remarks>swagger_remarks_producto_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_producto_reprocess</returns>
+            <response code="200">swagger_response_200_producto_reprocess</response>
+            <response code="400">swagger_response_400_producto_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ProductoController.GetProducto(System.String,System.Int32)">
+            <summary>
+                swagger_summary_producto_getproducto
+            </summary>
+            <remarks>swagger_remarks_producto_getproducto</remarks>
+            <param name="codigo" example="PR1">swagger_param_codigo_producto_getproducto</param>
+            <param name="empresa" example="1">swagger_param_empresa_producto_getproducto</param>
+            <returns>swagger_returns_producto_getproducto</returns>
+            <response code="200">swagger_response_200_producto_getproducto</response>
+            <response code="401">swagger_response_401_producto_getproducto</response>
+            <response code="404">swagger_response_404_producto_getproducto</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ProductoProveedorController.CreateOrDelete">
+            <summary>swagger_summary_productoproveedor_createordelete</summary>
+            <remarks>swagger_remarks_productoproveedor_createordelete</remarks>
+            <returns>swagger_returns_productoproveedor_createordelete</returns>
+            <response code="200">swagger_response_200_productoproveedor_createordelete</response>
+            <response code="400">swagger_response_400_productoproveedor_createordelete</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ProductoProveedorController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_productoproveedor_reprocess
+            </summary>
+            <remarks>swagger_remarks_productoproveedor_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_productoproveedor_reprocess</returns>
+            <response code="200">swagger_response_200_productoproveedor_reprocess</response>
+            <response code="400">swagger_response_400_productoproveedor_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ProductoProveedorController.GetProductoProveedor(System.String,System.Int32,System.String,System.String)">
+            <summary>
+                swagger_summary_productoproveedor_getproductoproveedor
+            </summary>
+            <remarks>swagger_remarks_productoproveedor_getproductoproveedor</remarks>
+            <param name="producto" example="PR1">swagger_param_producto_productoproveedor_getproductoproveedor</param>
+            <param name="empresa" example="1">swagger_param_empresa_productoproveedor_getproductoproveedor</param>
+            <param name="tipoAgente" example="CLI">swagger_param_tipoagente_productoproveedor_getproductoproveedor</param>
+            <param name="codigoAgente" example="AGE01">swagger_param_codigoagente_productoproveedor_getproductoproveedor</param>
+            <returns>swagger_returns_productoproveedor_getproductoproveedor</returns>
+            <response code="200">swagger_response_200_productoproveedor_getproductoproveedor</response>
+            <response code="401">swagger_response_401_productoproveedor_getproductoproveedor</response>
+            <response code="404">swagger_response_404_productoproveedor_getproductoproveedor</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ReferenciaRecepcionController.Create">
+            <summary>swagger_summary_referenciarecepcion_create</summary>
+            <remarks>swagger_remarks_referenciarecepcion_create</remarks>
+            <returns>swagger_returns_referenciarecepcion_create</returns>
+            <response code="200">swagger_response_200_referenciarecepcion_create</response>
+            <response code="400">swagger_response_400_referenciarecepcion_create</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ReferenciaRecepcionController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_referenciarecepcion_reprocess
+            </summary>
+            <remarks>swagger_remarks_referenciarecepcion_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_referenciarecepcion_reprocess</returns>
+            <response code="200">swagger_response_200_referenciarecepcion_reprocess</response>
+            <response code="400">swagger_response_400_referenciarecepcion_reprocess</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ReferenciaRecepcionController.GetReferencia(System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>
+                swagger_summary_referenciarecepcion_getreferencia
+            </summary>
+            <remarks>swagger_remarks_referenciarecepcion_getreferencia</remarks>
+            <param name="nuReferencia" example="REF1">swagger_param_nureferencia_referenciarecepcion_getreferencia</param>
+            <param name="empresa" example="1">swagger_param_empresa_referenciarecepcion_getreferencia</param>
+            <param name="tipo" example="OC">swagger_param_tipo_referenciarecepcion_getreferencia</param>
+            <param name="tipoAgente" example="PRO">swagger_param_tipoagente_referenciarecepcion_getreferencia</param>
+            <param name="codigoAgente" example="AGE01">swagger_param_codigoagente_referenciarecepcion_getreferencia</param>
+            <returns>swagger_returns_referenciarecepcion_getreferencia</returns>
+            <response code="200">swagger_response_200_referenciarecepcion_getreferencia</response>
+            <response code="401">swagger_response_401_referenciarecepcion_getreferencia</response>
+            <response code="404">swagger_response_404_referenciarecepcion_getreferencia</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.ReferenciaRecepcionController.GetReferenciaById(System.Int32)">
+            <summary>
+                swagger_summary_referenciarecepcion_getreferenciabyid
+            </summary>
+            <remarks>swagger_remarks_referenciarecepcion_getreferenciabyid</remarks>
+            <param name="idReferencia" example="1146">swagger_param_idreferencia_referenciarecepcion_getreferenciabyid</param>
+            <returns>swagger_returns_referenciarecepcion_getreferenciabyid</returns>
+            <response code="200">swagger_response_200_referenciarecepcion_getreferenciabyid</response>
+            <response code="401">swagger_response_401_referenciarecepcion_getreferenciabyid</response>
+            <response code="404">swagger_response_404_referenciarecepcion_getreferenciabyid</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.StockController.Ajustar">
+            <summary>swagger_summary_stock_ajustar</summary>
+            <remarks>swagger_remarks_stock_ajustar</remarks>
+            <returns>swagger_returns_stock_ajustar</returns>
+            <response code="200">swagger_response_200_stock_ajustar</response>
+            <response code="400">swagger_response_400_stock_ajustar</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.StockController.ReprocesarAjuste(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_stock_reprocesarajuste
+            </summary>
+            <remarks>swagger_remarks_stock_reprocesarajuste</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_stock_reprocesarajuste</returns>
+            <response code="200">swagger_response_200_stock_reprocesarajuste</response>
+            <response code="400">swagger_response_400_stock_reprocesarajuste</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.StockController.Transferir">
+            <summary>swagger_summary_stock_transferir</summary>
+            <remarks>swagger_remarks_stock_transferir</remarks>
+            <returns>swagger_returns_stock_transferir</returns>
+            <response code="200">swagger_response_200_stock_transferir</response>
+            <response code="400">swagger_response_400_stock_transferir</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.StockController.ReprocesarTransferencia(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>
+                swagger_summary_stock_reprocesartransferencia
+            </summary>
+            <remarks>swagger_remarks_stock_reprocesartransferencia</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_stock_reprocesartransferencia</returns>
+            <response code="200">swagger_response_200_stock_reprocesartransferencia</response>
+            <response code="400">swagger_response_400_stock_reprocesartransferencia</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Entrada.StockController.MovimientoStockAutomatismo(WIS.Domain.General.API.Dtos.Entrada.TransferenciaStockRequest)">
+            <summary>
+                swagger_summary_stock_MovimientoStockAutomatismo
+            </summary>
+            <remarks>swagger_remarks_MovimientoStockAutomatismo</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_MovimientoStockAutomatismo</returns>
+            <response code="200">swagger_response_200_MovimientoStockAutomatismo</response>
+            <response code="400">swagger_response_400_MovimientoStockAutomatismo</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Salida.AjustesDeStockController.GetData(System.Int64,System.Int32)">
+            <summary>
+                swagger_summary_ajustesdestock_getdata
+            </summary>
+            <remarks>swagger_remarks_ajustesdestock_getdata</remarks>
+            <param name="nroEjecucion" example="4564">swagger_param_nroEjecucion_ajustesdestock_getdata</param>
+            <param name="empresa" example="1">swagger_param_empresa_ajustesdestock_getdata</param>
+            <returns>swagger_returns_ajustesdestock_getdata</returns>
+            <response code="200">swagger_response_200_ajustesdestock_getdata</response>
+            <response code="401">swagger_response_401_ajustesdestock_getdata</response>
+            <response code="404">swagger_response_404_ajustesdestock_getdata</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Salida.AlmacenamientoController.GetData(System.Int64,System.Int32)">
+            <summary>
+                swagger_summary_almacenamiento_getdata
+            </summary>
+            <remarks>swagger_remarks_almacenamiento_getdata</remarks>
+            <param name="nroEjecucion" example="4564">swagger_param_nroEjecucion_almacenamiento_getdata</param>
+            <param name="empresa" example="1">swagger_param_empresa_almacenamiento_getdata</param>
+            <returns>swagger_returns_almacenamiento_getdata</returns>
+            <response code="200">swagger_response_200_almacenamiento_getdata</response>
+            <response code="401">swagger_response_401_almacenamiento_getdata</response>
+            <response code="404">swagger_response_404_almacenamiento_getdata</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Salida.ConfirmacionDePedidoController.GetData(System.Int64,System.Int32)">
+            <summary>
+                swagger_summary_confirmaciondepedido_getdata
+            </summary>
+            <remarks>swagger_remarks_confirmaciondepedido_getdata</remarks>
+            <param name="nroEjecucion" example="4564">swagger_param_nroEjecucion_confirmaciondepedido_getdata</param>
+            <param name="empresa" example="1">swagger_param_empresa_confirmaciondepedido_getdata</param>
+            <returns>swagger_returns_confirmaciondepedido_getdata</returns>
+            <response code="200">swagger_response_200_confirmaciondepedido_getdata</response>
+            <response code="401">swagger_response_401_confirmaciondepedido_getdata</response>
+            <response code="404">swagger_response_404_confirmaciondepedido_getdata</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Salida.ConfirmacionDeProduccionController.GetData(System.Int64,System.Int32)">
+            <summary>
+                swagger_summary_confirmaciondeproduccion_getdata
+            </summary>
+            <remarks>swagger_remarks_confirmaciondeproduccion_getdata</remarks>
+            <param name="nroEjecucion" example="4564">swagger_param_nroEjecucion_confirmaciondeproduccion_getdata</param>
+            <param name="empresa" example="1">swagger_param_empresa_confirmaciondeproduccion_getdata</param>
+            <returns>swagger_returns_confirmaciondeproduccion_getdata</returns>
+            <response code="200">swagger_response_200_confirmaciondeproduccion_getdata</response>
+            <response code="401">swagger_response_401_confirmaciondeproduccion_getdata</response>
+            <response code="404">swagger_response_404_confirmaciondeproduccion_getdata</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Salida.ConfirmacionDeRecepcionController.GetData(System.Int64,System.Int32)">
+            <summary>
+                swagger_summary_confirmacionderecepcion_getdata
+            </summary>
+            <remarks>swagger_remarks_confirmacionderecepcion_getdata</remarks>
+            <param name="nroEjecucion" example="4564">swagger_param_nroEjecucion_confirmacionderecepcion_getdata</param>
+            <param name="empresa" example="1">swagger_param_empresa_confirmacionderecepcion_getdata</param>
+            <returns>swagger_returns_confirmacionderecepcion_getdata</returns>
+            <response code="200">swagger_response_200_confirmacionderecepcion_getdata</response>
+            <response code="401">swagger_response_401_confirmacionderecepcion_getdata</response>
+            <response code="404">swagger_response_404_confirmacionderecepcion_getdata</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Salida.ConsultaDeStockController.GetData(WIS.Domain.General.API.Dtos.Salida.StockRequest)">
+            <summary>
+                swagger_summary_consultadestock_getdata
+            </summary>
+            <remarks>swagger_remarks_consultadestock_getdata</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_consultadestock_getdata</returns>
+            <response code="200">swagger_response_200_consultadestock_getdata</response>
+            <response code="401">swagger_response_401_consultadestock_getdata</response>
+            <response code="404">swagger_response_404_consultadestock_getdata</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Salida.FacturacionController.GetData(System.Int64,System.Int32)">
+            <summary>
+                swagger_summary_facturacion_getdata
+            </summary>
+            <remarks>swagger_remarks_facturacion_getdata</remarks>
+            <param name="nroEjecucion" example="4564">swagger_param_nroEjecucion_facturacion_getdata</param>
+            <param name="empresa" example="1">swagger_param_empresa_facturacion_getdata</param>
+            <returns>swagger_returns_facturacion_getdata</returns>
+            <response code="200">swagger_response_200_facturacion_getdata</response>
+            <response code="401">swagger_response_401_facturacion_getdata</response>
+            <response code="404">swagger_response_404_facturacion_getdata</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Salida.PedidosAnuladosController.GetData(System.Int64,System.Int32)">
+            <summary>
+                swagger_summary_pedidosanulados_getdata
+            </summary>
+            <remarks>swagger_remarks_pedidosanulados_getdata</remarks>
+            <param name="nroEjecucion" example="4564">swagger_param_nroEjecucion_pedidosanulados_getdata</param>
+            <param name="empresa" example="1">swagger_param_empresa_pedidosanulados_getdata</param>
+            <returns>swagger_returns_pedidosanulados_getdata</returns>
+            <response code="200">swagger_response_200_pedidosanulados_getdata</response>
+            <response code="401">swagger_response_401_pedidosanulados_getdata</response>
+            <response code="404">swagger_response_404_pedidosanulados_getdata</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Salida.SalidaController.ConfirmarLectura(WIS.Domain.General.API.Dtos.Salida.ConfirmarLecturaRequest)">
+            <summary>
+                swagger_summary_salida_confirmarlectura
+            </summary>
+            <remarks>swagger_remarks_salida_confirmarlectura</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_salida_confirmarlectura</returns>
+            <response code="200">swagger_response_200_salida_confirmarlectura</response>
+            <response code="400">swagger_response_400_salida_confirmarlectura</response>
+            <response code="404">swagger_response_404_salida_confirmarlectura</response>
+            <response code="401">swagger_response_401_salida_confirmarlectura</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Salida.SalidaController.GetEjecucionesPendientes(System.Int32)">
+            <summary>
+                swagger_summary_salida_getejecucionespendientes
+            </summary>
+            <remarks>swagger_remarks_salida_getejecucionespendientes</remarks>
+            <param name="empresa">swagger_param_empresa_salida_getejecucionespendientes</param>
+            <returns>swagger_returns_salida_getejecucionespendientes</returns>
+            <response code="200">swagger_response_200_salida_getejecucionespendientes</response>
+            <response code="401">swagger_response_401_salida_getejecucionespendientes</response>
+        </member>
+        <member name="M:WIS.WMS_API.Controllers.Salida.SalidaController.ConsultarEstado(System.Int64,System.Int32)">
+            <summary>
+                swagger_summary_salida_consultarestado
+            </summary>
+            <remarks>swagger_remarks_salida_consultarestado</remarks>
+            <param name="nroEjecucion" example="4564">swagger_param_nroejecucion_salida_getejecucionespendientes</param>
+            <param name="empresa" example="1">swagger_param_empresa_salida_getejecucionespendientes</param>
+            <returns>swagger_returns_salida_getejecucionespendientes</returns>
+            <response code="200">swagger_response_200_salida_getejecucionespendientes</response>
+            <response code="400">swagger_response_400_salida_getejecucionespendientes</response>
+            <response code="404">swagger_response_404_salida_getejecucionespendientes</response>
+            <response code="401">swagger_response_401_salida_getejecucionespendientes</response>
+        </member>
+        <member name="T:WIS.WMS_API.Extensions.ControllerBaseExtension">
+            <summary>
+            
+            ]Nota: Los metodos de esta clase deben ser protegidos sino se rompe swagger
+            
+            </summary>
+        </member>
+    </members>
+</doc>

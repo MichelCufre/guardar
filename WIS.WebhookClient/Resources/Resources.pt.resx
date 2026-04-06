@@ -1,0 +1,1049 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Supported languages" xml:space="preserve">
+    <value>Idiomas suportados</value>
+  </data>
+  <data name="supported_languages" xml:space="preserve">
+    <value>Idiomas suportados</value>
+  </data>
+  <data name="swagger_description" xml:space="preserve">
+    <value>Documentação de Webhooks para o sistema WMS</value>
+  </data>
+  <data name="swagger_remarks_webhookclient_callback" xml:space="preserve">
+    <value>
+		
+		Descrição:
+		    Processa o resultado da execução de uma interface de saída.
+			
+			Essa API é consumida pelo WMS para notificar os aplicativos clientes inscritos sobre a ocorrência de interfaces de saída.
+            Todas as interfaces de saída são notificadas por meio do mesmo endpoint.
+			É através de um dos atributos do parâmetro de entrada ("id") que é possível determinar o tipo de saída reportada.
+			Ao consumir esta API, o WMS inclui um cabeçalho HTTP "X-Hub-Signature" que contém o hash JSON do parâmetro de entrada 
+			calculado a partir do algoritmo "HMACSHA512" e o segredo compartilhado com o aplicativo cliente que disponibiliza esta API.
+			A implementação específica desta API pode usar o cabeçalho mencionado para verificar a autenticidade da mensagem recebida.
+			Para fazer isso, você deve recalcular o hash do JSON de entrada, aplicando o mesmo algoritmo e segredo compartilhado com o WMS
+            e verifique se corresponde ao recebido por meio do cabeçalho HTTP.
+			En el WMS, este secreto es configurado a nivel de empresa desde el Panel de empresas y no puede superar los 50 caracteres.
+			
+            Decimais devem ser enviados com '.'. Os formatos de data aceitos são: [aaaa-MM-dd], [aaaa/MM/dd], [MM/dd/aaaa] e [MM-dd-aaaa]</value>
+  </data>
+  <data name="swagger_response_200_webhookclient_callback" xml:space="preserve">
+    <value>Operação bem-sucedida.</value>
+  </data>
+  <data name="swagger_response_400_webhookclient_callback" xml:space="preserve">
+    <value>Falha na validação.</value>
+  </data>
+  <data name="swagger_response_401_webhookclient_callback" xml:space="preserve">
+    <value>Operação não autorizada.</value>
+  </data>
+  <data name="swagger_summary_agendadetallerequest_cantidadrecibida" xml:space="preserve">
+    <value>Valor recebido</value>
+  </data>
+  <data name="swagger_summary_agendadetallerequest_cantidadteorica" xml:space="preserve">
+    <value>Quantidade teórica</value>
+  </data>
+  <data name="swagger_summary_agendadetallerequest_fechavencimiento" xml:space="preserve">
+    <value>Data de vencimento</value>
+  </data>
+  <data name="swagger_summary_agendadetallerequest_identificador" xml:space="preserve">
+    <value>Série ou Lote do produto caso você manuseie.
+É um valor opcional e o WIS o tratará em modo automático
+se não for especificado</value>
+  </data>
+  <data name="swagger_summary_agendadetallerequest_producto" xml:space="preserve">
+    <value>Código do produto</value>
+  </data>
+  <data name="swagger_summary_agendarequest_agenda" xml:space="preserve">
+    <value>Número de lista telefônica atribuído ao WIS</value>
+  </data>
+  <data name="swagger_summary_agendarequest_anexo1" xml:space="preserve">
+    <value>Informações anexadas</value>
+  </data>
+  <data name="swagger_summary_agendarequest_anexo2" xml:space="preserve">
+    <value>Informações anexadas</value>
+  </data>
+  <data name="swagger_summary_agendarequest_lpns" xml:space="preserve">
+    <value>LPNs</value>
+  </data>
+  <data name="swagger_summary_agendarequest_anexo3" xml:space="preserve">
+    <value>Informações anexadas</value>
+  </data>
+  <data name="swagger_summary_agendarequest_anexo4" xml:space="preserve">
+    <value>Informações anexadas</value>
+  </data>
+  <data name="swagger_summary_agendarequest_codigoagente" xml:space="preserve">
+    <value>Código do agente</value>
+  </data>
+  <data name="swagger_summary_agendarequest_detalles" xml:space="preserve">
+    <value />
+  </data>
+  <data name="swagger_summary_agendarequest_empresa" xml:space="preserve">
+    <value>Código da companhia</value>
+  </data>
+  <data name="swagger_summary_agendarequest_facturas" xml:space="preserve">
+    <value />
+  </data>
+  <data name="swagger_summary_agendarequest_fechacierre" xml:space="preserve">
+    <value>Fechamento de pauta</value>
+  </data>
+  <data name="swagger_summary_agendarequest_fechaingreso" xml:space="preserve">
+    <value>Data de admissão</value>
+  </data>
+  <data name="swagger_summary_agendarequest_numerodocumento" xml:space="preserve">
+    <value>Número de referência se o rendimento for contra um
+único documento. caso contrário, vazio</value>
+  </data>
+  <data name="swagger_summary_agendarequest_predio" xml:space="preserve">
+    <value>Propriedade</value>
+  </data>
+  <data name="swagger_summary_agendarequest_referencias" xml:space="preserve">
+    <value />
+  </data>
+  <data name="swagger_summary_agendarequest_tipoagente" xml:space="preserve">
+    <value>tipo de agente
+PRO (Provedor) - CLI (Cliente)</value>
+  </data>
+  <data name="swagger_summary_agendarequest_tiporecepcion" xml:space="preserve">
+    <value>Identificação do tipo de recepção ou fluxo dentro
+de WIS</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_aplicacion" xml:space="preserve">
+    <value>Módulo WIS que gerou o ajuste</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_areaaveria" xml:space="preserve">
+    <value>Indica se o ajuste foi feito em um local de
+falta</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_cantidadmovimiento" xml:space="preserve">
+    <value>Quantidade de movimento - / +</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_descripcionmotivo" xml:space="preserve">
+    <value>Descrição do motivo</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_empresa" xml:space="preserve">
+    <value>Código da companhia</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_faixa" xml:space="preserve">
+    <value>Código de fax</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_fechamotivo" xml:space="preserve">
+    <value>Data do motivo</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_fecharealizacion" xml:space="preserve">
+    <value>Data de realização</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_fechaultimamodificacion" xml:space="preserve">
+    <value>Data da última modificação</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_fechavencimiento" xml:space="preserve">
+    <value>Data de validade do produto</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_funcionario" xml:space="preserve">
+    <value>Usuário do WIS que fez o ajuste</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_identificador" xml:space="preserve">
+    <value>Identificador do produto (série ou lote)</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_interfazejecucion" xml:space="preserve">
+    <value>Número da interface associada</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_motivo" xml:space="preserve">
+    <value>Código de Razão de Ajuste</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_nrologinventario" xml:space="preserve">
+    <value>Número de Registro de Inventário</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_numeroajustestock" xml:space="preserve">
+    <value>Número de ajuste de estoque no WIS</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_predio" xml:space="preserve">
+    <value>Número da propriedade</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_producto" xml:space="preserve">
+    <value>Código do produto</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_serializado" xml:space="preserve">
+    <value>Serializado</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_tipoajuste" xml:space="preserve">
+    <value>Tipo de configuração</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_ubicacion" xml:space="preserve">
+    <value>Localização do WIS correspondente à configuração</value>
+  </data>
+  <data name="swagger_summary_ajustesrequest_ajustes" xml:space="preserve">
+    <value />
+  </data>
+  <data name="swagger_summary_almacenamientorequest_agenda" xml:space="preserve">
+    <value>Número da agenda</value>
+  </data>
+  <data name="swagger_summary_almacenamientorequest_codigoagente" xml:space="preserve">
+    <value>Código do Agente</value>
+  </data>
+  <data name="swagger_summary_almacenamientorequest_etiqueta" xml:space="preserve">
+    <value>Etiqueta</value>
+  </data>
+  <data name="swagger_summary_almacenamientorequest_serializado" xml:space="preserve">
+    <value>Serializado</value>
+  </data>
+  <data name="swagger_summary_almacenamientorequest_tipoagente" xml:space="preserve">
+    <value>Tipo de agente</value>
+  </data>
+  <data name="swagger_summary_almacenamientorequest_tipoetiqueta" xml:space="preserve">
+    <value>Tipo de Etiqueta</value>
+  </data>
+  <data name="swagger_summary_atributorequest_idatributo" xml:space="preserve">
+    <value>ID do atributo</value>
+  </data>
+  <data name="swagger_summary_atributorequest_nombre" xml:space="preserve">
+    <value>Nome do Atributo</value>
+  </data>
+  <data name="swagger_summary_atributorequest_valor" xml:space="preserve">
+    <value>Valor do atributo</value>
+  </data>
+  <data name="swagger_summary_atributorequest_valoratributo" xml:space="preserve">
+    <value>Valor do atributo</value>
+  </data>
+  <data name="swagger_summary_confirmacionmercaderiapreparadarequest_codigocamion" xml:space="preserve">
+    <value>Código do caminhão</value>
+  </data>
+  <data name="swagger_summary_confirmacionmercaderiapreparadarequest_contenedores" xml:space="preserve">
+    <value />
+  </data>
+  <data name="swagger_summary_confirmacionmercaderiapreparadarequest_descripcioncamion" xml:space="preserve">
+    <value>Descrição do caminhão</value>
+  </data>
+  <data name="swagger_summary_confirmacionmercaderiapreparadarequest_fechafacturacion" xml:space="preserve">
+    <value>Data de cobrança</value>
+  </data>
+  <data name="swagger_summary_confirmacionmercaderiapreparadarequest_matriculacamion" xml:space="preserve">
+    <value>Registro de caminhão</value>
+  </data>
+  <data name="swagger_summary_confirmacionmercaderiapreparadarequest_pedidos" xml:space="preserve">
+    <value />
+  </data>
+  <data name="swagger_summary_confirmacionmercaderiapreparadarequest_predio" xml:space="preserve">
+    <value>Número da propriedade.
+Esse valor é informado no
+cabeça do caminhão e a ordem.
+Como referência deve ser tomado
+Sempre aquele com o caminhão.</value>
+  </data>
+  <data name="swagger_summary_confirmacionmercaderiapreparadarequest_puertaexpedicion" xml:space="preserve">
+    <value>Portão de despacho
+Número da porta onde você está
+fazendo a quitação.</value>
+  </data>
+  <data name="swagger_summary_confirmacionmercaderiapreparadarequest_ruta" xml:space="preserve">
+    <value>Rota</value>
+  </data>
+  <data name="swagger_summary_confirmacionmercaderiapreparadarequest_transportadora" xml:space="preserve">
+    <value>Código da operadora</value>
+  </data>
+  <data name="swagger_summary_confirmacionmercaderiapreparadarequest_vehiculo" xml:space="preserve">
+    <value>Código do veículo</value>
+  </data>
+  <data name="swagger_summary_confirmacionpedidorequest_camion" xml:space="preserve">
+    <value>Código do caminhão</value>
+  </data>
+  <data name="swagger_summary_confirmacionpedidorequest_descripcioncamion" xml:space="preserve">
+    <value>Descrição do caminhão</value>
+  </data>
+  <data name="swagger_summary_confirmacionpedidorequest_fechacierre" xml:space="preserve">
+    <value>Data de fechamento do caminhão</value>
+  </data>
+  <data name="swagger_summary_confirmacionpedidorequest_fechafacturacion" xml:space="preserve">
+    <value>Data de cobrança</value>
+  </data>
+  <data name="swagger_summary_confirmacionpedidorequest_matricula" xml:space="preserve">
+    <value>Registro de caminhão</value>
+  </data>
+  <data name="swagger_summary_confirmacionpedidorequest_predio" xml:space="preserve">
+    <value>Número da propriedade.
+Esse valor é informado no
+cabeça do caminhão e a ordem.
+Como referência deve ser tomado
+Sempre aquele com o caminhão.</value>
+  </data>
+  <data name="swagger_summary_confirmacionpedidorequest_puertaexpedicion" xml:space="preserve">
+    <value>Portão de despacho
+Número da porta onde você está
+fazendo a quitação.</value>
+  </data>
+  <data name="swagger_summary_confirmacionpedidorequest_ruta" xml:space="preserve">
+    <value>Rota</value>
+  </data>
+  <data name="swagger_summary_confirmacionpedidorequest_transportadora" xml:space="preserve">
+    <value>Código da operadora</value>
+  </data>
+  <data name="swagger_summary_confirmacionpedidorequest_vehiculo" xml:space="preserve">
+    <value>Código do veículo</value>
+  </data>
+  <data name="swagger_summary_consultastockrequest_stock" xml:space="preserve">
+    <value />
+  </data>
+  <data name="swagger_summary_contenedordetallerequest_averiapickeo" xml:space="preserve">
+    <value>Falha na colheita
+S (Sim) - N (Não)</value>
+  </data>
+  <data name="swagger_summary_contenedordetallerequest_cantidadpreparada" xml:space="preserve">
+    <value>Quantidade preparada</value>
+  </data>
+  <data name="swagger_summary_contenedordetallerequest_codigoagente" xml:space="preserve">
+    <value>Código do agente</value>
+  </data>
+  <data name="swagger_summary_contenedordetallerequest_fechavencimientopickeo" xml:space="preserve">
+    <value>Escolha a data de vencimento</value>
+  </data>
+  <data name="swagger_summary_contenedordetallerequest_identificador" xml:space="preserve">
+    <value>Identificador do produto (série ou lote)</value>
+  </data>
+  <data name="swagger_summary_contenedordetallerequest_pedido" xml:space="preserve">
+    <value>Número de pedido</value>
+  </data>
+  <data name="swagger_summary_contenedordetallerequest_producto" xml:space="preserve">
+    <value>Código do produto</value>
+  </data>
+  <data name="swagger_summary_contenedordetallerequest_tipoagente" xml:space="preserve">
+    <value>tipo de agente
+PRO (Provedor) - CLI (Cliente)</value>
+  </data>
+  <data name="swagger_summary_contenedorrequest_altura" xml:space="preserve">
+    <value>Altura</value>
+  </data>
+  <data name="swagger_summary_contenedorrequest_cantidadbultos" xml:space="preserve">
+    <value>Quantidade de pacotes</value>
+  </data>
+  <data name="swagger_summary_contenedorrequest_codigounidadbulto" xml:space="preserve">
+    <value>Código da unidade em massa</value>
+  </data>
+  <data name="swagger_summary_contenedorrequest_descripcioncontenedor" xml:space="preserve">
+    <value>Descrição do contêiner</value>
+  </data>
+  <data name="swagger_summary_contenedorrequest_detalles" xml:space="preserve">
+    <value />
+  </data>
+  <data name="swagger_summary_contenedorrequest_fechaexpedicion" xml:space="preserve">
+    <value>Data de expedição</value>
+  </data>
+  <data name="swagger_summary_contenedorrequest_largo" xml:space="preserve">
+    <value>Longo</value>
+  </data>
+  <data name="swagger_summary_contenedorrequest_numerocontenedor" xml:space="preserve">
+    <value>Número do container</value>
+  </data>
+  <data name="swagger_summary_contenedorrequest_pesoreal" xml:space="preserve">
+    <value>Peso atual</value>
+  </data>
+  <data name="swagger_summary_contenedorrequest_precinto1" xml:space="preserve">
+    <value>ID do distrito 1</value>
+  </data>
+  <data name="swagger_summary_contenedorrequest_precinto2" xml:space="preserve">
+    <value>ID do distrito 2</value>
+  </data>
+  <data name="swagger_summary_contenedorrequest_preparacion" xml:space="preserve">
+    <value>Número da preparação</value>
+  </data>
+  <data name="swagger_summary_contenedorrequest_profundidad" xml:space="preserve">
+    <value>Profundidade</value>
+  </data>
+  <data name="swagger_summary_contenedorrequest_subclase" xml:space="preserve">
+    <value>Código de subclasse
+A subclasse identifica e restringe a compatibilidade.
+com os produtos durante a colheita.</value>
+  </data>
+  <data name="swagger_summary_contenedorrequest_tipocontenedor" xml:space="preserve">
+    <value>Tipo de recipiente</value>
+  </data>
+  <data name="swagger_summary_contenedorrequest_volumen" xml:space="preserve">
+    <value>Volume</value>
+  </data>
+  <data name="swagger_summary_detallealmacenamientorequest_cantidadalmacenada" xml:space="preserve">
+    <value>Quantidade armazenada</value>
+  </data>
+  <data name="swagger_summary_detallealmacenamientorequest_cantidaddisponible" xml:space="preserve">
+    <value>Quantidade Disponível</value>
+  </data>
+  <data name="swagger_summary_detallealmacenamientorequest_empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="swagger_summary_detallealmacenamientorequest_faixa" xml:space="preserve">
+    <value>Código Faixa</value>
+  </data>
+  <data name="swagger_summary_detallealmacenamientorequest_fechaoperacion" xml:space="preserve">
+    <value>Data da Operação</value>
+  </data>
+  <data name="swagger_summary_detallealmacenamientorequest_funcionario" xml:space="preserve">
+    <value>Código do Funcionario</value>
+  </data>
+  <data name="swagger_summary_detallealmacenamientorequest_identificador" xml:space="preserve">
+    <value>Identificador</value>
+  </data>
+  <data name="swagger_summary_detallealmacenamientorequest_producto" xml:space="preserve">
+    <value>Código do produto</value>
+  </data>
+  <data name="swagger_summary_detallealmacenamientorequest_serializado" xml:space="preserve">
+    <value>Serializado</value>
+  </data>
+  <data name="swagger_summary_detallealmacenamientorequest_ubicacion" xml:space="preserve">
+    <value>Localização</value>
+  </data>
+  <data name="swagger_summary_detallealmacenamientorequest_vencimiento" xml:space="preserve">
+    <value>Expiração</value>
+  </data>
+  <data name="swagger_summary_eventrequest_id" xml:space="preserve">
+    <value>Identifica o tipo de evento relatado.
+Para cada tipo de evento, um
+propriedade com o mesmo nome de
+contém informações detalhadas
+notificado.</value>
+  </data>
+  <data name="swagger_summary_eventrequest_numerointerfazejecucion" xml:space="preserve">
+    <value>Número da interface de execução</value>
+  </data>
+  <data name="swagger_summary_facturadetallerequest_cantidadfacturada" xml:space="preserve">
+    <value>Valor faturado</value>
+  </data>
+  <data name="swagger_summary_facturadetallerequest_cantidadrecibida" xml:space="preserve">
+    <value>Valor recebido</value>
+  </data>
+  <data name="swagger_summary_facturadetallerequest_cantidadvalidada" xml:space="preserve">
+    <value>Quantidade validada</value>
+  </data>
+  <data name="swagger_summary_facturadetallerequest_fechavencimiento" xml:space="preserve">
+    <value>Data de vencimento</value>
+  </data>
+  <data name="swagger_summary_facturadetallerequest_identificador" xml:space="preserve">
+    <value>Série ou Lote do produto caso você manuseie.
+É um valor opcional e o WIS o tratará no modo
+automático se não especificado</value>
+  </data>
+  <data name="swagger_summary_facturadetallerequest_importeunitario" xml:space="preserve">
+    <value>importação unitária</value>
+  </data>
+  <data name="swagger_summary_facturadetallerequest_producto" xml:space="preserve">
+    <value>Código do produto</value>
+  </data>
+  <data name="swagger_summary_facturarequest_anexo1" xml:space="preserve">
+    <value>Informações Adicionais 1</value>
+  </data>
+  <data name="swagger_summary_facturarequest_anexo2" xml:space="preserve">
+    <value>Informações Adicionais 2</value>
+  </data>
+  <data name="swagger_summary_facturarequest_anexo3" xml:space="preserve">
+    <value>Informações Adicionais 3</value>
+  </data>
+  <data name="swagger_summary_facturarequest_codigocliente" xml:space="preserve">
+    <value>Código do cliente da fatura</value>
+  </data>
+  <data name="swagger_summary_facturarequest_codigoempresa" xml:space="preserve">
+    <value>Código da companhia</value>
+  </data>
+  <data name="swagger_summary_facturarequest_codigomoneda" xml:space="preserve">
+    <value>Código da moeda</value>
+  </data>
+  <data name="swagger_summary_facturarequest_codigosituacion" xml:space="preserve">
+    <value>Código de status da fatura</value>
+  </data>
+  <data name="swagger_summary_facturarequest_detalles" xml:space="preserve">
+    <value />
+  </data>
+  <data name="swagger_summary_facturarequest_estado" xml:space="preserve">
+    <value>Status da fatura</value>
+  </data>
+  <data name="swagger_summary_facturarequest_factura" xml:space="preserve">
+    <value>Número da fatura</value>
+  </data>
+  <data name="swagger_summary_facturarequest_fechacreacion" xml:space="preserve">
+    <value>Data de criação da fatura</value>
+  </data>
+  <data name="swagger_summary_facturarequest_fechaemision" xml:space="preserve">
+    <value>Data de emissão da fatura</value>
+  </data>
+  <data name="swagger_summary_facturarequest_fechavencimiento" xml:space="preserve">
+    <value>Data de vencimento da fatura</value>
+  </data>
+  <data name="swagger_summary_facturarequest_numeroordencompra" xml:space="preserve">
+    <value>Número da ordem de compra da fatura</value>
+  </data>
+  <data name="swagger_summary_facturarequest_numeroremito" xml:space="preserve">
+    <value>Número de entrega</value>
+  </data>
+  <data name="swagger_summary_facturarequest_observacion" xml:space="preserve">
+    <value>Observação</value>
+  </data>
+  <data name="swagger_summary_facturarequest_origen" xml:space="preserve">
+    <value>identificador de origem</value>
+  </data>
+  <data name="swagger_summary_facturarequest_predio" xml:space="preserve">
+    <value>Fatura do imóvel</value>
+  </data>
+  <data name="swagger_summary_facturarequest_serie" xml:space="preserve">
+    <value>Número de série</value>
+  </data>
+  <data name="swagger_summary_facturarequest_tipofactura" xml:space="preserve">
+    <value>Tipo de Fatura</value>
+  </data>
+  <data name="swagger_summary_facturarequest_totaldigitado" xml:space="preserve">
+    <value>Total digitado</value>
+  </data>
+  <data name="swagger_summary_lpndetallerequest_cantidad" xml:space="preserve">
+    <value>Quantia</value>
+  </data>
+  <data name="swagger_summary_lpndetallerequest_codigoproducto" xml:space="preserve">
+    <value>Código do produto</value>
+  </data>
+  <data name="swagger_summary_lpndetallerequest_faixa" xml:space="preserve">
+    <value>Código Faixa</value>
+  </data>
+  <data name="swagger_summary_lpndetallerequest_id" xml:space="preserve">
+    <value>Detalhe do ID</value>
+  </data>
+  <data name="swagger_summary_lpndetallerequest_idlineasistemaexterno" xml:space="preserve">
+    <value>Identificação no ERP ou sistema externo para o
+linha de detalhe.
+Se for definido posteriormente na confirmação, é
+retorna para uma correspondência no sistema externo.</value>
+  </data>
+  <data name="swagger_summary_lpndetallerequest_lote" xml:space="preserve">
+    <value>Lote</value>
+  </data>
+  <data name="swagger_summary_lpndetallerequest_numero" xml:space="preserve">
+    <value>Detalhe do número</value>
+  </data>
+  <data name="swagger_summary_lpndetallerequest_vencimiento" xml:space="preserve">
+    <value>Expiração</value>
+  </data>
+  <data name="swagger_summary_lpnrequest_empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="swagger_summary_lpnrequest_idexterno" xml:space="preserve">
+    <value>ID externo LPN</value>
+  </data>
+  <data name="swagger_summary_lpnrequest_idpacking" xml:space="preserve">
+    <value>Embalagem de identificação</value>
+  </data>
+  <data name="swagger_summary_lpnrequest_numero" xml:space="preserve">
+    <value>Número LPN</value>
+  </data>
+  <data name="swagger_summary_lpnrequest_tipo" xml:space="preserve">
+    <value>Tipo de LPN</value>
+  </data>
+  <data name="swagger_summary_pedidoanuladodetallerequest_aplicacion" xml:space="preserve">
+    <value>Código do aplicativo</value>
+  </data>
+  <data name="swagger_summary_pedidoanuladodetallerequest_cantidadanulada" xml:space="preserve">
+    <value>Valor cancelado</value>
+  </data>
+  <data name="swagger_summary_pedidoanuladodetallerequest_lpns" xml:space="preserve">
+    <value>LPNs</value>
+  </data>
+  <data name="swagger_summary_detallepedidolpnanuladorequest_idexterno" xml:space="preserve">
+    <value>Identificação externa</value>
+  </data>
+  <data name="swagger_summary_detallepedidolpnanuladorequest_tipo" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="swagger_summary_detallepedidolpnanuladorequest_detallesatributos" xml:space="preserve">
+    <value>Detalhe do atributo</value>
+  </data>
+  <data name="swagger_summary_detallepedidoatributoanuladorequest_idconfiguración" xml:space="preserve">
+    <value>ID de configuração</value>
+  </data>
+  <data name="swagger_summary_detallepedidoatributoanuladorequest_atributos" xml:space="preserve">
+    <value>Atributos</value>
+  </data>
+  <data name="swagger_summary_pedidoanuladodetallerequest_detallesatributos" xml:space="preserve">
+    <value>Detalhe do atributo</value>
+  </data>
+  <data name="swagger_summary_pedidoanuladodetallerequest_especificaidentificador" xml:space="preserve">
+    <value>Identificador de ID específico</value>
+  </data>
+  <data name="swagger_summary_pedidoanuladodetallerequest_fechaalta" xml:space="preserve">
+    <value>Data de registro de registro</value>
+  </data>
+  <data name="swagger_summary_pedidoanuladodetallerequest_funcionario" xml:space="preserve">
+    <value>Código oficial</value>
+  </data>
+  <data name="swagger_summary_pedidoanuladodetallerequest_identificador" xml:space="preserve">
+    <value>Identificador do produto (série ou lote)</value>
+  </data>
+  <data name="swagger_summary_pedidoanuladodetallerequest_motivo" xml:space="preserve">
+    <value>Informação adicional</value>
+  </data>
+  <data name="swagger_summary_pedidoanuladodetallerequest_producto" xml:space="preserve">
+    <value>Código do produto</value>
+  </data>
+  <data name="swagger_summary_pedidoanuladorequest_codigoagente" xml:space="preserve">
+    <value>Código do agente</value>
+  </data>
+  <data name="swagger_summary_pedidoanuladorequest_detalles" xml:space="preserve">
+    <value />
+  </data>
+  <data name="swagger_summary_pedidoanuladorequest_empresa" xml:space="preserve">
+    <value>Código da companhia</value>
+  </data>
+  <data name="swagger_summary_pedidoanuladorequest_pedido" xml:space="preserve">
+    <value>Número de pedido</value>
+  </data>
+  <data name="swagger_summary_pedidoanuladorequest_tipoagente" xml:space="preserve">
+    <value>tipo de agente
+PRO (Provedor) - CLI (Cliente)</value>
+  </data>
+  <data name="swagger_summary_pedidodetalleduplicadorequest_cantidadproducto" xml:space="preserve">
+    <value>Quantidade de produto para o pedido. No caso
+confirmação de mercadoria preparada,
+refere-se à quantidade preparada. No caso de
+fechamento de descarga, refere-se à quantidade emitida
+no caminhão.</value>
+  </data>
+  <data name="swagger_summary_pedidodetalleduplicadorequest_idlineasistemaexterno" xml:space="preserve">
+    <value>Identificação no ERP ou sistema externo para
+a linha do pedido.</value>
+  </data>
+  <data name="swagger_summary_pedidodetalleduplicadorequest_serializado" xml:space="preserve">
+    <value>Serializado</value>
+  </data>
+  <data name="swagger_summary_pedidodetalleduplicadorequest_tipolinea" xml:space="preserve">
+    <value>Tipo de linha.</value>
+  </data>
+  <data name="swagger_summary_pedidodetallerequest_cantidadproducto" xml:space="preserve">
+    <value>Quantidade de produto para o pedido. No caso de
+Confirmação de mercadoria preparada, refere-se a
+a quantidade preparada. Em caso de fechamento de
+saída, refere-se ao valor emitido no
+caminhão.</value>
+  </data>
+  <data name="swagger_summary_pedidodetallerequest_duplicados" xml:space="preserve">
+    <value />
+  </data>
+  <data name="swagger_summary_pedidodetallerequest_especificaidentifcador" xml:space="preserve">
+    <value>Especificar identificador
+S (Sim) - N (Não)</value>
+  </data>
+  <data name="swagger_summary_pedidodetallerequest_especificaidentificador" xml:space="preserve">
+    <value>Especificar identificador
+S (Sim) - N (Não)</value>
+  </data>
+  <data name="swagger_summary_pedidodetallerequest_identificador" xml:space="preserve">
+    <value>Identificador do produto (série ou lote)</value>
+  </data>
+  <data name="swagger_summary_pedidodetallerequest_memo" xml:space="preserve">
+    <value>Informação adicional</value>
+  </data>
+  <data name="swagger_summary_pedidodetallerequest_producto" xml:space="preserve">
+    <value>Código do produto</value>
+  </data>
+  <data name="swagger_summary_pedidodetallerequest_serializado" xml:space="preserve">
+    <value>Serializado</value>
+  </data>
+  <data name="swagger_summary_pedidorequest_codigoagente" xml:space="preserve">
+    <value>Código do agente</value>
+  </data>
+  <data name="swagger_summary_pedidorequest_codigoorigen" xml:space="preserve">
+    <value>Código fonte</value>
+  </data>
+  <data name="swagger_summary_pedidorequest_condicionliberacion" xml:space="preserve">
+    <value>Código de condição
+liberar</value>
+  </data>
+  <data name="swagger_summary_pedidorequest_detalles" xml:space="preserve">
+    <value />
+  </data>
+  <data name="swagger_summary_pedidorequest_direccion" xml:space="preserve">
+    <value>Destino da expedição</value>
+  </data>
+  <data name="swagger_summary_pedidorequest_empresa" xml:space="preserve">
+    <value>Código da companhia</value>
+  </data>
+  <data name="swagger_summary_pedidorequest_memo" xml:space="preserve">
+    <value>Informação adicional</value>
+  </data>
+  <data name="swagger_summary_pedidorequest_memo1" xml:space="preserve">
+    <value>Informação adicional</value>
+  </data>
+  <data name="swagger_summary_pedidorequest_pedido" xml:space="preserve">
+    <value>Número de pedido</value>
+  </data>
+  <data name="swagger_summary_pedidorequest_predio" xml:space="preserve">
+    <value>Número da propriedade.
+Esse valor é informado no
+cabeçalho do caminhão e
+ordem.
+Como referência deve ser tomado
+Sempre aquele com o caminhão.</value>
+  </data>
+  <data name="swagger_summary_pedidorequest_puntoentrega" xml:space="preserve">
+    <value>Código do ponto de entrega</value>
+  </data>
+  <data name="swagger_summary_pedidorequest_serializado" xml:space="preserve">
+    <value>Serializado</value>
+  </data>
+  <data name="swagger_summary_pedidorequest_tipoagente" xml:space="preserve">
+    <value>tipo de agente
+PRO (Provedor) - CLI (Cliente)</value>
+  </data>
+  <data name="swagger_summary_pedidorequest_tipoexpedicion" xml:space="preserve">
+    <value>Tipo de expedição</value>
+  </data>
+  <data name="swagger_summary_pedidorequest_tipopedido" xml:space="preserve">
+    <value>Tipo de pedido</value>
+  </data>
+  <data name="swagger_summary_pedidosanuladosrequest_pedidosanulados" xml:space="preserve">
+    <value />
+  </data>
+  <data name="swagger_summary_problemdetails_detail" xml:space="preserve">
+    <value>Detalhe</value>
+  </data>
+  <data name="swagger_summary_problemdetails_instance" xml:space="preserve">
+    <value>Instância</value>
+  </data>
+  <data name="swagger_summary_problemdetails_status" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="swagger_summary_problemdetails_title" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="swagger_summary_problemdetails_type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="swagger_summary_referenciadetallerequest_anexo" xml:space="preserve">
+    <value>Informação adicional</value>
+  </data>
+  <data name="swagger_summary_referenciadetallerequest_cantidadconsumida" xml:space="preserve">
+    <value>Quantidade consumida</value>
+  </data>
+  <data name="swagger_summary_referenciadetallerequest_cantidadconsumidaagenda" xml:space="preserve">
+    <value>Quantidade consumida programada</value>
+  </data>
+  <data name="swagger_summary_referenciadetallerequest_cantidadreferencia" xml:space="preserve">
+    <value>Quantidade de referência</value>
+  </data>
+  <data name="swagger_summary_referenciadetallerequest_fechavencimiento" xml:space="preserve">
+    <value>Data de vencimento</value>
+  </data>
+  <data name="swagger_summary_referenciadetallerequest_identificador" xml:space="preserve">
+    <value>Série ou Lote do produto caso você manuseie.
+É um valor opcional e o WIS o tratará em
+modo automático se não especificado</value>
+  </data>
+  <data name="swagger_summary_referenciadetallerequest_idlineasistemaexterno" xml:space="preserve">
+    <value>Identificação no ERP ou sistema externo para o
+linha de referência.
+Se for definido posteriormente no commit, será
+retorna para uma correspondência no sistema externo.</value>
+  </data>
+  <data name="swagger_summary_referenciadetallerequest_producto" xml:space="preserve">
+    <value>Código do produto</value>
+  </data>
+  <data name="swagger_summary_referenciarequest_anexo1" xml:space="preserve">
+    <value>Informações anexadas</value>
+  </data>
+  <data name="swagger_summary_referenciarequest_anexo2" xml:space="preserve">
+    <value>Informações anexadas</value>
+  </data>
+  <data name="swagger_summary_referenciarequest_anexo3" xml:space="preserve">
+    <value>Informações anexadas</value>
+  </data>
+  <data name="swagger_summary_referenciarequest_codigoagente" xml:space="preserve">
+    <value>Código do agente</value>
+  </data>
+  <data name="swagger_summary_referenciarequest_memo" xml:space="preserve">
+    <value>Informações adicionais retornadas na confirmação do
+recepção</value>
+  </data>
+  <data name="swagger_summary_referenciarequest_numeroreferencia" xml:space="preserve">
+    <value>Identificador da referência para recepção (número de
+OC, retorno, etc.)</value>
+  </data>
+  <data name="swagger_summary_referenciarequest_predio" xml:space="preserve">
+    <value>Número da propriedade</value>
+  </data>
+  <data name="swagger_summary_referenciarequest_serializado" xml:space="preserve">
+    <value>Serializado</value>
+  </data>
+  <data name="swagger_summary_referenciarequest_tipoagente" xml:space="preserve">
+    <value>tipo de agente
+PRO (Provedor) - CLI (Cliente)</value>
+  </data>
+  <data name="swagger_summary_referenciarequest_tiporeferencia" xml:space="preserve">
+    <value>Tipo de referência
+PO (Pedido de Compra) - RR (Referência de Recebimento) -
+OD (Pedido de Devolução) - ODC (Devolução de Troca)
+OC e RR correspondem ao tipo de agente PRO
+OD e ODC correspondem ao tipo de agente CLI</value>
+  </data>
+  <data name="swagger_summary_stockrequest_producto" xml:space="preserve">
+    <value>Código do produto</value>
+  </data>
+  <data name="swagger_summary_stockrequest_stockdisponible" xml:space="preserve">
+    <value>Estoque local disponível (elegível)</value>
+  </data>
+  <data name="swagger_summary_stockrequest_stockgeneral" xml:space="preserve">
+    <value>Estoque disponível + estoque em caminhões, bloqueados e outros.</value>
+  </data>
+  <data name="swagger_summary_webhookclient_callback" xml:space="preserve">
+    <value>Processa o resultado da execução de uma interface de saída</value>
+  </data>
+  <data name="swagger_tag_webhookclient" xml:space="preserve">
+    <value>Cliente Webhook para interfaces de saída</value>
+  </data>
+  <data name="swagger_summary_ajusterequest_atributos" xml:space="preserve">
+    <value>Atributos do LPN associado ao ajustamento</value>
+  </data>
+  <data name="swagger_summary_confirmacionmercaderiapreparadarequest_lpns" xml:space="preserve">
+    <value>LPNs</value>
+  </data>
+  <data name="swagger_summary_confirmacionpedidorequest_contenedores" xml:space="preserve">
+    <value>Containers</value>
+  </data>
+  <data name="swagger_summary_confirmacionpedidorequest_lpns" xml:space="preserve">
+    <value>LPNs</value>
+  </data>
+  <data name="swagger_summary_confirmacionpedidorequest_pedidos" xml:space="preserve">
+    <value>Pedidos</value>
+  </data>
+  <data name="swagger_summary_lpndetallerequest_atributos" xml:space="preserve">
+    <value>Atributos de detalhe LPN</value>
+  </data>
+  <data name="swagger_summary_lpnrequest_atributos" xml:space="preserve">
+    <value>Atributos</value>
+  </data>
+  <data name="swagger_summary_lpnrequest_detalles" xml:space="preserve">
+    <value>Detalhes LPN</value>
+  </data>
+  <data name="swagger_summary_pedidoanuladodetallerequest_duplicados" xml:space="preserve">
+    <value>Duplicatas</value>
+  </data>
+  <data name="swagger_summary_referenciarequest_detalles" xml:space="preserve">
+    <value>Detalhes</value>
+  </data>
+  <data name="swagger_summary_almacenamientorequest_detalles" xml:space="preserve">
+    <value>Detalhes</value>
+  </data>
+  <data name="swagger_summary_atributopedidoanuladorequest_nombre" xml:space="preserve">
+    <value>Nome do atributo</value>
+  </data>
+  <data name="swagger_summary_atributopedidoanuladorequest_tipo" xml:space="preserve">
+    <value>Tipo do atributo</value>
+  </data>
+  <data name="swagger_summary_atributopedidoanuladorequest_valor" xml:space="preserve">
+    <value>Valor do atributo</value>
+  </data>
+  <data name="swagger_summary_detallepedidoatributoanuladorequest_cantidadanulada" xml:space="preserve">
+    <value>Quantidade anulada</value>
+  </data>
+  <data name="swagger_summary_detallepedidolpnanuladorequest_cantidadanulada" xml:space="preserve">
+    <value>Quantidade anulada</value>
+  </data>
+  <data name="swagger_summary_pedidoanuladodetallerequest_atributos" xml:space="preserve">
+    <value>Detalhes dos atributos</value>
+  </data>
+  <data name="swagger_summary_confirmacionproduccionrequest_anexo1" xml:space="preserve">
+    <value>Informações anexadas</value>
+  </data>
+  <data name="swagger_summary_confirmacionproduccionrequest_anexo2" xml:space="preserve">
+    <value>Informações anexadas</value>
+  </data>
+  <data name="swagger_summary_confirmacionproduccionrequest_anexo3" xml:space="preserve">
+    <value>Informações anexadas</value>
+  </data>
+  <data name="swagger_summary_confirmacionproduccionrequest_anexo4" xml:space="preserve">
+    <value>Informações anexadas</value>
+  </data>
+  <data name="swagger_summary_confirmacionproduccionrequest_anexo5" xml:space="preserve">
+    <value>Informações anexadas</value>
+  </data>
+  <data name="swagger_summary_confirmacionproduccionrequest_estado" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="swagger_summary_confirmacionproduccionrequest_finproduccion" xml:space="preserve">
+    <value>Fim da produção</value>
+  </data>
+  <data name="swagger_summary_confirmacionproduccionrequest_idproduccionexterno" xml:space="preserve">
+    <value>ID de produção externa</value>
+  </data>
+  <data name="swagger_summary_confirmacionproduccionrequest_insumos" xml:space="preserve">
+    <value>Insumos</value>
+  </data>
+  <data name="swagger_summary_confirmacionproduccionrequest_predio" xml:space="preserve">
+    <value>Número da propriedade</value>
+  </data>
+  <data name="swagger_summary_confirmacionproduccionrequest_productos" xml:space="preserve">
+    <value>Productos</value>
+  </data>
+  <data name="swagger_summary_confirmacionproduccionrequest_tipo" xml:space="preserve">
+    <value>Tipo de confirmação de produção</value>
+  </data>
+  <data name="swagger_summary_confirmacionproduccionrequest_empresa" xml:space="preserve">
+    <value>Código da companhia</value>
+  </data>
+  <data name="swagger_summary_confirmacionproduccionrequest_espacioproduccion" xml:space="preserve">
+    <value>Estação</value>
+  </data>
+  <data name="swagger_summary_confirmacionproduccionrequest_fechainicioproduccion" xml:space="preserve">
+    <value>Data de início da produção</value>
+  </data>
+  <data name="swagger_summary_confirmacionproduccionrequest_fechafinproduccion" xml:space="preserve">
+    <value>Data de término da produção</value>
+  </data>
+  <data name="swagger_summary_productoproduccionrequest_modalidadcalculolote" xml:space="preserve">
+    <value>Modo de cálculo em lote</value>
+  </data>
+  <data name="swagger_summary_insumoproduccionrequest_cantidadconsumida" xml:space="preserve">
+    <value>Cantidad Consumida</value>
+  </data>
+  <data name="swagger_summary_insumoproduccionrequest_cantidadteorica" xml:space="preserve">
+    <value>Cantidad Teorica</value>
+  </data>
+  <data name="swagger_summary_insumoproduccionrequest_codigoproducto" xml:space="preserve">
+    <value>Código do produto</value>
+  </data>
+  <data name="swagger_summary_insumoproduccionrequest_identificador" xml:space="preserve">
+    <value>Identificador</value>
+  </data>
+  <data name="swagger_summary_productoproduccionrequest_cantidadproducida" xml:space="preserve">
+    <value>Quantidade Produzida</value>
+  </data>
+  <data name="swagger_summary_productoproduccionrequest_cantidadteorica" xml:space="preserve">
+    <value>Montante Teórico</value>
+  </data>
+  <data name="swagger_summary_productoproduccionrequest_codigomotivo" xml:space="preserve">
+    <value>Código de Razão</value>
+  </data>
+  <data name="swagger_summary_productoproduccionrequest_codigoproducto" xml:space="preserve">
+    <value>Código do produto</value>
+  </data>
+  <data name="swagger_summary_productoproduccionrequest_identificador" xml:space="preserve">
+    <value>Identificador de produto</value>
+  </data>
+  <data name="swagger_summary_productoproduccionrequest_observaciones" xml:space="preserve">
+    <value>Observações</value>
+  </data>
+  <data name="swagger_summary_productoproduccionrequest_unidadproductofinal" xml:space="preserve">
+    <value>Unidade de Produto Final</value>
+  </data>
+  <data name="swagger_summary_productoproduccionrequest_vencimiento" xml:space="preserve">
+    <value>Expiração</value>
+  </data>
+  <data name="swagger_summary_insumoproduccionrequest_codigomotivo" xml:space="preserve">
+    <value>Código de razão</value>
+  </data>
+</root>

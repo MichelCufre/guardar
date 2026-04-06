@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>WIS.TaskQueue</name>
+  </assembly>
+  <members>
+    <member name="P:WIS.TaskQueue.Dtos.TaskRequest.Category">
+      <summary>
+        Categoria de la tarea
+      </summary>
+      <example>1</example>
+    </member>
+    <member name="P:WIS.TaskQueue.Dtos.TaskRequest.Data">
+      <summary>
+        Datos de la tarea
+      </summary>
+      <example></example>
+    </member>
+    <member name="T:WIS.TaskQueue.Extensions.ControllerBaseExtension">
+      <summary>
+
+        ]Nota: Los metodos de esta clase deben ser protegidos sino se rompe swagger
+
+      </summary>
+    </member>
+  </members>
+</doc>

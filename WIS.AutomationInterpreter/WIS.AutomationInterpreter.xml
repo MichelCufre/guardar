@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WIS.AutomationInterpreter</name>
+    </assembly>
+    <members>
+        <member name="M:WIS.AutomationInterpreter.Controllers.Entrada.AutomatismoController.SendProductos(WIS.Domain.Integracion.Dtos.AutomatismoInterpreterRequest)">
+            <summary>
+                swagger_summary_automationinterpreter_sendproductos
+            </summary>
+            <remarks>swagger_remarks_automationinterpreter_sendproductos</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_automationinterpreter_sendproductos</returns>
+            <response code="200">swagger_response_200_automationinterpreter_sendproductos</response>
+            <response code="400">swagger_response_400_automationinterpreter_sendproductos</response>
+        </member>
+        <member name="M:WIS.AutomationInterpreter.Controllers.Entrada.AutomatismoController.SendCodigosBarras(WIS.Domain.Integracion.Dtos.AutomatismoInterpreterRequest)">
+            <summary>
+                swagger_summary_automationinterpreter_sendcodigosbarras
+            </summary>
+            <remarks>swagger_remarks_automationinterpreter_sendcodigosbarras</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_automationinterpreter_sendcodigosbarras</returns>
+            <response code="200">swagger_response_200_automationinterpreter_sendcodigosbarras</response>
+            <response code="400">swagger_response_400_automationinterpreter_sendcodigosbarras</response>
+        </member>
+        <member name="M:WIS.AutomationInterpreter.Controllers.Entrada.AutomatismoController.SendSalida(WIS.Domain.Integracion.Dtos.AutomatismoInterpreterRequest)">
+            <summary>
+                swagger_summary_automationinterpreter_sendsalida
+            </summary>
+            <remarks>swagger_remarks_automationinterpreter_sendsalida</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_automationinterpreter_sendsalida</returns>
+            <response code="200">swagger_response_200_automationinterpreter_sendsalida</response>
+            <response code="400">swagger_response_400_automationinterpreter_sendsalida</response>
+        </member>
+        <member name="M:WIS.AutomationInterpreter.Controllers.Entrada.AutomatismoController.SendEntrada(WIS.Domain.Integracion.Dtos.AutomatismoInterpreterRequest)">
+            <summary>
+                swagger_summary_automationinterpreter_sendentrada
+            </summary>
+            <remarks>swagger_remarks_automationinterpreter_sendentrada</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_automationinterpreter_sendentrada</returns>
+            <response code="200">swagger_response_200_automationinterpreter_sendentrada</response>
+            <response code="400">swagger_response_400_automationinterpreter_sendentrada</response>
+        </member>
+        <member name="M:WIS.AutomationInterpreter.Controllers.Salida.GalysNotificationController.NotificarAjustes(WIS.Automation.Galys.NotificacionAjusteStockGalysRequest)">
+            <summary>
+                swagger_summary_galysnotification_notificarajustes
+            </summary>
+            <remarks>swagger_remarks_galysnotification_notificarajustes</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_galysnotification_notificarajustes</returns>
+            <response code="200">swagger_response_200_galysnotification_notificarajustes</response>
+            <response code="404">swagger_response_404_galysnotification_notificarajustes</response>
+        </member>
+        <member name="M:WIS.AutomationInterpreter.Controllers.Salida.GalysNotificationController.ConfirmarOrdenEntrada(WIS.Automation.Galys.ConfirmacionEntradaStockGalysRequest)">
+            <summary>
+                swagger_summary_galysnotification_confirmarentradas
+            </summary>
+            <remarks>swagger_remarks_galysnotification_confirmarentradas</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_galysnotification_confirmarentradas</returns>
+            <response code="200">swagger_response_200_galysnotification_confirmarentradas</response>
+            <response code="404">swagger_response_404_galysnotification_confirmarentradas</response>
+        </member>
+        <member name="M:WIS.AutomationInterpreter.Controllers.Salida.GalysNotificationController.ConfirmarOrdenSalida(WIS.Automation.Galys.ConfirmacionSalidaStockGalysRequest)">
+            <summary>
+                swagger_summary_galysnotification_confirmarsalida
+            </summary>
+            <remarks>swagger_remarks_galysnotification_confirmarsalida</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_galysnotification_confirmarsalida</returns>
+            <response code="200">swagger_response_200_galysnotification_confirmarsalida</response>
+            <response code="404">swagger_response_404_galysnotification_confirmarsalida</response>
+        </member>
+        <member name="M:WIS.AutomationInterpreter.Controllers.Salida.GalysNotificationController.ConfirmarMovimiento(WIS.Automation.Galys.ConfirmacionMovimientoStockGalysRequest)">
+            <summary>
+                swagger_summary_galysnotification_confirmarmovimiento
+            </summary>
+            <remarks>swagger_remarks_galysnotification_confirmarmovimiento</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_galysnotification_confirmarmovimiento</returns>
+            <response code="200">swagger_response_200_galysnotification_confirmarmovimiento</response>
+            <response code="404">swagger_response_404_galysnotification_confirmarmovimiento</response>
+        </member>
+        <member name="M:WIS.AutomationInterpreter.Controllers.Salida.NotificacionAutomatismoController.NotificarAjuste(WIS.AutomationInterpreter.Models.NotificacionAjustesStockAutomatismoRequest)">
+            <summary>
+                swagger_summary_notificacionautomatismo_notificarajuste
+            </summary>
+            <remarks>swagger_remarks_notificacionautomatismo_notificarajuste</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_notificacionautomatismo_notificarajuste</returns>
+            <response code="200">swagger_response_200_notificacionautomatismo_notificarajuste</response>
+            <response code="400">swagger_response_400_notificacionautomatismo_notificarajuste</response>
+        </member>
+        <member name="M:WIS.AutomationInterpreter.Controllers.Salida.NotificacionAutomatismoController.ConfirmarEntrada(WIS.AutomationInterpreter.Models.ConfirmacionEntradaStockAutomatismoRequest)">
+            <summary>
+                swagger_summary_notificacionautomatismo_confirmarentrada
+            </summary>
+            <remarks>swagger_remarks_notificacionautomatismo_confirmarentrada</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_notificacionautomatismo_confirmarentrada</returns>
+            <response code="200">swagger_response_200_notificacionautomatismo_confirmarentrada</response>
+            <response code="400">swagger_response_400_notificacionautomatismo_confirmarentrada</response>
+        </member>
+        <member name="M:WIS.AutomationInterpreter.Controllers.Salida.NotificacionAutomatismoController.ConfirmarSalida(WIS.AutomationInterpreter.Models.ConfirmacionSalidaStockAutomatismoRequest)">
+            <summary>
+                swagger_summary_notificacionautomatismo_confirmarsalida
+            </summary>
+            <remarks>swagger_remarks_notificacionautomatismo_confirmarsalida</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_notificacionautomatismo_confirmarsalida</returns>
+            <response code="200">swagger_response_200_notificacionautomatismo_confirmarsalida</response>
+            <response code="400">swagger_response_400_notificacionautomatismo_confirmarsalida</response>
+        </member>
+        <member name="P:WIS.AutomationInterpreter.Models.ConfirmacionEntradaStockAutomatismoRequest.Empresa">
+            <summary>
+            Código de empresa de la ejecución
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.AutomationInterpreter.Models.ConfirmacionEntradaStockAutomatismoRequest.DsReferencia">
+            <summary>
+            Sirve para generar una referencia o un campo de búsqueda en el panel de ejecuciones de interfaces de WIS. Mediante este campo es posible identificar o buscar la traza de la ejecución de la interfaz. Ante un incidente o un procesamiento no esperado se puede reportar el problema haciendo referencia al valor de este campo.
+            </summary>
+            <example>Confirmación de entrada de stock</example>
+        </member>
+        <member name="P:WIS.AutomationInterpreter.Models.ConfirmacionEntradaStockAutomatismoRequest.Archivo">
+            <summary>
+            Generalmente se utiliza en sistemas externos que generan archivos y un middleware que oficia de intermediario entre el archivo y el API. 
+            En este campo se puede guardar el nombre del archivo original en el cual vinieron los datos. En caso de que la implantación no utilice archivos se puede utilizar con otros fines.
+            </summary>
+            <example>Archivo</example>
+        </member>
+        <member name="P:WIS.AutomationInterpreter.Models.ConfirmacionEntradaStockAutomatismoRequest.Detalles">
+            <summary>
+            Lista de detalles
+            </summary>
+        </member>
+        <member name="P:WIS.AutomationInterpreter.Models.ConfirmacionSalidaStockAutomatismoRequest.Empresa">
+            <summary>
+            Código de empresa de la ejecución
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.AutomationInterpreter.Models.ConfirmacionSalidaStockAutomatismoRequest.DsReferencia">
+            <summary>
+            Sirve para generar una referencia o un campo de búsqueda en el panel de ejecuciones de interfaces de WIS. Mediante este campo es posible identificar o buscar la traza de la ejecución de la interfaz. Ante un incidente o un procesamiento no esperado se puede reportar el problema haciendo referencia al valor de este campo.
+            </summary>
+            <example>Confirmación de salida de stock</example>
+        </member>
+        <member name="P:WIS.AutomationInterpreter.Models.ConfirmacionSalidaStockAutomatismoRequest.Archivo">
+            <summary>
+            Generalmente se utiliza en sistemas externos que generan archivos y un middleware que oficia de intermediario entre el archivo y el API. 
+            En este campo se puede guardar el nombre del archivo original en el cual vinieron los datos. En caso de que la implantación no utilice archivos se puede utilizar con otros fines.
+            </summary>
+            <example>Archivo</example>
+        </member>
+        <member name="P:WIS.AutomationInterpreter.Models.ConfirmacionSalidaStockAutomatismoRequest.Detalles">
+            <summary>
+            Lista de detalles
+            </summary>
+        </member>
+        <member name="P:WIS.AutomationInterpreter.Models.NotificacionAjustesStockAutomatismoRequest.Empresa">
+            <summary>
+            Código de empresa de la ejecución
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:WIS.AutomationInterpreter.Models.NotificacionAjustesStockAutomatismoRequest.DsReferencia">
+            <summary>
+            Sirve para generar una referencia o un campo de búsqueda en el panel de ejecuciones de interfaces de WIS. Mediante este campo es posible identificar o buscar la traza de la ejecución de la interfaz. Ante un incidente o un procesamiento no esperado se puede reportar el problema haciendo referencia al valor de este campo.
+            </summary>
+            <example>Confirmación de ajustes</example>
+        </member>
+        <member name="P:WIS.AutomationInterpreter.Models.NotificacionAjustesStockAutomatismoRequest.Archivo">
+            <summary>
+            Generalmente se utiliza en sistemas externos que generan archivos y un middleware que oficia de intermediario entre el archivo y el API. 
+            En este campo se puede guardar el nombre del archivo original en el cual vinieron los datos. En caso de que la implantación no utilice archivos se puede utilizar con otros fines.
+            </summary>
+            <example>Archivo</example>
+        </member>
+        <member name="P:WIS.AutomationInterpreter.Models.NotificacionAjustesStockAutomatismoRequest.Ajustes">
+            <summary>
+            Lista de ajustes
+            </summary>
+        </member>
+    </members>
+</doc>

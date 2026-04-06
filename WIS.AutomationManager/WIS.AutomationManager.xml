@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WIS.AutomationManager</name>
+    </assembly>
+    <members>
+        <member name="M:WIS.AutomationManager.Controllers.Entrada.ConfirmacionEntradaController.Send(WIS.Domain.Automatismo.Dtos.ConfirmacionEntradaStockRequest)">
+            <summary>
+                swagger_summary_confirmacionentrada_send
+            </summary>
+            <remarks>swagger_remarks_confirmacionentrada_send</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_confirmacionentrada_send</returns>
+            <response code="200">swagger_response_200_confirmacionentrada_send</response>
+            <response code="400">swagger_response_400_confirmacionentrada_send</response>
+        </member>
+        <member name="M:WIS.AutomationManager.Controllers.Entrada.ConfirmacionMovimientoController.Send(WIS.Domain.Automatismo.Dtos.ConfirmacionMovimientoStockRequest)">
+            <summary>
+                swagger_summary_ConfirmacionMovimiento_send
+            </summary>
+            <remarks>swagger_remarks_ConfirmacionMovimiento_send</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_ConfirmacionMovimiento_send</returns>
+            <response code="200">swagger_response_200_ConfirmacionMovimiento_send</response>
+            <response code="400">swagger_response_400_ConfirmacionMovimiento_send</response>
+        </member>
+        <member name="M:WIS.AutomationManager.Controllers.Entrada.ConfirmacionSalidaController.Send(WIS.Domain.Automatismo.Dtos.ConfirmacionSalidaStockRequest)">
+            <summary>
+                swagger_summary_confirmacionsalida_send
+            </summary>
+            <remarks>swagger_remarks_confirmacionsalida_send</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_confirmacionsalida_send</returns>
+            <response code="200">swagger_response_200_confirmacionsalida_send</response>
+            <response code="400">swagger_response_400_confirmacionsalida_send</response>
+        </member>
+        <member name="M:WIS.AutomationManager.Controllers.Entrada.NotificacionAjusteStockController.Send(WIS.Domain.Automatismo.Dtos.NotificacionAjustesStockRequest)">
+            <summary>
+                swagger_summary_notificacionajustestock_send
+            </summary>
+            <remarks>swagger_remarks_notificacionajustestock_send</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_notificacionajustestock_send</returns>
+            <response code="200">swagger_response_200_notificacionajustestock_send</response>
+            <response code="400">swagger_response_400_notificacionajustestock_send</response>
+        </member>
+        <member name="M:WIS.AutomationManager.Controllers.Salida.CodigoBarraController.CreateUpdateOrDelete(WIS.Domain.Automatismo.Dtos.CodigosBarrasAutomatismoRequest)">
+            <summary>
+                swagger_summary_codigobarra_createupdateordelete
+            </summary>
+            <remarks>swagger_remarks_codigobarra_createupdateordelete</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_codigobarra_createupdateordelete</returns>
+            <response code="200">swagger_response_200_codigobarra_createupdateordelete</response>
+            <response code="400">swagger_response_400_codigobarra_createupdateordelete</response>
+        </member>
+        <member name="M:WIS.AutomationManager.Controllers.Salida.EntradaController.EntradaStock(WIS.Domain.Automatismo.Dtos.EntradaStockAutomatismoRequest)">
+            <summary>
+                swagger_summary_entrada_entradastock
+            </summary>
+            <remarks>swagger_remarks_entrada_entradastock</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_entrada_entradastock</returns>
+            <response code="200">swagger_response_200_entrada_entradastock</response>
+            <response code="400">swagger_response_400_entrada_entradastock</response>
+        </member>
+        <member name="M:WIS.AutomationManager.Controllers.Salida.ProductoController.Update(WIS.Domain.Automatismo.Dtos.ProductosAutomatismoRequest)">
+            <summary>
+                swagger_summary_producto_update
+            </summary>
+            <remarks>swagger_remarks_producto_update</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_producto_update</returns>
+            <response code="200">swagger_response_200_producto_update</response>
+            <response code="400">swagger_response_400_producto_update</response>
+        </member>
+        <member name="M:WIS.AutomationManager.Controllers.Salida.SalidaController.SalidaStock(WIS.Domain.Automatismo.Dtos.SalidaStockAutomatismoRequest)">
+            <summary>
+                swagger_summary_salida_salidastock
+            </summary>
+            <remarks>swagger_remarks_salida_salidastock</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_salida_salidastock</returns>
+            <response code="200">swagger_response_200_salida_salidastock</response>
+            <response code="400">swagger_response_400_salida_salidastock</response>
+        </member>
+        <member name="M:WIS.AutomationManager.Controllers.Salida.UbicacionPickingController.CreateUpdateOrDelete(WIS.Domain.Automatismo.Dtos.UbicacionesPickingAutomatismoRequest)">
+            <summary>
+                swagger_summary_ubicacionpicking_createupdateordelete
+            </summary>
+            <remarks>swagger_remarks_ubicacionpicking_createupdateordelete</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_ubicacionpicking_createupdateordelete</returns>
+            <response code="200">swagger_response_200_ubicacionpicking_createupdateordelete</response>
+            <response code="400">swagger_response_400_ubicacionpicking_createupdateordelete</response>
+        </member>
+        <member name="T:WIS.AutomationManager.Extensions.AutomatismoBaseController">
+            <summary>
+            
+            Nota: Los metodos de esta clase deben ser protegidos sino se rompe Swagger
+            
+            </summary>
+        </member>
+    </members>
+</doc>

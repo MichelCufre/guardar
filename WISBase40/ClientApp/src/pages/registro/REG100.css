@@ -1,0 +1,7 @@
+﻿.webhook-response {
+    margin-left: 10px;
+}
+
+    .webhook-response.error {
+        color: red;
+    }
