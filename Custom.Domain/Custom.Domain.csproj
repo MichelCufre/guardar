@@ -42,7 +42,6 @@
     <None Remove="Stock\**" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Services\BatchWmsApiService.cs" />
     <Compile Include="Services\Interfaces\IMiddlewareService.cs" />
     <Compile Include="Services\MiddlewareService.cs" />
   </ItemGroup>

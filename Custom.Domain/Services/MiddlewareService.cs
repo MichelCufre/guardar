@@ -11,6 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using WIS.Configuration;
 using WIS.Domain.General.API.Dtos.Entrada;
+using WIS.Domain.Services.Interfaces;
 
 namespace Custom.Domain.Services
 {
@@ -19,12 +20,15 @@ namespace Custom.Domain.Services
         protected readonly IOptions<AuthSettings> _authSettings;
         protected readonly IHttpContextAccessor _httpContextAccessor;
         protected readonly ILogger<MiddlewareService> _logger;
-        protected readonly BatchWmsApiService _wmsApiService;
+        //protected readonly BatchWmsApiService _wmsApiService;
+        protected readonly IWmsApiService _wmsApiService;
+
 
         public MiddlewareService(
             IOptions<AuthSettings> authSettings,
             IHttpContextAccessor httpContextAccessor,
-            BatchWmsApiService wmsApiService,
+            //BatchWmsApiService wmsApiService,
+            IWmsApiService wmsApiService,
             ILogger<MiddlewareService> logger)
         {
             _authSettings = authSettings;
@@ -39,54 +43,61 @@ namespace Custom.Domain.Services
 
             var token = GetToken(CancellationToken.None).Result;
 
-            _wmsApiService.SetAccessToken(token);
+            //_wmsApiService.SetAccessToken(token);
 
-            CrearProducto(new ProductosRequest
-            {
-                Empresa = 0,           // TODO: completar
-                DsReferencia = "Middleware - Productos",
-                Archivo = "",          // TODO: completar
-                IdRequest = "",        // TODO: completar
-                Productos = new List<ProductoRequest>
-                {
-                    // TODO: completar con datos reales
-                }
-            });
+
+            //CrearProducto(new ProductosRequest
+            //{
+            //    Empresa = 0,
+            //    DsReferencia = "Middleware - Productos",
+            //    Archivo = "",
+            //    IdRequest = "",
+            //    Productos = new List<ProductoRequest>
+            //    {
+            //    }
+            //});
+
+
+            //CrearAgentes(new AgentesRequest
+            //{
+            //    Empresa = 0,           
+            //    DsReferencia = "Middleware - Agentes",
+            //    Archivo = "",          
+            //    IdRequest = "",        
+            //    Agentes = new List<AgenteRequest>
+            //    {
+            //    }
+            //});
+
+            //CrearPedidos(new PedidosRequest
+            //{
+            //    Empresa = 0,           
+            //    DsReferencia = "Middleware - Pedidos",
+            //    Archivo = "",          
+            //    IdRequest = "",        
+            //    Pedidos = new List<PedidoRequest>
+            //    {
+            //    }
+            //});
 
             CrearCodigoBarras(new CodigosBarrasRequest
             {
-                Empresa = 0,           // TODO: completar
-                DsReferencia = "Middleware - Codigos de Barra",
-                Archivo = "",          // TODO: completar
-                IdRequest = "",        // TODO: completar
-                CodigosDeBarras = new List<CodigoBarraRequest>
-                {
-                    // TODO: completar con datos reales
-                }
-            });
-
-            CrearAgentes(new AgentesRequest
-            {
-                Empresa = 0,           // TODO: completar
-                DsReferencia = "Middleware - Agentes",
-                Archivo = "",          // TODO: completar
-                IdRequest = "",        // TODO: completar
-                Agentes = new List<AgenteRequest>
-                {
-                    // TODO: completar con datos reales
-                }
-            });
-
-            CrearPedidos(new PedidosRequest
-            {
-                Empresa = 0,           // TODO: completar
-                DsReferencia = "Middleware - Pedidos",
-                Archivo = "",          // TODO: completar
-                IdRequest = "",        // TODO: completar
-                Pedidos = new List<PedidoRequest>
-                {
-                    // TODO: completar con datos reales
-                }
+                Empresa = 1,
+                DsReferencia = "Creación de códigos de barras",
+                Archivo = "Archivo",
+                IdRequest = "123",
+                CodigosDeBarras =
+                [
+                    new CodigoBarraRequest
+                    {
+                        Codigo = "CB1",
+                        Producto = "PR1",
+                        TipoCodigo = 1,
+                        PrioridadUso = 1,
+                        CantidadEmbalaje = 1,
+                        TipoOperacion = "A"
+                    }
+                ]
             });
 
             _logger.LogInformation("MiddlewareService finalizado");
@@ -99,14 +110,6 @@ namespace Custom.Domain.Services
         protected virtual async Task<string> GetToken(CancellationToken cancellationToken)
         {
             _logger.LogDebug("Obteniendo token de acceso...");
-
-            var access_token = _httpContextAccessor.HttpContext?.Request?.Headers["access_token"][0];
-
-            if (!string.IsNullOrEmpty(access_token))
-            {
-                _logger.LogDebug("Autenticado desde HttpContext");
-                return access_token;
-            }
 
             using (var client = new HttpClient())
             {
