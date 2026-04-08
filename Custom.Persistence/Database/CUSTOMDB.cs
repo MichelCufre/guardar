@@ -1,3 +1,4 @@
+using Custom.Persistence.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using WIS.Persistence;
@@ -14,7 +15,6 @@ namespace Custom.Persistence.Database
         }
 
         #region Tablas
-
         #endregion
 
         #region Vistas
@@ -28,7 +28,6 @@ namespace Custom.Persistence.Database
             #region Claves compuestas
 
             #region Tablas
-
             #endregion
 
             #region Vistas

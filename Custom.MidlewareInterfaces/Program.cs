@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Custom.Domain.DataModel;
 using Custom.Domain.Services;
 using Custom.Domain.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
@@ -17,6 +18,7 @@ using WIS.Domain.DataModel;
 using WIS.Domain.Services.Configuracion;
 using WIS.Http;
 using WIS.Persistence;
+using WIS.Security;
 
 namespace Custom.MidlewareInterfaces
 {
@@ -55,6 +57,7 @@ namespace Custom.MidlewareInterfaces
                             if (hasHandle)
                             {
                                 app.Run();
+                                
                             }
                             else
                             {
@@ -87,11 +90,13 @@ namespace Custom.MidlewareInterfaces
         {
             services.Configure<WmsApiSettings>(config.GetSection(WmsApiSettings.Position));
             services.Configure<AuthSettings>(config.GetSection(AuthSettings.Position));
+            services.Configure<DatabaseSettings>(config.GetSection(DatabaseSettings.Position));
 
             services.AddSingleton<IConfiguration>(config);
 
             services.AddScoped<IWebApiClient, WebApiClient>();
-            services.AddScoped<IUnitOfWorkFactory, UnitOfWorkFactory>();
+            services.AddScoped<IUnitOfWorkFactory, UnitOfWorkCustomFactory>();
+            services.AddScoped<BatchWmsApiService>();
             services.AddScoped<IMiddlewareService, MiddlewareService>();
 
             services.AddLogging(builder =>

@@ -1,4 +1,5 @@
 ﻿using Custom.Domain.DataModel.Repositories;
+using Custom.Domain.DataModel.Repositories;
 using Custom.Persistence.Database;
 using Microsoft.Extensions.Options;
 using WIS.Configuration;
@@ -51,7 +52,7 @@ namespace Custom.Domain.DataModel
 
         #region Repositories
         private AgendaCustomRepository _agendaCustomRepository; public AgendaCustomRepository AgendaCustomRepository => this._agendaCustomRepository ?? (this._agendaCustomRepository = new AgendaCustomRepository((CUSTOMDB)this._context, this._application, this._userId, this._dapper));
-        
+        private MiddlewareColaRepository _middlewareColaRepository; public MiddlewareColaRepository MiddlewareColaRepository => this._middlewareColaRepository ?? (this._middlewareColaRepository = new MiddlewareColaRepository(this._dapper));
         #endregion Repositories
     }
 }

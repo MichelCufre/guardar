@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Services\BatchWmsApiService.cs" />
+    <Compile Include="Services\Configuration\MiddlewareDatos.cs" />
     <Compile Include="Services\Interfaces\IMiddlewareService.cs" />
     <Compile Include="Services\MiddlewareService.cs" />
   </ItemGroup>
@@ -63,6 +64,7 @@
     <ProjectReference Include="..\WIS.Domain\WIS.Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="DataModel\Entities\" />
     <Folder Include="General\API\Dtos\Entrada\" />
     <Folder Include="General\API\Dtos\Salida\" />
     <Folder Include="Services\Configuration\" />

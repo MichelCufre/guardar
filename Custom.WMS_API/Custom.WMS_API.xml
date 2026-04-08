@@ -4,5 +4,61 @@
         <name>Custom.WMS_API</name>
     </assembly>
     <members>
+        <member name="M:Custom.WMS_API.Controllers.Entrada.ReferenciaRecepcionController.Create">
+            <summary>swagger_summary_referenciarecepcion_create</summary>
+            <remarks>swagger_remarks_referenciarecepcion_create</remarks>
+            <returns>swagger_returns_referenciarecepcion_create</returns>
+            <response code="200">swagger_response_200_referenciarecepcion_create</response>
+            <response code="400">swagger_response_400_referenciarecepcion_create</response>
+        </member>
+        <member name="M:Custom.WMS_API.Controllers.Entrada.ReferenciaRecepcionController.Reprocess(WIS.Domain.General.API.Dtos.Entrada.ReprocesamientoRequest)">
+            <summary>swagger_summary_referenciarecepcion_reprocess</summary>
+            <remarks>swagger_remarks_referenciarecepcion_reprocess</remarks>
+            <param name="request"></param>
+            <returns>swagger_returns_referenciarecepcion_reprocess</returns>
+            <response code="200">swagger_response_200_referenciarecepcion_reprocess</response>
+            <response code="400">swagger_response_400_referenciarecepcion_reprocess</response>
+        </member>
+        <member name="M:Custom.WMS_API.Controllers.Entrada.ReferenciaRecepcionController.GetReferencia(System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>swagger_summary_referenciarecepcion_getreferencia</summary>
+            <param name="nuReferencia" example="REF1">swagger_param_nureferencia_referenciarecepcion_getreferencia</param>
+            <param name="empresa" example="1">swagger_param_empresa_referenciarecepcion_getreferencia</param>
+            <param name="tipo" example="OC">swagger_param_tipo_referenciarecepcion_getreferencia</param>
+            <param name="tipoAgente" example="PRO">swagger_param_tipoagente_referenciarecepcion_getreferencia</param>
+            <param name="codigoAgente" example="AGE01">swagger_param_codigoagente_referenciarecepcion_getreferencia</param>
+            <returns>swagger_returns_referenciarecepcion_getreferencia</returns>
+            <response code="200">swagger_response_200_referenciarecepcion_getreferencia</response>
+            <response code="401">swagger_response_401_referenciarecepcion_getreferencia</response>
+            <response code="404">swagger_response_404_referenciarecepcion_getreferencia</response>
+        </member>
+        <member name="M:Custom.WMS_API.Controllers.Entrada.ReferenciaRecepcionController.GetReferenciaById(System.Int32)">
+            <summary>swagger_summary_referenciarecepcion_getreferenciabyid</summary>
+            <param name="idReferencia" example="1146">swagger_param_idreferencia_referenciarecepcion_getreferenciabyid</param>
+            <returns>swagger_returns_referenciarecepcion_getreferenciabyid</returns>
+            <response code="200">swagger_response_200_referenciarecepcion_getreferenciabyid</response>
+            <response code="401">swagger_response_401_referenciarecepcion_getreferenciabyid</response>
+            <response code="404">swagger_response_404_referenciarecepcion_getreferenciabyid</response>
+        </member>
+        <member name="T:Custom.WMS_API.Controllers.Entrada.ReferenciasConAgendaRequest">
+            <summary>
+            Request custom que extiende ReferenciasRecepcionRequest agregando la creación de agendas
+            en la misma operación.
+            </summary>
+        </member>
+        <member name="P:Custom.WMS_API.Controllers.Entrada.ReferenciasConAgendaRequest.Agendas">
+            <summary>
+            Lista de agendas a crear junto con las referencias
+            </summary>
+        </member>
+        <member name="M:Custom.WMS_API.Controllers.Entrada.ReferenciasConAgendaRequest.ToReferenciasRecepcionRequest">
+            <summary>
+            Convierte al request estándar de referencias para reutilizar el mapper existente
+            </summary>
+        </member>
+        <member name="M:Custom.WMS_API.Controllers.Entrada.ReferenciasConAgendaRequest.ToAgendasRequest">
+            <summary>
+            Convierte al request estándar de agendas para reutilizar el mapper existente
+            </summary>
+        </member>
     </members>
 </doc>

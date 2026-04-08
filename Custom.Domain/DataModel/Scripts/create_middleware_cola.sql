@@ -1,0 +1,28 @@
+CREATE TABLE MIDDLEWARE_COLA (
+    -- Tabla de cola de middleware en la BD de WIS (Oracle)
+    -- Ejecutar en la misma BD donde viven las tablas I_E_ESTAN_*
+    CREATE TABLE T_MIDDLEWARE_COLA (
+        NU_COLA      NUMBER(18)      GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+        TP_COLA      VARCHAR2(20)    NOT NULL,       -- PRODUCTO | AGENTE | CODIGOBARRAS | PEDIDO
+        DS_PAYLOAD   CLOB            NOT NULL,       -- JSON del WmsRequest traducido
+        CD_ESTADO    VARCHAR2(10)    DEFAULT 'PENDIENTE' NOT NULL,  -- PENDIENTE | PROCESADO | ERROR
+        DT_ADDROW    DATE            DEFAULT SYSDATE NOT NULL,
+        DT_PROCESADO DATE            NULL,
+        DS_ERROR     VARCHAR2(2000)  NULL,
+        NU_INTENTOS  NUMBER(3)       DEFAULT 0 NOT NULL
+    );
+
+    CREATE INDEX IX_MIDDLEWARE_COLA_ESTADO ON T_MIDDLEWARE_COLA (CD_ESTADO, DT_ADDROW);
+
+    -- SQL Server (usar este bloque si la BD es SQL Server en lugar de Oracle)
+    -- CREATE TABLE T_MIDDLEWARE_COLA (
+    --     NU_COLA      BIGINT          NOT NULL IDENTITY(1,1) PRIMARY KEY,
+    --     TP_COLA      VARCHAR(20)     NOT NULL,
+    --     DS_PAYLOAD   VARCHAR(MAX)    NOT NULL,
+    --     CD_ESTADO    VARCHAR(10)     NOT NULL DEFAULT 'PENDIENTE',
+    --     DT_ADDROW    DATETIME        NOT NULL DEFAULT GETDATE(),
+    --     DT_PROCESADO DATETIME        NULL,
+    --     DS_ERROR     VARCHAR(2000)   NULL,
+    --     NU_INTENTOS  INT             NOT NULL DEFAULT 0
+    -- );
+    -- CREATE INDEX IX_MIDDLEWARE_COLA_ESTADO ON T_MIDDLEWARE_COLA (CD_ESTADO, DT_ADDROW);

@@ -1,16 +1,17 @@
 using Custom.Domain.Services.Interfaces;
+using Custom.Domain.DataModel;
+using Custom.Domain.DataModel.Repositories;
+using Custom.Domain.Services.Interfaces;
 using IdentityModel.Client;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using WIS.Configuration;
-using WIS.Domain.General.API.Dtos.Entrada;
+using WIS.Domain.DataModel;
 
 namespace Custom.Domain.Services
 {
@@ -20,16 +21,19 @@ namespace Custom.Domain.Services
         protected readonly IHttpContextAccessor _httpContextAccessor;
         protected readonly ILogger<MiddlewareService> _logger;
         protected readonly BatchWmsApiService _wmsApiService;
+        protected readonly IUnitOfWorkFactory _uowFactory;
 
         public MiddlewareService(
             IOptions<AuthSettings> authSettings,
             IHttpContextAccessor httpContextAccessor,
             BatchWmsApiService wmsApiService,
+            IUnitOfWorkFactory uowFactory,
             ILogger<MiddlewareService> logger)
         {
             _authSettings = authSettings;
             _httpContextAccessor = httpContextAccessor;
             _wmsApiService = wmsApiService;
+            _uowFactory = uowFactory;
             _logger = logger;
         }
 
@@ -37,76 +41,58 @@ namespace Custom.Domain.Services
         {
             _logger.LogInformation("Iniciando proceso MiddlewareService");
 
-            var token = GetToken(CancellationToken.None).Result;
+            if (!_wmsApiService.IsEnabled())
+            {
+                _logger.LogWarning("WMS API deshabilitada. Proceso abortado.");
+                return;
+            }
 
+            var token = GetToken(CancellationToken.None).Result;
             _wmsApiService.SetAccessToken(token);
 
-            CrearProducto(new ProductosRequest
+            using (var uow = (UnitOfWorkCustom)_uowFactory.GetUnitOfWork())
             {
-                Empresa = 0,           // TODO: completar
-                DsReferencia = "Middleware - Productos",
-                Archivo = "",          // TODO: completar
-                IdRequest = "",        // TODO: completar
-                Productos = new List<ProductoRequest>
-                {
-                    // TODO: completar con datos reales
-                }
-            });
+                var pendientes = uow.MiddlewareColaRepository.GetPendientes();
 
-            CrearCodigoBarras(new CodigosBarrasRequest
-            {
-                Empresa = 0,           // TODO: completar
-                DsReferencia = "Middleware - Codigos de Barra",
-                Archivo = "",          // TODO: completar
-                IdRequest = "",        // TODO: completar
-                CodigosDeBarras = new List<CodigoBarraRequest>
+                foreach (var item in pendientes)
                 {
-                    // TODO: completar con datos reales
-                }
-            });
+                    try
+                    {
+                        _logger.LogInformation("Procesando cola Id={Id} Tipo={Tipo}", item.NU_COLA, item.TP_COLA);
 
-            CrearAgentes(new AgentesRequest
-            {
-                Empresa = 0,           // TODO: completar
-                DsReferencia = "Middleware - Agentes",
-                Archivo = "",          // TODO: completar
-                IdRequest = "",        // TODO: completar
-                Agentes = new List<AgenteRequest>
-                {
-                    // TODO: completar con datos reales
-                }
-            });
+                        var endpoint = ResolverEndpoint(item.TP_COLA);
+                        var result   = _wmsApiService.CallService(endpoint, item.DS_PAYLOAD);
 
-            CrearPedidos(new PedidosRequest
-            {
-                Empresa = 0,           // TODO: completar
-                DsReferencia = "Middleware - Pedidos",
-                Archivo = "",          // TODO: completar
-                IdRequest = "",        // TODO: completar
-                Pedidos = new List<PedidoRequest>
-                {
-                    // TODO: completar con datos reales
+                        uow.MiddlewareColaRepository.MarcarProcesado(item.NU_COLA);
+
+                        _logger.LogInformation("Cola Id={Id} procesada. Resultado={Result}", item.NU_COLA, result);
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError(ex, "Error al procesar cola Id={Id} Tipo={Tipo}", item.NU_COLA, item.TP_COLA);
+                        uow.MiddlewareColaRepository.MarcarError(item.NU_COLA, ex.Message);
+                    }
                 }
-            });
+            }
 
             _logger.LogInformation("MiddlewareService finalizado");
         }
 
-        /// <summary>
-        /// Obtiene el access token. Si hay HttpContext lo toma del header access_token,
-        /// caso contrario usa client_credentials (flujo batch), igual que PrintingService.
-        /// </summary>
+        private static string ResolverEndpoint(string tipo)
+        {
+            return tipo switch
+            {
+                MiddlewareColaTipo.Producto => "Producto/CreateOrUpdate",
+                MiddlewareColaTipo.Agente => "Agente/CreateOrUpdate",
+                MiddlewareColaTipo.CodigoBarras => "CodigoBarras/CreateOrUpdate",
+                MiddlewareColaTipo.Pedido => "Pedido/CreateOrUpdate",
+                _ => throw new InvalidOperationException($"Tipo de cola desconocido: {tipo}")
+            };
+        }
+
         protected virtual async Task<string> GetToken(CancellationToken cancellationToken)
         {
             _logger.LogDebug("Obteniendo token de acceso...");
-
-            var access_token = _httpContextAccessor.HttpContext?.Request?.Headers["access_token"][0];
-
-            if (!string.IsNullOrEmpty(access_token))
-            {
-                _logger.LogDebug("Autenticado desde HttpContext");
-                return access_token;
-            }
 
             using (var client = new HttpClient())
             {
@@ -128,54 +114,6 @@ namespace Custom.Domain.Services
                 _logger.LogDebug("Autenticado via client_credentials");
                 return response.AccessToken;
             }
-        }
-
-        protected virtual void CrearProducto(ProductosRequest request)
-        {
-            _logger.LogInformation("Procesando productos...");
-
-            if (!_wmsApiService.IsEnabled())
-                throw new Exception("INT050_Sec0_Error_ApiDeshabilitada");
-
-            string result = _wmsApiService.CallService("Producto/CreateOrUpdate", JsonConvert.SerializeObject(request));
-
-            _logger.LogInformation($"Productos procesados. {result}");
-        }
-
-        protected virtual void CrearCodigoBarras(CodigosBarrasRequest request)
-        {
-            _logger.LogInformation("Procesando codigos de barra...");
-
-            if (!_wmsApiService.IsEnabled())
-                throw new Exception("INT050_Sec0_Error_ApiDeshabilitada");
-
-            string result = _wmsApiService.CallService("CodigoBarras/CreateOrUpdate", JsonConvert.SerializeObject(request));
-
-            _logger.LogInformation($"Codigos de barra procesados. {result}");
-        }
-
-        protected virtual void CrearAgentes(AgentesRequest request)
-        {
-            _logger.LogInformation("Procesando agentes...");
-
-            if (!_wmsApiService.IsEnabled())
-                throw new Exception("INT050_Sec0_Error_ApiDeshabilitada");
-
-            string result = _wmsApiService.CallService("Agente/CreateOrUpdate", JsonConvert.SerializeObject(request));
-
-            _logger.LogInformation($"Agentes procesados. {result}");
-        }
-
-        protected virtual void CrearPedidos(PedidosRequest request)
-        {
-            _logger.LogInformation("Procesando pedidos...");
-
-            if (!_wmsApiService.IsEnabled())
-                throw new Exception("INT050_Sec0_Error_ApiDeshabilitada");
-
-            string result = _wmsApiService.CallService("Pedido/CreateOrUpdate", JsonConvert.SerializeObject(request));
-
-            _logger.LogInformation($"Pedidos procesados. {result}");
         }
     }
 }
