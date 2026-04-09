@@ -43,9 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Services\BatchWmsApiService.cs" />
-    <Compile Include="Services\Configuration\MiddlewareDatos.cs" />
+    <Compile Include="Services\Configuration\ErpClientSettings.cs" />
+    <Compile Include="Services\ErpDataExtractor.cs" />
     <Compile Include="Services\Interfaces\IMiddlewareService.cs" />
     <Compile Include="Services\MiddlewareService.cs" />
+    <Compile Include="Services\WsGenQueryClient.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
@@ -67,6 +69,5 @@
     <Folder Include="DataModel\Entities\" />
     <Folder Include="General\API\Dtos\Entrada\" />
     <Folder Include="General\API\Dtos\Salida\" />
-    <Folder Include="Services\Configuration\" />
   </ItemGroup>
 </Project>

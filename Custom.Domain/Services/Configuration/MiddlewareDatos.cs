@@ -1,1 +1,0 @@
-﻿namespace Custom.Domain.Services.Configuration { public class MiddlewareDatos { public const string Position = "MiddlewareDatos"; } }

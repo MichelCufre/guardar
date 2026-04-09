@@ -108,9 +108,8 @@ namespace Custom.Domain.DataModel.Repositories
 
     public static class MiddlewareColaTipo
     {
-        public const string Producto = "PRODUCTO";
-        public const string Agente = "AGENTE";
+        public const string Producto     = "PRODUCTO";
+        public const string Agente       = "AGENTE";
         public const string CodigoBarras = "CODIGOBARRAS";
-        public const string Pedido = "PEDIDO";
     }
 }

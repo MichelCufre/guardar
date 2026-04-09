@@ -1,9 +1,6 @@
-using Microsoft.AspNetCore.Mvc;
 using Custom.Domain.DataModel;
-using Custom.Domain.DataModel.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 using System;
 using WIS.Domain.DataModel;
 
@@ -22,15 +19,13 @@ namespace WIS.MiddlewareAPI.Controllers
             _logger     = logger;
         }
 
-        protected IActionResult Encolar(string tipo, object wmsRequest)
+        // Encola el payload crudo tal como llega del cliente (XML o JSON)
+        protected IActionResult Encolar(string tipo, string payload)
         {
             try
             {
-                var payload = JsonConvert.SerializeObject(wmsRequest);
-
                 using (var uow = (UnitOfWorkCustom)_uowFactory.GetUnitOfWork())
                 {
-                    // Inserta en T_MIDDLEWARE_COLA de la BD de WIS via Dapper
                     uow.MiddlewareColaRepository.Encolar(tipo, payload);
                 }
 

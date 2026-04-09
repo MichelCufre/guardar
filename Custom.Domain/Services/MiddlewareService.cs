@@ -1,4 +1,4 @@
-using Custom.Domain.Services.Interfaces;
+﻿using Custom.Domain.Services.Interfaces;
 using Custom.Domain.DataModel;
 using Custom.Domain.DataModel.Repositories;
 using Custom.Domain.Services.Interfaces;
@@ -22,19 +22,22 @@ namespace Custom.Domain.Services
         protected readonly ILogger<MiddlewareService> _logger;
         protected readonly BatchWmsApiService _wmsApiService;
         protected readonly IUnitOfWorkFactory _uowFactory;
+        protected readonly ErpDataExtractor _erpExtractor;
 
         public MiddlewareService(
             IOptions<AuthSettings> authSettings,
             IHttpContextAccessor httpContextAccessor,
             BatchWmsApiService wmsApiService,
             IUnitOfWorkFactory uowFactory,
+            ErpDataExtractor erpExtractor,
             ILogger<MiddlewareService> logger)
         {
-            _authSettings = authSettings;
+            _authSettings  = authSettings;
             _httpContextAccessor = httpContextAccessor;
             _wmsApiService = wmsApiService;
-            _uowFactory = uowFactory;
-            _logger = logger;
+            _uowFactory    = uowFactory;
+            _erpExtractor  = erpExtractor;
+            _logger        = logger;
         }
 
         public virtual void Run()
@@ -47,9 +50,48 @@ namespace Custom.Domain.Services
                 return;
             }
 
+            // FASE 1 — Consultar la API del cliente y encolar los datos
+            ExtraerYEncolar();
+
+            // FASE 2 — Obtener token WMS y procesar la cola hacia WMS
             var token = GetToken(CancellationToken.None).Result;
             _wmsApiService.SetAccessToken(token);
 
+            ProcesarCola();
+
+            _logger.LogInformation("MiddlewareService finalizado");
+        }
+
+        // ─── Fase 1: extrae datos del ERP del cliente y los encola ───────────────
+
+        protected virtual void ExtraerYEncolar()
+        {
+            using (var uow = (UnitOfWorkCustom)_uowFactory.GetUnitOfWork())
+            {
+                EncolarSiHayDatos(uow, MiddlewareColaTipo.Producto, _erpExtractor.ObtenerXmlProductos);
+                EncolarSiHayDatos(uow, MiddlewareColaTipo.Agente, _erpExtractor.ObtenerXmlAgentes);
+                EncolarSiHayDatos(uow, MiddlewareColaTipo.CodigoBarras, _erpExtractor.ObtenerXmlCodigosBarras);
+            }
+        }
+
+        private void EncolarSiHayDatos(UnitOfWorkCustom uow, string tipo, Func<string> obtenerPayload)
+        {
+            try
+            {
+                var payload = obtenerPayload();
+                uow.MiddlewareColaRepository.Encolar(tipo, payload);
+                _logger.LogInformation("Encolado tipo={Tipo}", tipo);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error al extraer/encolar tipo={Tipo}", tipo);
+            }
+        }
+
+        // ─── Fase 2: procesa la cola y envia a WMS ───────────────────────────────
+
+        protected virtual void ProcesarCola()
+        {
             using (var uow = (UnitOfWorkCustom)_uowFactory.GetUnitOfWork())
             {
                 var pendientes = uow.MiddlewareColaRepository.GetPendientes();
@@ -61,7 +103,8 @@ namespace Custom.Domain.Services
                         _logger.LogInformation("Procesando cola Id={Id} Tipo={Tipo}", item.NU_COLA, item.TP_COLA);
 
                         var endpoint = ResolverEndpoint(item.TP_COLA);
-                        var result   = _wmsApiService.CallService(endpoint, item.DS_PAYLOAD);
+                        var wmsPayload = TraducirPayload(item.TP_COLA, item.DS_PAYLOAD);
+                        var result = _wmsApiService.CallService(endpoint, wmsPayload);
 
                         uow.MiddlewareColaRepository.MarcarProcesado(item.NU_COLA);
 
@@ -74,8 +117,6 @@ namespace Custom.Domain.Services
                     }
                 }
             }
-
-            _logger.LogInformation("MiddlewareService finalizado");
         }
 
         private static string ResolverEndpoint(string tipo)
@@ -84,9 +125,19 @@ namespace Custom.Domain.Services
             {
                 MiddlewareColaTipo.Producto => "Producto/CreateOrUpdate",
                 MiddlewareColaTipo.Agente => "Agente/CreateOrUpdate",
-                MiddlewareColaTipo.CodigoBarras => "CodigoBarras/CreateOrUpdate",
-                MiddlewareColaTipo.Pedido => "Pedido/CreateOrUpdate",
+                MiddlewareColaTipo.CodigoBarras => "CodigoBarras/CreateUpdateOrDelete",
                 _ => throw new InvalidOperationException($"Tipo de cola desconocido: {tipo}")
+            };
+        }
+
+        private string TraducirPayload(string tipo, string xmlPayload)
+        {
+            return tipo switch
+            {
+                MiddlewareColaTipo.Producto => _erpExtractor.ToWmsProductos(xmlPayload),
+                MiddlewareColaTipo.Agente => _erpExtractor.ToWmsAgentes(xmlPayload),
+                MiddlewareColaTipo.CodigoBarras => _erpExtractor.ToWmsCodigosBarras(xmlPayload),
+                _ => throw new InvalidOperationException($"Tipo de cola sin traductor: {tipo}")
             };
         }
 
@@ -106,7 +157,7 @@ namespace Custom.Domain.Services
 
                 if (response.IsError)
                 {
-                    var error = $"Ocurri� un error al obtener el token de acceso: {response.Error}";
+                    var error = $"Ocurrio un error al obtener el token de acceso: {response.Error}";
                     _logger.LogError(error);
                     throw new InvalidOperationException(error);
                 }

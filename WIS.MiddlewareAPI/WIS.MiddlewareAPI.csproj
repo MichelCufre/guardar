@@ -24,4 +24,9 @@
     <ProjectReference Include="..\WIS.Security\WIS.Security.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Dtos\" />
+    <Folder Include="Mappers\" />
+  </ItemGroup>
+
 </Project>

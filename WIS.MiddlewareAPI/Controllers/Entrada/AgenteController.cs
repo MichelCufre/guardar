@@ -2,8 +2,6 @@ using Custom.Domain.DataModel.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using WIS.Domain.DataModel;
-using WIS.MiddlewareAPI.Dtos;
-using WIS.MiddlewareAPI.Mappers;
 
 namespace WIS.MiddlewareAPI.Controllers.Entrada
 {
@@ -15,7 +13,7 @@ namespace WIS.MiddlewareAPI.Controllers.Entrada
             : base(uowFactory, logger) { }
 
         /// <summary>Encola la creacion o actualizacion de agentes/clientes.</summary>
-        /// <remarks>Recibe la estructura del ERP del cliente.</remarks>
+        /// <remarks>Recibe el payload crudo del cliente para encolar y traducir en el batch.</remarks>
         /// <response code="202">Solicitud encolada correctamente.</response>
         /// <response code="400">El cuerpo del request es invalido.</response>
         /// <response code="500">Error interno.</response>
@@ -23,10 +21,9 @@ namespace WIS.MiddlewareAPI.Controllers.Entrada
         [ProducesResponseType(typeof(object), 202)]
         [ProducesResponseType(400)]
         [ProducesResponseType(500)]
-        public IActionResult CreateOrUpdate([FromBody] ErpAgentesRequest request)
+        public IActionResult CreateOrUpdate([FromBody] string payload)
         {
-            var wmsRequest = ErpMapper.ToWms(request);
-            return Encolar(MiddlewareColaTipo.Agente, wmsRequest);
+            return Encolar(MiddlewareColaTipo.Agente, payload);
         }
     }
 }
